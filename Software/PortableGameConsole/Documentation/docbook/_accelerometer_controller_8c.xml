@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_accelerometer_controller_8c">
+    <title>AccelerometerController.c File Reference</title>
+    <programlisting>#include &lt;avr/io.h&gt;</programlisting>
+    <programlisting>#include &lt;stdlib.h&gt;</programlisting>
+    <programlisting>#include &quot;AccelerometerController.h&quot;</programlisting>
+    <programlisting>#include &quot;I2CController.h&quot;</programlisting>
+        <section>
+            <title>Funkcje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_accelerometer_controller_8c_1a3503c5a03dda05fa47abd5022c9609b6">AccelerometerInit</link> (
+void )<para><emphasis>Inicjalizuje akcelerometr.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int8_t <link linkend="_accelerometer_controller_8c_1a8c6d76397000c290219fa9ec3320e2dc">AccelerometerGetAngle</link> (
+<link linkend="_accelerometer_controller_8h_1ae3996976d8ffb3e58d88f58227473f8e">Axis</link> axis)<para><emphasis>Pobiera wartosc proporcjonalna do kata nachylenia do danej osi.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_accelerometer_controller_8h_1a224b9163917ac32fc95a60d8c1eec3aa">Direction</link> <link linkend="_accelerometer_controller_8c_1a20e54871d9dd61e2d49607176aeadb8d">AccelerometerGetDirection</link> (
+void )<para><emphasis>Pobiera kierunek nachylenia.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Opis szczegółowy</title>
+
+<para>Kontroler akcelerometru - source file. </para>
+
+<para><formalpara><title>Autor: </title>
+
+<para>Mateusz Chudy </para>
+</formalpara>
+</para>
+    <para>Definition in file C:/AVR/SMIW_M.Chudy_PrzenosnaKonsolaGier/Software/PortableGameConsole/Sources/Drivers/AccelerometerController.c</para>
+    </simplesect>
+</section>

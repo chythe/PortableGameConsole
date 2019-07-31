@@ -1,0 +1,143 @@
+\hypertarget{_touch_controller_8c}{}\subsection{Dokumentacja pliku Touch\+Controller.\+c}
+\label{_touch_controller_8c}\index{Touch\+Controller.\+c@{Touch\+Controller.\+c}}
+\subsubsection*{Definicje}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_touch_controller_8c_a43bafb28b29491ec7f871319b5a3b2f8}\label{_touch_controller_8c_a43bafb28b29491ec7f871319b5a3b2f8}} 
+\#define {\bfseries F\+\_\+\+C\+PU}~16000000\+UL
+\end{DoxyCompactItemize}
+\subsubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_touch_controller_8c_afea150fcd685610cb9f7672fce361e53}\label{_touch_controller_8c_afea150fcd685610cb9f7672fce361e53}} 
+\hyperlink{_touch_controller_8c_afea150fcd685610cb9f7672fce361e53}{I\+SR} (I\+N\+T0\+\_\+vect)
+\item 
+\mbox{\Hypertarget{_touch_controller_8c_a13aa17f82bc27e0c9c4b625f6b7b3b4b}\label{_touch_controller_8c_a13aa17f82bc27e0c9c4b625f6b7b3b4b}} 
+void \hyperlink{_touch_controller_8c_a13aa17f82bc27e0c9c4b625f6b7b3b4b}{Touch\+Init} (void)
+\item 
+uint16\+\_\+t \hyperlink{_touch_controller_8c_afd6b9fd0d9c6c8cd8c9207f77aee409b}{Touch\+Get\+A\+DC} (uint8\+\_\+t cmd\+Code)
+\item 
+uint16\+\_\+t \hyperlink{_touch_controller_8c_acd900b25f07bb8edbad17c66c6df1ae7}{Touch\+Get\+A\+D\+C\+Ex} (uint8\+\_\+t cmd\+Code)
+\item 
+\hyperlink{_global_errors_8h_a24419a48e73982468e2a8efbec672928}{Execute\+Result} \hyperlink{_touch_controller_8c_a48966a8d6c8270b2401c35b21ec45339}{Touch\+Read\+A\+DS} (uint16\+\_\+t $\ast$xad, uint16\+\_\+t $\ast$yad)
+\item 
+\hyperlink{_global_errors_8h_a24419a48e73982468e2a8efbec672928}{Execute\+Result} \hyperlink{_touch_controller_8c_a9c991e05a075f348beb925569a21794f}{Touch\+Read\+A\+D\+S2} (uint32\+\_\+t $\ast$xad, uint32\+\_\+t $\ast$yad)
+\item 
+\mbox{\Hypertarget{_touch_controller_8c_a669d365b06438c56d3186e03b4714a99}\label{_touch_controller_8c_a669d365b06438c56d3186e03b4714a99}} 
+void \hyperlink{_touch_controller_8c_a669d365b06438c56d3186e03b4714a99}{Touch\+Convert\+Ad\+To\+Xy} (void)
+\item 
+\hyperlink{_global_errors_8h_a24419a48e73982468e2a8efbec672928}{Execute\+Result} \hyperlink{_touch_controller_8c_a29238080856992b4b2f5963da3dbb78a}{Touch\+Read\+Once} (void)
+\item 
+\hyperlink{_global_errors_8h_a24419a48e73982468e2a8efbec672928}{Execute\+Result} \hyperlink{_touch_controller_8c_a5be623bca9f4958335adf98549214d99}{Touch\+Read\+Continue} (void)
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Opis szczegółowy}
+\begin{DoxyAuthor}{Autor}
+Mateusz Chudy 
+\end{DoxyAuthor}
+
+
+\subsubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{_touch_controller_8c_afd6b9fd0d9c6c8cd8c9207f77aee409b}\label{_touch_controller_8c_afd6b9fd0d9c6c8cd8c9207f77aee409b}} 
+\index{Touch\+Controller.\+c@{Touch\+Controller.\+c}!Touch\+Get\+A\+DC@{Touch\+Get\+A\+DC}}
+\index{Touch\+Get\+A\+DC@{Touch\+Get\+A\+DC}!Touch\+Controller.\+c@{Touch\+Controller.\+c}}
+\paragraph{\texorpdfstring{Touch\+Get\+A\+D\+C()}{TouchGetADC()}}
+{\footnotesize\ttfamily uint16\+\_\+t Touch\+Get\+A\+DC (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{cmd\+Code }\end{DoxyParamCaption})}
+
+
+
+Pobiera ze sterownika pojedynczy wynik A\+DC. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em cmd\+Code} & -\/ komenda wskazujaca na os \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wynik konwersji AD 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_touch_controller_8c_acd900b25f07bb8edbad17c66c6df1ae7}\label{_touch_controller_8c_acd900b25f07bb8edbad17c66c6df1ae7}} 
+\index{Touch\+Controller.\+c@{Touch\+Controller.\+c}!Touch\+Get\+A\+D\+C\+Ex@{Touch\+Get\+A\+D\+C\+Ex}}
+\index{Touch\+Get\+A\+D\+C\+Ex@{Touch\+Get\+A\+D\+C\+Ex}!Touch\+Controller.\+c@{Touch\+Controller.\+c}}
+\paragraph{\texorpdfstring{Touch\+Get\+A\+D\+C\+Ex()}{TouchGetADCEx()}}
+{\footnotesize\ttfamily uint16\+\_\+t Touch\+Get\+A\+D\+C\+Ex (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{cmd\+Code }\end{DoxyParamCaption})}
+
+
+
+Pobiera ze sterownika kilka razy wynik A\+DC i filtruje zwracana wartosc. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em cmd\+Code} & -\/ komenda wskazujaca na os \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+przefiltrowany wynik konwersji AD 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_touch_controller_8c_a48966a8d6c8270b2401c35b21ec45339}\label{_touch_controller_8c_a48966a8d6c8270b2401c35b21ec45339}} 
+\index{Touch\+Controller.\+c@{Touch\+Controller.\+c}!Touch\+Read\+A\+DS@{Touch\+Read\+A\+DS}}
+\index{Touch\+Read\+A\+DS@{Touch\+Read\+A\+DS}!Touch\+Controller.\+c@{Touch\+Controller.\+c}}
+\paragraph{\texorpdfstring{Touch\+Read\+A\+D\+S()}{TouchReadADS()}}
+{\footnotesize\ttfamily \hyperlink{_global_errors_8h_a24419a48e73982468e2a8efbec672928}{Execute\+Result} Touch\+Read\+A\+DS (\begin{DoxyParamCaption}\item[{uint16\+\_\+t $\ast$}]{xad,  }\item[{uint16\+\_\+t $\ast$}]{yad }\end{DoxyParamCaption})}
+
+
+
+Pobiera ze sterownika przefiltrowane wyniki konwersji AD dla osi x i y. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em xad} & -\/ przefiltrowany wynik konwersji AD dla osi x \\
+\hline
+{\em yad} & -\/ przefiltrowany wynik konwersji AD dla osi y \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+rezultat operacji 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_touch_controller_8c_a9c991e05a075f348beb925569a21794f}\label{_touch_controller_8c_a9c991e05a075f348beb925569a21794f}} 
+\index{Touch\+Controller.\+c@{Touch\+Controller.\+c}!Touch\+Read\+A\+D\+S2@{Touch\+Read\+A\+D\+S2}}
+\index{Touch\+Read\+A\+D\+S2@{Touch\+Read\+A\+D\+S2}!Touch\+Controller.\+c@{Touch\+Controller.\+c}}
+\paragraph{\texorpdfstring{Touch\+Read\+A\+D\+S2()}{TouchReadADS2()}}
+{\footnotesize\ttfamily \hyperlink{_global_errors_8h_a24419a48e73982468e2a8efbec672928}{Execute\+Result} Touch\+Read\+A\+D\+S2 (\begin{DoxyParamCaption}\item[{uint32\+\_\+t $\ast$}]{xad,  }\item[{uint32\+\_\+t $\ast$}]{yad }\end{DoxyParamCaption})}
+
+
+
+Dwukrotnie pobiera ze sterownika przefiltrowane wyniki konwersji AD dla osi x i y. 
+
+Wartosc obu odczytow dla porownania, w granicach dopuszczalnego bledu 
+\begin{DoxyParams}{Parametry}
+{\em xad} & -\/ przefiltrowany wynik konwersji AD dla osi x \\
+\hline
+{\em yad} & -\/ przefiltrowany wynik konwersji AD dla osi y \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+rezultat operacji 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_touch_controller_8c_a5be623bca9f4958335adf98549214d99}\label{_touch_controller_8c_a5be623bca9f4958335adf98549214d99}} 
+\index{Touch\+Controller.\+c@{Touch\+Controller.\+c}!Touch\+Read\+Continue@{Touch\+Read\+Continue}}
+\index{Touch\+Read\+Continue@{Touch\+Read\+Continue}!Touch\+Controller.\+c@{Touch\+Controller.\+c}}
+\paragraph{\texorpdfstring{Touch\+Read\+Continue()}{TouchReadContinue()}}
+{\footnotesize\ttfamily \hyperlink{_global_errors_8h_a24419a48e73982468e2a8efbec672928}{Execute\+Result} Touch\+Read\+Continue (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Pobiera wspolrzedne dotkniecia w sposob ciagly. 
+
+\begin{DoxyReturn}{Zwraca}
+rezultat operacji 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_touch_controller_8c_a29238080856992b4b2f5963da3dbb78a}\label{_touch_controller_8c_a29238080856992b4b2f5963da3dbb78a}} 
+\index{Touch\+Controller.\+c@{Touch\+Controller.\+c}!Touch\+Read\+Once@{Touch\+Read\+Once}}
+\index{Touch\+Read\+Once@{Touch\+Read\+Once}!Touch\+Controller.\+c@{Touch\+Controller.\+c}}
+\paragraph{\texorpdfstring{Touch\+Read\+Once()}{TouchReadOnce()}}
+{\footnotesize\ttfamily \hyperlink{_global_errors_8h_a24419a48e73982468e2a8efbec672928}{Execute\+Result} Touch\+Read\+Once (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Pobiera jednokrotnie wspolrzedne dotkniecia. 
+
+\begin{DoxyReturn}{Zwraca}
+rezultat operacji 
+\end{DoxyReturn}

@@ -1,0 +1,373 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Portable Game Console: Dokumentacja pliku LCDController.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Portable Game Console
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','Szukaj');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a class="el" href="dir_abb47d9036a42ab5431b8adc2735c9e9.html">Drivers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definicje</a> &#124;
+<a href="#enum-members">Wyliczenia</a> &#124;
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku LCDController.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="_l_c_d_controller_8h_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definicje</h2></td></tr>
+<tr class="memitem:adb4896a8d3a0821a86d2f68487ed3a7d"><td class="memItemLeft" align="right" valign="top"><a id="adb4896a8d3a0821a86d2f68487ed3a7d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LCD_SIZE_X</b>&#160;&#160;&#160;240</td></tr>
+<tr class="separator:adb4896a8d3a0821a86d2f68487ed3a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3ee1c378bb5c697eea544e8685dbd98"><td class="memItemLeft" align="right" valign="top"><a id="aa3ee1c378bb5c697eea544e8685dbd98"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LCD_SIZE_Y</b>&#160;&#160;&#160;320</td></tr>
+<tr class="separator:aa3ee1c378bb5c697eea544e8685dbd98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14192c7862a227f6fabb37414ff6a933"><td class="memItemLeft" align="right" valign="top"><a id="a14192c7862a227f6fabb37414ff6a933"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_START_OSCILLATION</b>&#160;&#160;&#160;0x000</td></tr>
+<tr class="separator:a14192c7862a227f6fabb37414ff6a933"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b020bad9efd30dd236525d75b882c82"><td class="memItemLeft" align="right" valign="top"><a id="a4b020bad9efd30dd236525d75b882c82"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_DRIVER_OUTPUT_CONTROL</b>&#160;&#160;&#160;0x001</td></tr>
+<tr class="separator:a4b020bad9efd30dd236525d75b882c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1d862cfc06c32554f74f68412a94d4d"><td class="memItemLeft" align="right" valign="top"><a id="ab1d862cfc06c32554f74f68412a94d4d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_CRYSTAL_DRIVE_INVERSION_CONTROL</b>&#160;&#160;&#160;0x002</td></tr>
+<tr class="separator:ab1d862cfc06c32554f74f68412a94d4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd5787e716e8e12765ee036c3d1bb80f"><td class="memItemLeft" align="right" valign="top"><a id="afd5787e716e8e12765ee036c3d1bb80f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_ENTRY_MODE</b>&#160;&#160;&#160;0x003</td></tr>
+<tr class="separator:afd5787e716e8e12765ee036c3d1bb80f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefa77cc271c259826dfd6d658fdeb983"><td class="memItemLeft" align="right" valign="top"><a id="aefa77cc271c259826dfd6d658fdeb983"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_MOVING_IMAGE_DISPLAY_CONTROL</b>&#160;&#160;&#160;0x006</td></tr>
+<tr class="separator:aefa77cc271c259826dfd6d658fdeb983"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e20e8e60ed80bc872460fb6c87a1405"><td class="memItemLeft" align="right" valign="top"><a id="a0e20e8e60ed80bc872460fb6c87a1405"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_DISPLAY_CONTROL1</b>&#160;&#160;&#160;0x007</td></tr>
+<tr class="separator:a0e20e8e60ed80bc872460fb6c87a1405"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a828e0f7bc8d8795e3427e65c25bf8610"><td class="memItemLeft" align="right" valign="top"><a id="a828e0f7bc8d8795e3427e65c25bf8610"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_DISPLAY_CONTROL2</b>&#160;&#160;&#160;0x008</td></tr>
+<tr class="separator:a828e0f7bc8d8795e3427e65c25bf8610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d1066464f9a0b69b9c74a3516cc42f5"><td class="memItemLeft" align="right" valign="top"><a id="a7d1066464f9a0b69b9c74a3516cc42f5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_DISPLAY_CONTROL3</b>&#160;&#160;&#160;0x009</td></tr>
+<tr class="separator:a7d1066464f9a0b69b9c74a3516cc42f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9e231237475aa574fd7d5ee6699cf12"><td class="memItemLeft" align="right" valign="top"><a id="ac9e231237475aa574fd7d5ee6699cf12"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_DISPLAY_CONTROL4</b>&#160;&#160;&#160;0x00B</td></tr>
+<tr class="separator:ac9e231237475aa574fd7d5ee6699cf12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8394e73fe3171db6916cae6ccbf0320d"><td class="memItemLeft" align="right" valign="top"><a id="a8394e73fe3171db6916cae6ccbf0320d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_EXTERNAL_DISPLAY_INTERFACE_CONTROL1</b>&#160;&#160;&#160;0x00C</td></tr>
+<tr class="separator:a8394e73fe3171db6916cae6ccbf0320d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d442b0da26154469cb66338d58fba44"><td class="memItemLeft" align="right" valign="top"><a id="a8d442b0da26154469cb66338d58fba44"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_FRAME_CYCLE_ADJUSTMENT_CONTROL</b>&#160;&#160;&#160;0x00D</td></tr>
+<tr class="separator:a8d442b0da26154469cb66338d58fba44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06dfccd15f65a6c657b8429a799730b0"><td class="memItemLeft" align="right" valign="top"><a id="a06dfccd15f65a6c657b8429a799730b0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_SOURCE_DRIVER_INTERFACE_CONTROL1</b>&#160;&#160;&#160;0x012</td></tr>
+<tr class="separator:a06dfccd15f65a6c657b8429a799730b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0222f910a57ee962aea95971e9de8b58"><td class="memItemLeft" align="right" valign="top"><a id="a0222f910a57ee962aea95971e9de8b58"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_GATE_DRIVER_INTERFACE_CONTROL1</b>&#160;&#160;&#160;0x013</td></tr>
+<tr class="separator:a0222f910a57ee962aea95971e9de8b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad240657fadb68d5cd1ad432059ccb292"><td class="memItemLeft" align="right" valign="top"><a id="ad240657fadb68d5cd1ad432059ccb292"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_SOURCE_DRIVER_INTERFACE_CONTROL2</b>&#160;&#160;&#160;0x018</td></tr>
+<tr class="separator:ad240657fadb68d5cd1ad432059ccb292"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a669703458a1456ac41075c278c69fa31"><td class="memItemLeft" align="right" valign="top"><a id="a669703458a1456ac41075c278c69fa31"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_GATE_DRIVER_INTERFACE_CONTROL2</b>&#160;&#160;&#160;0x019</td></tr>
+<tr class="separator:a669703458a1456ac41075c278c69fa31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a170a50340cf2249c7cbcb4d8dd6ec58a"><td class="memItemLeft" align="right" valign="top"><a id="a170a50340cf2249c7cbcb4d8dd6ec58a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_POWER_CONTROL1</b>&#160;&#160;&#160;0x100</td></tr>
+<tr class="separator:a170a50340cf2249c7cbcb4d8dd6ec58a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6622927796a6b208d33c7880e28b55c"><td class="memItemLeft" align="right" valign="top"><a id="af6622927796a6b208d33c7880e28b55c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_POWER_CONTROL2</b>&#160;&#160;&#160;0x101</td></tr>
+<tr class="separator:af6622927796a6b208d33c7880e28b55c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a333a63700b8d48c5b12f9f0168bce66e"><td class="memItemLeft" align="right" valign="top"><a id="a333a63700b8d48c5b12f9f0168bce66e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_POWER_CONTROL3</b>&#160;&#160;&#160;0x102</td></tr>
+<tr class="separator:a333a63700b8d48c5b12f9f0168bce66e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ea0d7eb720c4649e8a48f6a11361e44"><td class="memItemLeft" align="right" valign="top"><a id="a9ea0d7eb720c4649e8a48f6a11361e44"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_POWER_CONTROL4</b>&#160;&#160;&#160;0x103</td></tr>
+<tr class="separator:a9ea0d7eb720c4649e8a48f6a11361e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9de74c8fa4f2b72e497c28e0d1561ee2"><td class="memItemLeft" align="right" valign="top"><a id="a9de74c8fa4f2b72e497c28e0d1561ee2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_POWER_CONTROL5</b>&#160;&#160;&#160;0x110</td></tr>
+<tr class="separator:a9de74c8fa4f2b72e497c28e0d1561ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1387233de6e8e16dec1bb04a41c1552"><td class="memItemLeft" align="right" valign="top"><a id="ab1387233de6e8e16dec1bb04a41c1552"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_POWER_CONTROL6</b>&#160;&#160;&#160;0x111</td></tr>
+<tr class="separator:ab1387233de6e8e16dec1bb04a41c1552"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe093e18ec19e5f0d97e68389946c638"><td class="memItemLeft" align="right" valign="top"><a id="abe093e18ec19e5f0d97e68389946c638"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_HORIZONTAL_RAM_ADDRESS_SET</b>&#160;&#160;&#160;0x200</td></tr>
+<tr class="separator:abe093e18ec19e5f0d97e68389946c638"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a861678b01246e12b9c1cd97f1e939acb"><td class="memItemLeft" align="right" valign="top"><a id="a861678b01246e12b9c1cd97f1e939acb"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_VERTICAL_RAM_ADDRESS_SET</b>&#160;&#160;&#160;0x201</td></tr>
+<tr class="separator:a861678b01246e12b9c1cd97f1e939acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2aa3cce27868eeda6b65a61d2d71482"><td class="memItemLeft" align="right" valign="top"><a id="ae2aa3cce27868eeda6b65a61d2d71482"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_RAM_DATA_WRITE</b>&#160;&#160;&#160;0x202</td></tr>
+<tr class="separator:ae2aa3cce27868eeda6b65a61d2d71482"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97313c33b091278ede7682a187e3f349"><td class="memItemLeft" align="right" valign="top"><a id="a97313c33b091278ede7682a187e3f349"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_RAM_WRITE_DATA_MASK1</b>&#160;&#160;&#160;0x203</td></tr>
+<tr class="separator:a97313c33b091278ede7682a187e3f349"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fc89d91b0f41c0e153d9d1b2aef4ace"><td class="memItemLeft" align="right" valign="top"><a id="a3fc89d91b0f41c0e153d9d1b2aef4ace"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_RAM_WRITE_DATA_MASK2</b>&#160;&#160;&#160;0x204</td></tr>
+<tr class="separator:a3fc89d91b0f41c0e153d9d1b2aef4ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada67175df67944e38e143fd1a4f55d0f"><td class="memItemLeft" align="right" valign="top"><a id="ada67175df67944e38e143fd1a4f55d0f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_HORIZONTAL_RAM_ADDRESS_START_POSITION</b>&#160;&#160;&#160;0x210</td></tr>
+<tr class="separator:ada67175df67944e38e143fd1a4f55d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac94df50af44d1d9a1f4c27ea140dc3a6"><td class="memItemLeft" align="right" valign="top"><a id="ac94df50af44d1d9a1f4c27ea140dc3a6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_HORIZONTAL_RAM_ADDRESS_END_POSITION</b>&#160;&#160;&#160;0x211</td></tr>
+<tr class="separator:ac94df50af44d1d9a1f4c27ea140dc3a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c69565133ac47c89fe2369533b0a395"><td class="memItemLeft" align="right" valign="top"><a id="a4c69565133ac47c89fe2369533b0a395"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_VERTICAL_RAM_ADDRESS_START_POSITION</b>&#160;&#160;&#160;0x212</td></tr>
+<tr class="separator:a4c69565133ac47c89fe2369533b0a395"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81d9769de496df680d4105f83681698d"><td class="memItemLeft" align="right" valign="top"><a id="a81d9769de496df680d4105f83681698d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_VERTICAL_RAM_ADDRESS_END_POSITION</b>&#160;&#160;&#160;0x213</td></tr>
+<tr class="separator:a81d9769de496df680d4105f83681698d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc7a350c775209d4dc9e6d76d6299ed1"><td class="memItemLeft" align="right" valign="top"><a id="adc7a350c775209d4dc9e6d76d6299ed1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_MOVING_PICTURE_CONTROL_ADDRESS_START_POSITION1</b>&#160;&#160;&#160;0x214</td></tr>
+<tr class="separator:adc7a350c775209d4dc9e6d76d6299ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30e7e0e85c0b0573e6f2ed1f7c6c0018"><td class="memItemLeft" align="right" valign="top"><a id="a30e7e0e85c0b0573e6f2ed1f7c6c0018"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_MOVING_PICTURE_CONTROL_ADDRESS_END_POSITION1</b>&#160;&#160;&#160;0x215</td></tr>
+<tr class="separator:a30e7e0e85c0b0573e6f2ed1f7c6c0018"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72174ab405db2076208c54ece7c6ed55"><td class="memItemLeft" align="right" valign="top"><a id="a72174ab405db2076208c54ece7c6ed55"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_MOVING_PICTURE_CONTROL_ADDRESS_START_POSITION2</b>&#160;&#160;&#160;0x216</td></tr>
+<tr class="separator:a72174ab405db2076208c54ece7c6ed55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cd2722681a7c419e0abbf18febdaeab"><td class="memItemLeft" align="right" valign="top"><a id="a5cd2722681a7c419e0abbf18febdaeab"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_MOVING_PICTURE_CONTROL_ADDRESS_END_POSITION2</b>&#160;&#160;&#160;0x217</td></tr>
+<tr class="separator:a5cd2722681a7c419e0abbf18febdaeab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfcc8f2f0a0e42a3762a529dfefcc568"><td class="memItemLeft" align="right" valign="top"><a id="abfcc8f2f0a0e42a3762a529dfefcc568"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_GAMMA_CONTROL1</b>&#160;&#160;&#160;0x300</td></tr>
+<tr class="separator:abfcc8f2f0a0e42a3762a529dfefcc568"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cfff1ce8f7d223570d26854f6e39000"><td class="memItemLeft" align="right" valign="top"><a id="a1cfff1ce8f7d223570d26854f6e39000"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_GAMMA_CONTROL2</b>&#160;&#160;&#160;0x301</td></tr>
+<tr class="separator:a1cfff1ce8f7d223570d26854f6e39000"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0393dc223aab529be482233ec9355a9f"><td class="memItemLeft" align="right" valign="top"><a id="a0393dc223aab529be482233ec9355a9f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_GAMMA_CONTROL3</b>&#160;&#160;&#160;0x302</td></tr>
+<tr class="separator:a0393dc223aab529be482233ec9355a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7fbbf1b56108737577808799700a452"><td class="memItemLeft" align="right" valign="top"><a id="ac7fbbf1b56108737577808799700a452"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_GAMMA_CONTROL4</b>&#160;&#160;&#160;0x303</td></tr>
+<tr class="separator:ac7fbbf1b56108737577808799700a452"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e67b1543f756ec4662828d93cbcfdf0"><td class="memItemLeft" align="right" valign="top"><a id="a7e67b1543f756ec4662828d93cbcfdf0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_GAMMA_CONTROL5</b>&#160;&#160;&#160;0x304</td></tr>
+<tr class="separator:a7e67b1543f756ec4662828d93cbcfdf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af67a66a92b28ae924aba97b7eb962d06"><td class="memItemLeft" align="right" valign="top"><a id="af67a66a92b28ae924aba97b7eb962d06"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_GAMMA_CONTROL6</b>&#160;&#160;&#160;0x305</td></tr>
+<tr class="separator:af67a66a92b28ae924aba97b7eb962d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66044f5d14485cd24c708d97bb8db948"><td class="memItemLeft" align="right" valign="top"><a id="a66044f5d14485cd24c708d97bb8db948"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_GAMMA_CONTROL7</b>&#160;&#160;&#160;0x306</td></tr>
+<tr class="separator:a66044f5d14485cd24c708d97bb8db948"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaca7d969cd7d989df1ca13cd37c06ae2"><td class="memItemLeft" align="right" valign="top"><a id="aaca7d969cd7d989df1ca13cd37c06ae2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_GAMMA_CONTROL8</b>&#160;&#160;&#160;0x307</td></tr>
+<tr class="separator:aaca7d969cd7d989df1ca13cd37c06ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a1a5d32030b5d8fa4d3f974b3e15972"><td class="memItemLeft" align="right" valign="top"><a id="a6a1a5d32030b5d8fa4d3f974b3e15972"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_GAMMA_CONTROL9</b>&#160;&#160;&#160;0x308</td></tr>
+<tr class="separator:a6a1a5d32030b5d8fa4d3f974b3e15972"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92092cf0d63c47d9524bead495b6daca"><td class="memItemLeft" align="right" valign="top"><a id="a92092cf0d63c47d9524bead495b6daca"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_GAMMA_CONTROL10</b>&#160;&#160;&#160;0x309</td></tr>
+<tr class="separator:a92092cf0d63c47d9524bead495b6daca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d70e8c9165b07d02fb57eadf84545de"><td class="memItemLeft" align="right" valign="top"><a id="a3d70e8c9165b07d02fb57eadf84545de"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_LINE_NUMBER_CONTROL</b>&#160;&#160;&#160;0x400</td></tr>
+<tr class="separator:a3d70e8c9165b07d02fb57eadf84545de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abac753dba4002f82753914ab816b1816"><td class="memItemLeft" align="right" valign="top"><a id="abac753dba4002f82753914ab816b1816"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_SCREEN_CONTROL</b>&#160;&#160;&#160;0x401</td></tr>
+<tr class="separator:abac753dba4002f82753914ab816b1816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca0c63edfd3f81c02f1203e4ac0ace0b"><td class="memItemLeft" align="right" valign="top"><a id="aca0c63edfd3f81c02f1203e4ac0ace0b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_FULL_SCREEN_IMAGE_RAM_AREA_START_LINE</b>&#160;&#160;&#160;0x402</td></tr>
+<tr class="separator:aca0c63edfd3f81c02f1203e4ac0ace0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e3046145924808f2c943ebc62a43ff7"><td class="memItemLeft" align="right" valign="top"><a id="a1e3046145924808f2c943ebc62a43ff7"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_FULL_SCREEN_IMAGE_RAM_AREA_END_LINE</b>&#160;&#160;&#160;0x403</td></tr>
+<tr class="separator:a1e3046145924808f2c943ebc62a43ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7de05dc2d9f6de3c6eaf22ca78270a3"><td class="memItemLeft" align="right" valign="top"><a id="af7de05dc2d9f6de3c6eaf22ca78270a3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX_VERTICAL_SCROLL_CONTROL</b>&#160;&#160;&#160;0x404</td></tr>
+<tr class="separator:af7de05dc2d9f6de3c6eaf22ca78270a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3534a292b8c135962395055d1f02d7f9"><td class="memItemLeft" align="right" valign="top"><a id="a3534a292b8c135962395055d1f02d7f9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LCD_RST_H</b>()&#160;&#160;&#160;PORTB |= (1 &lt;&lt; PB0);</td></tr>
+<tr class="separator:a3534a292b8c135962395055d1f02d7f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a938e5e2887fc2ac51db1b837f8c28c06"><td class="memItemLeft" align="right" valign="top"><a id="a938e5e2887fc2ac51db1b837f8c28c06"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LCD_RST_L</b>()&#160;&#160;&#160;PORTB &amp;= ~(1 &lt;&lt; PB0);</td></tr>
+<tr class="separator:a938e5e2887fc2ac51db1b837f8c28c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55730e1e119f4dd31e8056b8d322ca7d"><td class="memItemLeft" align="right" valign="top"><a id="a55730e1e119f4dd31e8056b8d322ca7d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LCD_RS_H</b>()&#160;&#160;&#160;PORTB |= (1 &lt;&lt; PB1);</td></tr>
+<tr class="separator:a55730e1e119f4dd31e8056b8d322ca7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ff98deef0b5e865767281a0e439dc42"><td class="memItemLeft" align="right" valign="top"><a id="a0ff98deef0b5e865767281a0e439dc42"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LCD_RS_L</b>()&#160;&#160;&#160;PORTB &amp;= ~(1 &lt;&lt; PB1);</td></tr>
+<tr class="separator:a0ff98deef0b5e865767281a0e439dc42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a954ced03b5814a3ec7d0766eb13cbc37"><td class="memItemLeft" align="right" valign="top"><a id="a954ced03b5814a3ec7d0766eb13cbc37"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LCD_CS_H</b>()&#160;&#160;&#160;PORTB |= (1 &lt;&lt; PB2);</td></tr>
+<tr class="separator:a954ced03b5814a3ec7d0766eb13cbc37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaa58e1d932ba98f85bee92ae730773c"><td class="memItemLeft" align="right" valign="top"><a id="aaaa58e1d932ba98f85bee92ae730773c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LCD_CS_L</b>()&#160;&#160;&#160;PORTB &amp;= ~(1 &lt;&lt; PB2);</td></tr>
+<tr class="separator:aaaa58e1d932ba98f85bee92ae730773c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Wyliczenia</h2></td></tr>
+<tr class="memitem:ab87bacfdad76e61b9412d7124be44c1c"><td class="memItemLeft" align="right" valign="top"><a id="ab87bacfdad76e61b9412d7124be44c1c"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_c_d_controller_8h.html#ab87bacfdad76e61b9412d7124be44c1c">Color</a> { <br />
+&#160;&#160;<b>BLACK</b> = 0X0000, 
+<b>CYAN</b> = 0x07FF, 
+<b>PURPLE</b> = 0xF81F, 
+<b>RED</b> = 0XF800, 
+<br />
+&#160;&#160;<b>GREEN</b> = 0X07E0, 
+<b>BLUE</b> = 0X001F, 
+<b>YELLOW</b> = 0XFFE0, 
+<b>ORANGE</b> = 0XFC08, 
+<br />
+&#160;&#160;<b>GRAY</b> = 0X8430, 
+<b>LGRAY</b> = 0XC618, 
+<b>DARKGRAY</b> = 0X8410, 
+<b>PORPO</b> = 0X801F, 
+<br />
+&#160;&#160;<b>PINK</b> = 0XF81F, 
+<b>GRAYBLUE</b> = 0X5458, 
+<b>LGRAYBLUE</b> = 0XA651, 
+<b>DARKBLUE</b> = 0X01CF, 
+<br />
+&#160;&#160;<b>LIGHTBLUE</b> = 0X7D7C, 
+<b>WHITE</b> = 0XFFFF
+<br />
+ }</td></tr>
+<tr class="separator:ab87bacfdad76e61b9412d7124be44c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:ad73cbdb125a38140802550653f243fca"><td class="memItemLeft" align="right" valign="top"><a id="ad73cbdb125a38140802550653f243fca"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_c_d_controller_8h.html#ad73cbdb125a38140802550653f243fca">LCDPWMInit</a> (void)</td></tr>
+<tr class="separator:ad73cbdb125a38140802550653f243fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae36ba846363b79a812be19300f843576"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_c_d_controller_8h.html#ae36ba846363b79a812be19300f843576">LCDWriteIndex</a> (uint16_t index)</td></tr>
+<tr class="separator:ae36ba846363b79a812be19300f843576"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30bbc98d8f283ea2b5bab632e48543d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_c_d_controller_8h.html#a30bbc98d8f283ea2b5bab632e48543d3">LCDWriteReg</a> (uint16_t index, uint16_t data)</td></tr>
+<tr class="separator:a30bbc98d8f283ea2b5bab632e48543d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34085397b2bf54f843b9196a9b787e6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_c_d_controller_8h.html#a34085397b2bf54f843b9196a9b787e6b">LCDWriteData</a> (uint16_t data)</td></tr>
+<tr class="separator:a34085397b2bf54f843b9196a9b787e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a410f02e534a63d1f6e7a168dae003d6d"><td class="memItemLeft" align="right" valign="top"><a id="a410f02e534a63d1f6e7a168dae003d6d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_c_d_controller_8h.html#a410f02e534a63d1f6e7a168dae003d6d">LCDInit</a> (void)</td></tr>
+<tr class="separator:a410f02e534a63d1f6e7a168dae003d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><dl class="section author"><dt>Autor</dt><dd>Mateusz Chudy </dd></dl>
+</div><h2 class="groupheader">Dokumentacja funkcji</h2>
+<a id="a34085397b2bf54f843b9196a9b787e6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34085397b2bf54f843b9196a9b787e6b">&#9670;&nbsp;</a></span>LCDWriteData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LCDWriteData </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wpisuje dane. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>- wpisywane dane </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae36ba846363b79a812be19300f843576"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae36ba846363b79a812be19300f843576">&#9670;&nbsp;</a></span>LCDWriteIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LCDWriteIndex </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wpisuje do sterownika indeks rejestru. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>- indeks rejestru </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a30bbc98d8f283ea2b5bab632e48543d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30bbc98d8f283ea2b5bab632e48543d3">&#9670;&nbsp;</a></span>LCDWriteReg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LCDWriteReg </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wpisuje dane do rejestru. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>- indeks rejestru </td></tr>
+    <tr><td class="paramname">data</td><td>- wpisywane dane </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

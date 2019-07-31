@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Portable Game Console: Plik źródłowy AccelerometerController.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Portable Game Console
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','Szukaj');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a class="el" href="dir_abb47d9036a42ab5431b8adc2735c9e9.html">Drivers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">AccelerometerController.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_accelerometer_controller_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/**************************************************************************/</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef _ACCELEROMETER_CONTROLLER_H_</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define _ACCELEROMETER_CONTROLLER_H_</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define X0                      0</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define Y0                      -5</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define WRITE                   0x3A</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#define READ                    0x3B</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#define ACCE_SENSITIVITY        10</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="_accelerometer_controller_8h.html#ae3996976d8ffb3e58d88f58227473f8e">   21</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    AXIS_X = 0x29,</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    AXIS_Y = 0x2B,</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    AXIS_Z = 0x2D</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;} <a class="code" href="_accelerometer_controller_8h.html#ae3996976d8ffb3e58d88f58227473f8e" title="Indeksy rejestrow, pod ktorymi znajduja sie dane proporcjonalne do kata nachylenia do danej osi...">Axis</a>;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="_accelerometer_controller_8h.html#a224b9163917ac32fc95a60d8c1eec3aa">   29</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    CONST,</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    UP,</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    DOWN,</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    LEFT,</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    RIGHT</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;} <a class="code" href="_accelerometer_controller_8h.html#a224b9163917ac32fc95a60d8c1eec3aa" title="Kierunek wyznaczany przez nachylenie urzadzenia. ">Direction</a>;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_accelerometer_controller_8h.html#a3503c5a03dda05fa47abd5022c9609b6" title="Inicjalizuje akcelerometr. ">AccelerometerInit</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;int8_t <a class="code" href="_accelerometer_controller_8h.html#a8c6d76397000c290219fa9ec3320e2dc" title="Pobiera wartosc proporcjonalna do kata nachylenia do danej osi. ">AccelerometerGetAngle</a>(<a class="code" href="_accelerometer_controller_8h.html#ae3996976d8ffb3e58d88f58227473f8e" title="Indeksy rejestrow, pod ktorymi znajduja sie dane proporcjonalne do kata nachylenia do danej osi...">Axis</a> axis);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<a class="code" href="_accelerometer_controller_8h.html#a224b9163917ac32fc95a60d8c1eec3aa" title="Kierunek wyznaczany przez nachylenie urzadzenia. ">Direction</a> <a class="code" href="_accelerometer_controller_8h.html#a20e54871d9dd61e2d49607176aeadb8d" title="Pobiera kierunek nachylenia. ">AccelerometerGetDirection</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif      // _ACCELEROMETER_CONTROLLER_H_</span></div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">// ----------------------------------------------------------------------------</span></div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">// End of file ----------------------------------------------------------------</span></div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">// ----------------------------------------------------------------------------</span></div></div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

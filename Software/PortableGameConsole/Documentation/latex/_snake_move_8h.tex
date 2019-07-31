@@ -1,0 +1,130 @@
+\hypertarget{_snake_move_8h}{}\subsection{Dokumentacja pliku Snake\+Move.\+h}
+\label{_snake_move_8h}\index{Snake\+Move.\+h@{Snake\+Move.\+h}}
+\subsubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{_snake_move_8h_a4826d6fabdc46eabdf73dd1f82413645}{Snake\+Check\+Collision} (\hyperlink{struct_element}{Element} $\ast$$\ast$snake\+Elements, uint8\+\_\+t snake\+Size, uint8\+\_\+t is\+Fall)
+\item 
+\hyperlink{struct_element}{Element} $\ast$$\ast$ \hyperlink{_snake_move_8h_aacfe4d57705b0bccb20be6eff24bf4c3}{Snake\+Check\+Change\+Direction} (\hyperlink{struct_element}{Element} $\ast$$\ast$snake\+Elements, uint8\+\_\+t $\ast$snake\+Size)
+\item 
+\hyperlink{struct_element}{Element} $\ast$$\ast$ \hyperlink{_snake_move_8h_aa87c68fc69a04911e9d34a931c6eb0c7}{Snake\+Check\+Food} (\hyperlink{struct_element}{Element} $\ast$$\ast$snake\+Elements, uint8\+\_\+t $\ast$snake\+Size, \hyperlink{struct_element}{Element} $\ast$food)
+\item 
+\hyperlink{struct_element}{Element} $\ast$$\ast$ \hyperlink{_snake_move_8h_a7a5be7fc634f033f3648138c55029949}{Snake\+Update\+Directions} (\hyperlink{struct_element}{Element} $\ast$$\ast$snake\+Elements, uint8\+\_\+t $\ast$snake\+Size)
+\item 
+\hyperlink{struct_element}{Element} $\ast$$\ast$ \hyperlink{_snake_move_8h_a205cb9d6c4412c5e25b56f0d3d4b2176}{Snake\+Move} (\hyperlink{struct_element}{Element} $\ast$$\ast$snake\+Elements, uint8\+\_\+t $\ast$snake\+Size, \hyperlink{struct_element}{Element} $\ast$food)
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Opis szczegółowy}
+\begin{DoxyAuthor}{Autor}
+Mateusz Chudy 
+\end{DoxyAuthor}
+
+
+\subsubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{_snake_move_8h_aacfe4d57705b0bccb20be6eff24bf4c3}\label{_snake_move_8h_aacfe4d57705b0bccb20be6eff24bf4c3}} 
+\index{Snake\+Move.\+h@{Snake\+Move.\+h}!Snake\+Check\+Change\+Direction@{Snake\+Check\+Change\+Direction}}
+\index{Snake\+Check\+Change\+Direction@{Snake\+Check\+Change\+Direction}!Snake\+Move.\+h@{Snake\+Move.\+h}}
+\paragraph{\texorpdfstring{Snake\+Check\+Change\+Direction()}{SnakeCheckChangeDirection()}}
+{\footnotesize\ttfamily \hyperlink{struct_element}{Element}$\ast$$\ast$ Snake\+Check\+Change\+Direction (\begin{DoxyParamCaption}\item[{\hyperlink{struct_element}{Element} $\ast$$\ast$}]{snake\+Elements,  }\item[{uint8\+\_\+t $\ast$}]{snake\+Size }\end{DoxyParamCaption})}
+
+
+
+Sprawdza i zmienia kierunek wenza. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em snake\+Elements} & -\/ wskaznik na tablice elementow weza \\
+\hline
+{\em snake\+Size} & -\/ wskaznik na rozmiar weza \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wskaznik na tablice elementow weza 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_snake_move_8h_a4826d6fabdc46eabdf73dd1f82413645}\label{_snake_move_8h_a4826d6fabdc46eabdf73dd1f82413645}} 
+\index{Snake\+Move.\+h@{Snake\+Move.\+h}!Snake\+Check\+Collision@{Snake\+Check\+Collision}}
+\index{Snake\+Check\+Collision@{Snake\+Check\+Collision}!Snake\+Move.\+h@{Snake\+Move.\+h}}
+\paragraph{\texorpdfstring{Snake\+Check\+Collision()}{SnakeCheckCollision()}}
+{\footnotesize\ttfamily uint8\+\_\+t Snake\+Check\+Collision (\begin{DoxyParamCaption}\item[{\hyperlink{struct_element}{Element} $\ast$$\ast$}]{snake\+Elements,  }\item[{uint8\+\_\+t}]{snake\+Size,  }\item[{uint8\+\_\+t}]{is\+Fall }\end{DoxyParamCaption})}
+
+
+
+Sprawdza kolizje weza. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em snake\+Elements} & -\/ wskaznik na tablice elementow weza \\
+\hline
+{\em snake\+Size} & -\/ rozmiar weza \\
+\hline
+{\em is\+Fall} & -\/ flaga wskazujaca czy w grze obecne sa sciany \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wartosc logiczna wskazujaca na kolizje lub jej brak 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_snake_move_8h_aa87c68fc69a04911e9d34a931c6eb0c7}\label{_snake_move_8h_aa87c68fc69a04911e9d34a931c6eb0c7}} 
+\index{Snake\+Move.\+h@{Snake\+Move.\+h}!Snake\+Check\+Food@{Snake\+Check\+Food}}
+\index{Snake\+Check\+Food@{Snake\+Check\+Food}!Snake\+Move.\+h@{Snake\+Move.\+h}}
+\paragraph{\texorpdfstring{Snake\+Check\+Food()}{SnakeCheckFood()}}
+{\footnotesize\ttfamily \hyperlink{struct_element}{Element}$\ast$$\ast$ Snake\+Check\+Food (\begin{DoxyParamCaption}\item[{\hyperlink{struct_element}{Element} $\ast$$\ast$}]{snake\+Elements,  }\item[{uint8\+\_\+t $\ast$}]{snake\+Size,  }\item[{\hyperlink{struct_element}{Element} $\ast$}]{food }\end{DoxyParamCaption})}
+
+
+
+Sprawdza czy waz natrafil na pokarm, jesli takrysuje nowy i zwieksza wenza. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em snake\+Elements} & -\/ wskaznik na tablice elementow weza \\
+\hline
+{\em snake\+Size} & -\/ wskaznik na rozmiar weza \\
+\hline
+{\em food} & -\/ wskaznik na element pokarmu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wskaznik na tablice elementow weza 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_snake_move_8h_a205cb9d6c4412c5e25b56f0d3d4b2176}\label{_snake_move_8h_a205cb9d6c4412c5e25b56f0d3d4b2176}} 
+\index{Snake\+Move.\+h@{Snake\+Move.\+h}!Snake\+Move@{Snake\+Move}}
+\index{Snake\+Move@{Snake\+Move}!Snake\+Move.\+h@{Snake\+Move.\+h}}
+\paragraph{\texorpdfstring{Snake\+Move()}{SnakeMove()}}
+{\footnotesize\ttfamily \hyperlink{struct_element}{Element}$\ast$$\ast$ Snake\+Move (\begin{DoxyParamCaption}\item[{\hyperlink{struct_element}{Element} $\ast$$\ast$}]{snake\+Elements,  }\item[{uint8\+\_\+t $\ast$}]{snake\+Size,  }\item[{\hyperlink{struct_element}{Element} $\ast$}]{food }\end{DoxyParamCaption})}
+
+
+
+Przemieszcza wenza na ekranie. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em snake\+Elements} & -\/ wskaznik na tablice elementow weza \\
+\hline
+{\em snake\+Size} & -\/ wskaznik na rozmiar weza \\
+\hline
+{\em food} & -\/ wskaznik na element pokarmu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wskaznik na tablice elementow weza 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_snake_move_8h_a7a5be7fc634f033f3648138c55029949}\label{_snake_move_8h_a7a5be7fc634f033f3648138c55029949}} 
+\index{Snake\+Move.\+h@{Snake\+Move.\+h}!Snake\+Update\+Directions@{Snake\+Update\+Directions}}
+\index{Snake\+Update\+Directions@{Snake\+Update\+Directions}!Snake\+Move.\+h@{Snake\+Move.\+h}}
+\paragraph{\texorpdfstring{Snake\+Update\+Directions()}{SnakeUpdateDirections()}}
+{\footnotesize\ttfamily \hyperlink{struct_element}{Element}$\ast$$\ast$ Snake\+Update\+Directions (\begin{DoxyParamCaption}\item[{\hyperlink{struct_element}{Element} $\ast$$\ast$}]{snake\+Elements,  }\item[{uint8\+\_\+t $\ast$}]{snake\+Size }\end{DoxyParamCaption})}
+
+
+
+Aktualizuje kierunki dla elementow wenza. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em snake\+Elements} & -\/ wskaznik na tablice elementow weza \\
+\hline
+{\em snake\+Size} & -\/ wskaznik na rozmiar weza \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wskaznik na tablice elementow weza 
+\end{DoxyReturn}

@@ -1,0 +1,498 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_l_c_d_controller_8h">
+    <title>LCDController.h File Reference</title>
+    <programlisting>#include &lt;stdint.h&gt;</programlisting>
+        <section>
+            <title>Definicje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1adb4896a8d3a0821a86d2f68487ed3a7d">LCD_SIZE_X</link> 240</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1aa3ee1c378bb5c697eea544e8685dbd98">LCD_SIZE_Y</link> 320</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1a14192c7862a227f6fabb37414ff6a933">INDEX_START_OSCILLATION</link> 0x000</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1a4b020bad9efd30dd236525d75b882c82">INDEX_DRIVER_OUTPUT_CONTROL</link> 0x001</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1ab1d862cfc06c32554f74f68412a94d4d">INDEX_CRYSTAL_DRIVE_INVERSION_CONTROL</link> 0x002</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1afd5787e716e8e12765ee036c3d1bb80f">INDEX_ENTRY_MODE</link> 0x003</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1aefa77cc271c259826dfd6d658fdeb983">INDEX_MOVING_IMAGE_DISPLAY_CONTROL</link> 0x006</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1a0e20e8e60ed80bc872460fb6c87a1405">INDEX_DISPLAY_CONTROL1</link> 0x007</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1a828e0f7bc8d8795e3427e65c25bf8610">INDEX_DISPLAY_CONTROL2</link> 0x008</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1a7d1066464f9a0b69b9c74a3516cc42f5">INDEX_DISPLAY_CONTROL3</link> 0x009</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1ac9e231237475aa574fd7d5ee6699cf12">INDEX_DISPLAY_CONTROL4</link> 0x00B</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1a8394e73fe3171db6916cae6ccbf0320d">INDEX_EXTERNAL_DISPLAY_INTERFACE_CONTROL1</link> 0x00C</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1a8d442b0da26154469cb66338d58fba44">INDEX_FRAME_CYCLE_ADJUSTMENT_CONTROL</link> 0x00D</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1a06dfccd15f65a6c657b8429a799730b0">INDEX_SOURCE_DRIVER_INTERFACE_CONTROL1</link> 0x012</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1a0222f910a57ee962aea95971e9de8b58">INDEX_GATE_DRIVER_INTERFACE_CONTROL1</link> 0x013</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1ad240657fadb68d5cd1ad432059ccb292">INDEX_SOURCE_DRIVER_INTERFACE_CONTROL2</link> 0x018</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1a669703458a1456ac41075c278c69fa31">INDEX_GATE_DRIVER_INTERFACE_CONTROL2</link> 0x019</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1a170a50340cf2249c7cbcb4d8dd6ec58a">INDEX_POWER_CONTROL1</link> 0x100</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1af6622927796a6b208d33c7880e28b55c">INDEX_POWER_CONTROL2</link> 0x101</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1a333a63700b8d48c5b12f9f0168bce66e">INDEX_POWER_CONTROL3</link> 0x102</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1a9ea0d7eb720c4649e8a48f6a11361e44">INDEX_POWER_CONTROL4</link> 0x103</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1a9de74c8fa4f2b72e497c28e0d1561ee2">INDEX_POWER_CONTROL5</link> 0x110</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1ab1387233de6e8e16dec1bb04a41c1552">INDEX_POWER_CONTROL6</link> 0x111</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1abe093e18ec19e5f0d97e68389946c638">INDEX_HORIZONTAL_RAM_ADDRESS_SET</link> 0x200</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1a861678b01246e12b9c1cd97f1e939acb">INDEX_VERTICAL_RAM_ADDRESS_SET</link> 0x201</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1ae2aa3cce27868eeda6b65a61d2d71482">INDEX_RAM_DATA_WRITE</link> 0x202</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1a97313c33b091278ede7682a187e3f349">INDEX_RAM_WRITE_DATA_MASK1</link> 0x203</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1a3fc89d91b0f41c0e153d9d1b2aef4ace">INDEX_RAM_WRITE_DATA_MASK2</link> 0x204</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1ada67175df67944e38e143fd1a4f55d0f">INDEX_HORIZONTAL_RAM_ADDRESS_START_POSITION</link> 0x210</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1ac94df50af44d1d9a1f4c27ea140dc3a6">INDEX_HORIZONTAL_RAM_ADDRESS_END_POSITION</link> 0x211</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1a4c69565133ac47c89fe2369533b0a395">INDEX_VERTICAL_RAM_ADDRESS_START_POSITION</link> 0x212</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1a81d9769de496df680d4105f83681698d">INDEX_VERTICAL_RAM_ADDRESS_END_POSITION</link> 0x213</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1adc7a350c775209d4dc9e6d76d6299ed1">INDEX_MOVING_PICTURE_CONTROL_ADDRESS_START_POSITION1</link> 0x214</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1a30e7e0e85c0b0573e6f2ed1f7c6c0018">INDEX_MOVING_PICTURE_CONTROL_ADDRESS_END_POSITION1</link> 0x215</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1a72174ab405db2076208c54ece7c6ed55">INDEX_MOVING_PICTURE_CONTROL_ADDRESS_START_POSITION2</link> 0x216</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1a5cd2722681a7c419e0abbf18febdaeab">INDEX_MOVING_PICTURE_CONTROL_ADDRESS_END_POSITION2</link> 0x217</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1abfcc8f2f0a0e42a3762a529dfefcc568">INDEX_GAMMA_CONTROL1</link> 0x300</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1a1cfff1ce8f7d223570d26854f6e39000">INDEX_GAMMA_CONTROL2</link> 0x301</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1a0393dc223aab529be482233ec9355a9f">INDEX_GAMMA_CONTROL3</link> 0x302</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1ac7fbbf1b56108737577808799700a452">INDEX_GAMMA_CONTROL4</link> 0x303</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1a7e67b1543f756ec4662828d93cbcfdf0">INDEX_GAMMA_CONTROL5</link> 0x304</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1af67a66a92b28ae924aba97b7eb962d06">INDEX_GAMMA_CONTROL6</link> 0x305</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1a66044f5d14485cd24c708d97bb8db948">INDEX_GAMMA_CONTROL7</link> 0x306</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1aaca7d969cd7d989df1ca13cd37c06ae2">INDEX_GAMMA_CONTROL8</link> 0x307</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1a6a1a5d32030b5d8fa4d3f974b3e15972">INDEX_GAMMA_CONTROL9</link> 0x308</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1a92092cf0d63c47d9524bead495b6daca">INDEX_GAMMA_CONTROL10</link> 0x309</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1a3d70e8c9165b07d02fb57eadf84545de">INDEX_LINE_NUMBER_CONTROL</link> 0x400</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1abac753dba4002f82753914ab816b1816">INDEX_SCREEN_CONTROL</link> 0x401</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1aca0c63edfd3f81c02f1203e4ac0ace0b">INDEX_FULL_SCREEN_IMAGE_RAM_AREA_START_LINE</link> 0x402</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1a1e3046145924808f2c943ebc62a43ff7">INDEX_FULL_SCREEN_IMAGE_RAM_AREA_END_LINE</link> 0x403</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1af7de05dc2d9f6de3c6eaf22ca78270a3">INDEX_VERTICAL_SCROLL_CONTROL</link> 0x404</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1a3534a292b8c135962395055d1f02d7f9">LCD_RST_H</link> PORTB |= (1 &lt;&lt; PB0);</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1a938e5e2887fc2ac51db1b837f8c28c06">LCD_RST_L</link> PORTB &amp;= ~(1 &lt;&lt; PB0);</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1a55730e1e119f4dd31e8056b8d322ca7d">LCD_RS_H</link> PORTB |= (1 &lt;&lt; PB1);</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1a0ff98deef0b5e865767281a0e439dc42">LCD_RS_L</link> PORTB &amp;= ~(1 &lt;&lt; PB1);</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1a954ced03b5814a3ec7d0766eb13cbc37">LCD_CS_H</link> PORTB |= (1 &lt;&lt; PB2);</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8h_1aaaa58e1d932ba98f85bee92ae730773c">LCD_CS_L</link> PORTB &amp;= ~(1 &lt;&lt; PB2);</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Wyliczenia</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para><literallayout>enum <link linkend="_l_c_d_controller_8h_1ab87bacfdad76e61b9412d7124be44c1c">Color</link> {
+<link linkend="_l_c_d_controller_8h_1ab87bacfdad76e61b9412d7124be44c1caf77fb67151d0c18d397069ad8c271ba3">BLACK</link>= 0X0000,
+<link linkend="_l_c_d_controller_8h_1ab87bacfdad76e61b9412d7124be44c1caafe71cad474c15ce63b300c470eef8cc">CYAN</link>= 0x07FF,
+<link linkend="_l_c_d_controller_8h_1ab87bacfdad76e61b9412d7124be44c1ca2772ad7cd64f03c2aed60f91c69fa69d">PURPLE</link>= 0xF81F,
+<link linkend="_l_c_d_controller_8h_1ab87bacfdad76e61b9412d7124be44c1caf80f9a890089d211842d59625e561f88">RED</link>= 0XF800,
+<link linkend="_l_c_d_controller_8h_1ab87bacfdad76e61b9412d7124be44c1caa60bd322f93178d68184e30e162571ca">GREEN</link>= 0X07E0,
+<link linkend="_l_c_d_controller_8h_1ab87bacfdad76e61b9412d7124be44c1ca35d6719cb4d7577c031b3d79057a1b79">BLUE</link>= 0X001F,
+<link linkend="_l_c_d_controller_8h_1ab87bacfdad76e61b9412d7124be44c1cae735a848bf82163a19236ead1c3ef2d2">YELLOW</link>= 0XFFE0,
+<link linkend="_l_c_d_controller_8h_1ab87bacfdad76e61b9412d7124be44c1cace9ee4c1a6b777940c7f3a766a9a88d4">ORANGE</link>= 0XFC08,
+<link linkend="_l_c_d_controller_8h_1ab87bacfdad76e61b9412d7124be44c1ca3fb6c4ad00f4ad98553e01229d1803ac">GRAY</link>= 0X8430,
+<link linkend="_l_c_d_controller_8h_1ab87bacfdad76e61b9412d7124be44c1ca391713814d354c95e32cee838decb2f3">LGRAY</link>= 0XC618,
+<link linkend="_l_c_d_controller_8h_1ab87bacfdad76e61b9412d7124be44c1ca52a9af0edd45f66d37996edcb1ca69f0">DARKGRAY</link>= 0X8410,
+<link linkend="_l_c_d_controller_8h_1ab87bacfdad76e61b9412d7124be44c1ca40f67012197619f3f3445e9d59e307d9">PORPO</link>= 0X801F,
+<link linkend="_l_c_d_controller_8h_1ab87bacfdad76e61b9412d7124be44c1ca186598537092d140eaa60720ec7e0821">PINK</link>= 0XF81F,
+<link linkend="_l_c_d_controller_8h_1ab87bacfdad76e61b9412d7124be44c1caf0813fa73d558d8c19e93dc9c7575fe5">GRAYBLUE</link>= 0X5458,
+<link linkend="_l_c_d_controller_8h_1ab87bacfdad76e61b9412d7124be44c1caef40b458873dd281d65a2a36466ae01b">LGRAYBLUE</link>= 0XA651,
+<link linkend="_l_c_d_controller_8h_1ab87bacfdad76e61b9412d7124be44c1cabfc89dc8dc5c91a35a6e3d347b7c9baa">DARKBLUE</link>= 0X01CF,
+<link linkend="_l_c_d_controller_8h_1ab87bacfdad76e61b9412d7124be44c1ca272b71e84bc2640b193e9fe3c72cb3de">LIGHTBLUE</link>= 0X7D7C,
+<link linkend="_l_c_d_controller_8h_1ab87bacfdad76e61b9412d7124be44c1ca283fc479650da98250635b9c3c0e7e50">WHITE</link>= 0XFFFF
+}</literallayout>
+<para><emphasis>Kolory.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Funkcje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_l_c_d_controller_8h_1ad73cbdb125a38140802550653f243fca">LCDPWMInit</link> (
+void )<para><emphasis>Inicjalizuje i wlacza sygnal PWM.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_l_c_d_controller_8h_1ae36ba846363b79a812be19300f843576">LCDWriteIndex</link> (
+uint16_t index)<para><emphasis>Wpisuje do sterownika indeks rejestru.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_l_c_d_controller_8h_1a30bbc98d8f283ea2b5bab632e48543d3">LCDWriteReg</link> (
+uint16_t index, uint16_t data)<para><emphasis>Wpisuje dane do rejestru.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_l_c_d_controller_8h_1a34085397b2bf54f843b9196a9b787e6b">LCDWriteData</link> (
+uint16_t data)<para><emphasis>Wpisuje dane.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_l_c_d_controller_8h_1a410f02e534a63d1f6e7a168dae003d6d">LCDInit</link> (
+void )<para><emphasis>Inicjalizuje sterownik wyswietlacza.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Opis szczegółowy</title>
+
+<para>Kontroler sterownika wyswietlacza BD663474 - header file. </para>
+
+<para><formalpara><title>Autor: </title>
+
+<para>Mateusz Chudy </para>
+</formalpara>
+</para>
+    <para>Definition in file C:/AVR/SMIW_M.Chudy_PrzenosnaKonsolaGier/Software/PortableGameConsole/Sources/Drivers/LCDController.h</para>
+    </simplesect>
+</section>

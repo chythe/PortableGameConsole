@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_global_errors_8h">
+    <title>GlobalErrors.h File Reference</title>
+        <section>
+            <title>Wyliczenia</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para><literallayout>enum <link linkend="_global_errors_8h_1a24419a48e73982468e2a8efbec672928">ExecuteResult</link> {
+<link linkend="_global_errors_8h_1a24419a48e73982468e2a8efbec672928a0be3613a08ef99f962fb48ebc761c58f">EXECUTE_OK</link>= 0,
+<link linkend="_global_errors_8h_1a24419a48e73982468e2a8efbec672928a3f26dd98dc0ab63a635667a0c49fc709">OUT_OF_RANGE</link>= 1,
+<link linkend="_global_errors_8h_1a24419a48e73982468e2a8efbec672928a0d213a9ce640867b78937ff030c6c76f">INVALID_PARAMETER</link>= 2
+}</literallayout>
+<para><emphasis>Definicje bledow.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Opis szczegółowy</title>
+
+<para>Plik zawierajacy wszystkie definicje bledow - header file. </para>
+
+<para><formalpara><title>Autor: </title>
+
+<para>Mateusz Chudy </para>
+</formalpara>
+</para>
+    <para>Definition in file C:/AVR/SMIW_M.Chudy_PrzenosnaKonsolaGier/Software/PortableGameConsole/Sources/Config/GlobalErrors.h</para>
+    </simplesect>
+</section>

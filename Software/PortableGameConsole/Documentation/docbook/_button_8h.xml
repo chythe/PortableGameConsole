@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_button_8h">
+    <title>Button.h File Reference</title>
+    <programlisting>#include &lt;stdint.h&gt;</programlisting>
+    <programlisting>#include &lt;stdbool.h&gt;</programlisting>
+    <programlisting>#include &quot;MenuOptions.h&quot;</programlisting>
+        <section>
+            <title> Klasy </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="struct_button">Button</link></para>
+<para><emphasis>Struktura reprezentujaca przycisk.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Funkcje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="struct_button">Button</link> * <link linkend="_button_8h_1a367c2772e3110d433c77ee3443031ec2">ButtonCreate</link> (
+char * string, <link linkend="_menu_options_8h_1a0e65ad13124ea2cb5e255b640464e35f">Option</link> option, uint16_t textColor, uint16_t buttonColor, uint8_t x, uint16_t y, uint8_t width, uint16_t height)<para><emphasis>Tworzy nowy przycik.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="struct_button">Button</link> ** <link linkend="_button_8h_1af8a436f5506fa2dc818138be7b3c9cf3">ButtonDestroy</link> (
+struct <link linkend="struct_button">Button</link> * button)<para><emphasis>Niszczy przycisk.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_button_8h_1a7617ae84fbfa553843b5d899dc685866">ButtonDisplay</link> (
+struct <link linkend="struct_button">Button</link> * button)<para><emphasis>Wyswietla przycisk.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="_button_8h_1aa3ba40afe7ec1a5a1f74a68541eefa2a">ButtonCheck</link> (
+struct <link linkend="struct_button">Button</link> * button)<para><emphasis>Sprawdza czy przycisk zostal nacisniety.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Opis szczegółowy</title>
+
+<para>Przycisk na ekranie - header file. </para>
+
+<para><formalpara><title>Autor: </title>
+
+<para>Mateusz Chudy </para>
+</formalpara>
+</para>
+    <para>Definition in file C:/AVR/SMIW_M.Chudy_PrzenosnaKonsolaGier/Software/PortableGameConsole/Sources/GUI/Button.h</para>
+    </simplesect>
+</section>

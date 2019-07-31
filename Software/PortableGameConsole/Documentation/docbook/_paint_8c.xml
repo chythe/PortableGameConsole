@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_paint_8c">
+    <title>Paint.c File Reference</title>
+    <programlisting>#include &lt;DisplayTexts.h&gt;</programlisting>
+    <programlisting>#include &quot;Paint.h&quot;</programlisting>
+    <programlisting>#include &quot;GraphicsPrimitives.h&quot;</programlisting>
+    <programlisting>#include &quot;TouchController.h&quot;</programlisting>
+        <section>
+            <title>Funkcje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_paint_8c_1ac99cfa10de8bd671ada04b2ba820fdc5">PaintInit</link> (
+<link linkend="_l_c_d_controller_8h_1ab87bacfdad76e61b9412d7124be44c1c">Color</link> * buttonColors, struct <link linkend="struct_button">Button</link> * button)<para><emphasis>Inicjalizuje aplikacje Paint.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_l_c_d_controller_8h_1ab87bacfdad76e61b9412d7124be44c1c">Color</link> <link linkend="_paint_8c_1a236eb3c4337f5a009410093958e1cdfb">PaintCheckColorChange</link> (
+<link linkend="_l_c_d_controller_8h_1ab87bacfdad76e61b9412d7124be44c1c">Color</link> * buttonColors, <link linkend="_l_c_d_controller_8h_1ab87bacfdad76e61b9412d7124be44c1c">Color</link> currentColor)<para><emphasis>Sprawdza zmiane koloru przez urzytkownika.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_paint_8c_1a30e160c962706cff49c25c3adc27f42b">PaintShow</link> (
+void )<para><emphasis>Wlacza aplikacje Paint.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Opis szczegółowy</title>
+
+<para>Aplikacja do rysowania - source file. </para>
+
+<para><formalpara><title>Autor: </title>
+
+<para>Mateusz Chudy </para>
+</formalpara>
+</para>
+    <para>Definition in file C:/AVR/SMIW_M.Chudy_PrzenosnaKonsolaGier/Software/PortableGameConsole/Sources/Applications/Paint/Paint.c</para>
+    </simplesect>
+</section>

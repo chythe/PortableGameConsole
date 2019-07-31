@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_snake_elements_8c">
+    <title>SnakeElements.c File Reference</title>
+    <programlisting>#include &quot;SnakeElements.h&quot;</programlisting>
+    <programlisting>#include &quot;ToolSet.h&quot;</programlisting>
+    <programlisting>#include &quot;Snake.h&quot;</programlisting>
+    <programlisting>#include &lt;stdbool.h&gt;</programlisting>
+        <section>
+            <title>Funkcje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_snake_elements_8c_1a6c80b2b3616efc81929191ba4cea1732">SnakeDiplayElement</link> (
+<link linkend="struct_element">Element</link> * element, bool clear)<para><emphasis>Wyswietla element.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_snake_elements_8c_1af53169d87bbd209574aa79fc5b909747">SnakeNewFood</link> (
+<link linkend="struct_element">Element</link> ** snakeElements, uint8_t snakeSize, <link linkend="struct_element">Element</link> * food)<para><emphasis>Tworzy nowy pokarm i rysuje go.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="struct_element">Element</link> ** <link linkend="_snake_elements_8c_1a51c6255aeb8e18e339b6a99906928976">SnakeElementAdd</link> (
+<link linkend="struct_element">Element</link> ** snakeElements, uint8_t * snakeSize, <link linkend="_l_c_d_controller_8h_1ab87bacfdad76e61b9412d7124be44c1c">Color</link> color, uint8_t x, uint8_t y, <link linkend="_accelerometer_controller_8h_1a224b9163917ac32fc95a60d8c1eec3aa">Direction</link> direction)<para><emphasis>Dodaje element do wenza.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="struct_element">Element</link> ** <link linkend="_snake_elements_8c_1a064042e2696fb6c482921aee45aa710e">SnakeDestroy</link> (
+<link linkend="struct_element">Element</link> ** snakeElements, uint8_t * snakeSize)<para><emphasis>Niszczy tablice elementow wenza.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Opis szczegółowy</title>
+
+<para>Elementy weza dla gry Snake - source file. </para>
+
+<para><formalpara><title>Autor: </title>
+
+<para>Mateusz Chudy </para>
+</formalpara>
+</para>
+    <para>Definition in file C:/AVR/SMIW_M.Chudy_PrzenosnaKonsolaGier/Software/PortableGameConsole/Sources/Games/Snake/SnakeElements.c</para>
+    </simplesect>
+</section>

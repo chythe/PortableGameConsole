@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_tool_set_8c">
+    <title>ToolSet.c File Reference</title>
+    <programlisting>#include &quot;ToolSet.h&quot;</programlisting>
+        <section>
+            <title>Funkcje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t <link linkend="_tool_set_8c_1a2aa670b7c00e7b7a22f2130a8c7a8d21">ToolsRandom</link> (
+uint16_t min, uint16_t max)<para><emphasis>Generuje liczbe losowa z zadanego przedzialu.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_tool_set_8c_1a9bf076bc007b677399df9b03a628770c">ToolsSwap</link> (
+uint16_t * a, uint16_t * b)<para><emphasis>Zamienia dwie zmienne wartosciami.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="_tool_set_8c_1aaed1745fe617135baac6ebf2815a86c6">ToolsPow</link> (
+uint16_t m, uint16_t n)<para><emphasis>Realizuje potegowanie.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Opis szczegółowy</title>
+
+<para>Zbior pomocnych funkcji - source file. </para>
+
+<para><formalpara><title>Autor: </title>
+
+<para>Mateusz Chudy </para>
+</formalpara>
+</para>
+    <para>Definition in file C:/AVR/SMIW_M.Chudy_PrzenosnaKonsolaGier/Software/PortableGameConsole/Sources/Tool/ToolSet.c</para>
+    </simplesect>
+</section>

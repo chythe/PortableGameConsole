@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_paint_8h">
+    <title>Paint.h File Reference</title>
+    <programlisting>#include &lt;stdint.h&gt;</programlisting>
+    <programlisting>#include &lt;stdbool.h&gt;</programlisting>
+    <programlisting>#include &quot;Button.h&quot;</programlisting>
+    <programlisting>#include &quot;LCDController.h&quot;</programlisting>
+        <section>
+            <title>Definicje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_paint_8h_1a40a24f48200dfb1249032a7628a2355a">PAINT_BACKGROUND_COLOR</link> WHITE</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_paint_8h_1a88457497156abe7e02855e94f02272d0">PAINT_BUTTONS_SIZE</link> 30</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_paint_8h_1a88457497156abe7e02855e94f02272d0">PAINT_BUTTONS_SIZE</link> 30</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_paint_8h_1ad0c9b2e40badd0f2fdc56a87c45e6c54">PAINT_BUTTONS_MAX_X</link> 8</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_paint_8h_1ab0f37452e5131db5a4cedaaeb4a1e043">PAINT_EXIT_BUTTON_X</link> 5</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_paint_8h_1aed4af7e28d9e4f617866577ace57f4dc">PAINT_EXIT_BUTTON_Y</link> 285</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Funkcje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_paint_8h_1ac99cfa10de8bd671ada04b2ba820fdc5">PaintInit</link> (
+<link linkend="_l_c_d_controller_8h_1ab87bacfdad76e61b9412d7124be44c1c">Color</link> * buttonColors, struct <link linkend="struct_button">Button</link> * button)<para><emphasis>Inicjalizuje aplikacje Paint.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_l_c_d_controller_8h_1ab87bacfdad76e61b9412d7124be44c1c">Color</link> <link linkend="_paint_8h_1a236eb3c4337f5a009410093958e1cdfb">PaintCheckColorChange</link> (
+<link linkend="_l_c_d_controller_8h_1ab87bacfdad76e61b9412d7124be44c1c">Color</link> * buttonColors, <link linkend="_l_c_d_controller_8h_1ab87bacfdad76e61b9412d7124be44c1c">Color</link> currentColor)<para><emphasis>Sprawdza zmiane koloru przez urzytkownika.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_paint_8h_1a30e160c962706cff49c25c3adc27f42b">PaintShow</link> (
+void )<para><emphasis>Wlacza aplikacje Paint.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Opis szczegółowy</title>
+
+<para>Aplikacja do rysowania - header file. </para>
+
+<para><formalpara><title>Autor: </title>
+
+<para>Mateusz Chudy </para>
+</formalpara>
+</para>
+    <para>Definition in file C:/AVR/SMIW_M.Chudy_PrzenosnaKonsolaGier/Software/PortableGameConsole/Sources/Applications/Paint/Paint.h</para>
+    </simplesect>
+</section>

@@ -1,0 +1,17 @@
+digraph "AccelerometerController.c"
+{
+  edge [fontname="TimesNewRoman",fontsize="10",labelfontname="TimesNewRoman",labelfontsize="10"];
+  node [fontname="TimesNewRoman",fontsize="10",shape=record];
+  Node0 [label="AccelerometerController.c",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node1 [label="avr/io.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node2 [label="stdlib.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node3 [label="AccelerometerController.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_accelerometer_controller_8h.html",tooltip="Kontroler akcelerometru - header file. "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node4 [label="stdint.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node5 [label="I2CController.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_i2_c_controller_8h.html",tooltip="Kontroler interfejsu I2C - header file. "];
+  Node5 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+}

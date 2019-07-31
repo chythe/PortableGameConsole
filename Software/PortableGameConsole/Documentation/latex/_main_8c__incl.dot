@@ -1,0 +1,22 @@
+digraph "Main.c"
+{
+  edge [fontname="TimesNewRoman",fontsize="10",labelfontname="TimesNewRoman",labelfontsize="10"];
+  node [fontname="TimesNewRoman",fontsize="10",shape=record];
+  Node0 [label="Main.c",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 [label="util/delay.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="AccelerometerController.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="SPIController.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="TouchController.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="LCDController.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="I2CController.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Welcome.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="Desktop.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

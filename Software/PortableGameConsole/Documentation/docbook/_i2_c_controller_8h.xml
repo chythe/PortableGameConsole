@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_i2_c_controller_8h">
+    <title>I2CController.h File Reference</title>
+    <programlisting>#include &lt;stdint.h&gt;</programlisting>
+        <section>
+            <title>Funkcje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_i2_c_controller_8h_1a7d23473bd5eb72909c1a3588a70bb237">I2CInit</link> (
+void )<para><emphasis>Inicjalizuje komunikacje po I2C.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_i2_c_controller_8h_1ab29e53969976864795268c48d5e25043">I2CStart</link> (
+void )<para><emphasis>Wlacza przesyl / odbior danych po I2C.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_i2_c_controller_8h_1a892b03121ef3958e5c4e704ee8865f85">I2CWriteByte</link> (
+int8_t byte)<para><emphasis>Wysyla bajt danych.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int8_t <link linkend="_i2_c_controller_8h_1adf3e09529da8bf3413654db776cda3a7">I2CReadByte</link> (
+void )<para><emphasis>Odbiera bajt danych.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int8_t <link linkend="_i2_c_controller_8h_1a16255da7db17b6e5cc2c02caf0738aed">I2CReadLastByte</link> (
+void )<para><emphasis>Odbiera ostatni bajt danych.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_i2_c_controller_8h_1aa2b7df36988a92384217016facf46574">I2CStop</link> (
+void )<para><emphasis>Wylacza przesyl / odbior danych po I2C.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Opis szczegółowy</title>
+
+<para>Kontroler interfejsu I2C - header file. </para>
+
+<para><formalpara><title>Autor: </title>
+
+<para>Mateusz Chudy </para>
+</formalpara>
+</para>
+    <para>Definition in file C:/AVR/SMIW_M.Chudy_PrzenosnaKonsolaGier/Software/PortableGameConsole/Sources/Communication/I2CController.h</para>
+    </simplesect>
+</section>

@@ -1,0 +1,70 @@
+\hypertarget{_i2_c_controller_8h}{}\subsection{Dokumentacja pliku I2\+C\+Controller.\+h}
+\label{_i2_c_controller_8h}\index{I2\+C\+Controller.\+h@{I2\+C\+Controller.\+h}}
+\subsubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_i2_c_controller_8h_a7d23473bd5eb72909c1a3588a70bb237}\label{_i2_c_controller_8h_a7d23473bd5eb72909c1a3588a70bb237}} 
+void \hyperlink{_i2_c_controller_8h_a7d23473bd5eb72909c1a3588a70bb237}{I2\+C\+Init} (void)
+\item 
+\mbox{\Hypertarget{_i2_c_controller_8h_ab29e53969976864795268c48d5e25043}\label{_i2_c_controller_8h_ab29e53969976864795268c48d5e25043}} 
+void \hyperlink{_i2_c_controller_8h_ab29e53969976864795268c48d5e25043}{I2\+C\+Start} (void)
+\item 
+void \hyperlink{_i2_c_controller_8h_a892b03121ef3958e5c4e704ee8865f85}{I2\+C\+Write\+Byte} (int8\+\_\+t byte)
+\item 
+int8\+\_\+t \hyperlink{_i2_c_controller_8h_adf3e09529da8bf3413654db776cda3a7}{I2\+C\+Read\+Byte} (void)
+\item 
+int8\+\_\+t \hyperlink{_i2_c_controller_8h_a16255da7db17b6e5cc2c02caf0738aed}{I2\+C\+Read\+Last\+Byte} (void)
+\item 
+\mbox{\Hypertarget{_i2_c_controller_8h_aa2b7df36988a92384217016facf46574}\label{_i2_c_controller_8h_aa2b7df36988a92384217016facf46574}} 
+void \hyperlink{_i2_c_controller_8h_aa2b7df36988a92384217016facf46574}{I2\+C\+Stop} (void)
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Opis szczegółowy}
+\begin{DoxyAuthor}{Autor}
+Mateusz Chudy 
+\end{DoxyAuthor}
+
+
+\subsubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{_i2_c_controller_8h_adf3e09529da8bf3413654db776cda3a7}\label{_i2_c_controller_8h_adf3e09529da8bf3413654db776cda3a7}} 
+\index{I2\+C\+Controller.\+h@{I2\+C\+Controller.\+h}!I2\+C\+Read\+Byte@{I2\+C\+Read\+Byte}}
+\index{I2\+C\+Read\+Byte@{I2\+C\+Read\+Byte}!I2\+C\+Controller.\+h@{I2\+C\+Controller.\+h}}
+\paragraph{\texorpdfstring{I2\+C\+Read\+Byte()}{I2CReadByte()}}
+{\footnotesize\ttfamily int8\+\_\+t I2\+C\+Read\+Byte (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Odbiera bajt danych. 
+
+\begin{DoxyReturn}{Zwraca}
+odebrany bajt danych 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_i2_c_controller_8h_a16255da7db17b6e5cc2c02caf0738aed}\label{_i2_c_controller_8h_a16255da7db17b6e5cc2c02caf0738aed}} 
+\index{I2\+C\+Controller.\+h@{I2\+C\+Controller.\+h}!I2\+C\+Read\+Last\+Byte@{I2\+C\+Read\+Last\+Byte}}
+\index{I2\+C\+Read\+Last\+Byte@{I2\+C\+Read\+Last\+Byte}!I2\+C\+Controller.\+h@{I2\+C\+Controller.\+h}}
+\paragraph{\texorpdfstring{I2\+C\+Read\+Last\+Byte()}{I2CReadLastByte()}}
+{\footnotesize\ttfamily int8\+\_\+t I2\+C\+Read\+Last\+Byte (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Odbiera ostatni bajt danych. 
+
+\begin{DoxyReturn}{Zwraca}
+odebrany ostatni bajt danych 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_i2_c_controller_8h_a892b03121ef3958e5c4e704ee8865f85}\label{_i2_c_controller_8h_a892b03121ef3958e5c4e704ee8865f85}} 
+\index{I2\+C\+Controller.\+h@{I2\+C\+Controller.\+h}!I2\+C\+Write\+Byte@{I2\+C\+Write\+Byte}}
+\index{I2\+C\+Write\+Byte@{I2\+C\+Write\+Byte}!I2\+C\+Controller.\+h@{I2\+C\+Controller.\+h}}
+\paragraph{\texorpdfstring{I2\+C\+Write\+Byte()}{I2CWriteByte()}}
+{\footnotesize\ttfamily void I2\+C\+Write\+Byte (\begin{DoxyParamCaption}\item[{int8\+\_\+t}]{byte }\end{DoxyParamCaption})}
+
+
+
+Wysyla bajt danych. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em byte} & -\/ wysylany bajt danych \\
+\hline
+\end{DoxyParams}

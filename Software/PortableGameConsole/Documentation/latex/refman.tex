@@ -1,0 +1,199 @@
+\documentclass[twoside]{article}
+
+% Packages required by doxygen
+\usepackage{fixltx2e}
+\usepackage{calc}
+\usepackage{doxygen}
+\usepackage[export]{adjustbox} % also loads graphicx
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{makeidx}
+\usepackage{multicol}
+\usepackage{multirow}
+\PassOptionsToPackage{warn}{textcomp}
+\usepackage{textcomp}
+\usepackage[nointegrals]{wasysym}
+\usepackage[table]{xcolor}
+
+% NLS support packages
+\usepackage{polski}
+\usepackage[T1]{fontenc}
+
+% Font selection
+\usepackage[T1]{fontenc}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{amssymb}
+\usepackage{sectsty}
+\renewcommand{\familydefault}{\sfdefault}
+\allsectionsfont{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\renewcommand{\DoxyLabelFont}{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\newcommand{\+}{\discretionary{\mbox{\scriptsize$\hookleftarrow$}}{}{}}
+
+% Page & text layout
+\usepackage{geometry}
+\geometry{%
+  a4paper,%
+  top=2.5cm,%
+  bottom=2.5cm,%
+  left=2.5cm,%
+  right=2.5cm%
+}
+\tolerance=750
+\hfuzz=15pt
+\hbadness=750
+\setlength{\emergencystretch}{15pt}
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{3ex plus 2ex minus 2ex}
+\makeatletter
+\renewcommand{\paragraph}{%
+  \@startsection{paragraph}{4}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@parafont%
+  }%
+}
+\renewcommand{\subparagraph}{%
+  \@startsection{subparagraph}{5}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@subparafont%
+  }%
+}
+\makeatother
+
+% Headers & footers
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead[LE]{\fancyplain{}{\bfseries\thepage}}
+\fancyhead[CE]{\fancyplain{}{}}
+\fancyhead[RE]{\fancyplain{}{\bfseries\leftmark}}
+\fancyhead[LO]{\fancyplain{}{\bfseries\rightmark}}
+\fancyhead[CO]{\fancyplain{}{}}
+\fancyhead[RO]{\fancyplain{}{\bfseries\thepage}}
+\fancyfoot[LE]{\fancyplain{}{}}
+\fancyfoot[CE]{\fancyplain{}{}}
+\fancyfoot[RE]{\fancyplain{}{\bfseries\scriptsize Wygenerowano przez Doxygen }}
+\fancyfoot[LO]{\fancyplain{}{\bfseries\scriptsize Wygenerowano przez Doxygen }}
+\fancyfoot[CO]{\fancyplain{}{}}
+\fancyfoot[RO]{\fancyplain{}{}}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\sectionmark}[1]{%
+  \markright{\thesection\ #1}%
+}
+
+% Indices & bibliography
+\usepackage{natbib}
+\usepackage[titles]{tocloft}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{5}
+\makeindex
+
+% Hyperlinks (required, but should be loaded last)
+\usepackage{ifpdf}
+\ifpdf
+  \usepackage[pdftex,pagebackref=true]{hyperref}
+\else
+  \usepackage[ps2pdf,pagebackref=true]{hyperref}
+\fi
+\hypersetup{%
+  colorlinks=true,%
+  linkcolor=blue,%
+  citecolor=blue,%
+  unicode%
+}
+
+% Custom commands
+\newcommand{\clearemptydoublepage}{%
+  \newpage{\pagestyle{empty}\cleardoublepage}%
+}
+
+\usepackage{caption}
+\captionsetup{labelsep=space,justification=centering,font={bf},singlelinecheck=off,skip=4pt,position=top}
+
+%===== C O N T E N T S =====
+
+\begin{document}
+
+% Titlepage & ToC
+\hypersetup{pageanchor=false,
+             bookmarksnumbered=true,
+             pdfencoding=unicode
+            }
+\pagenumbering{alph}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}%
+{\Large Portable Game Console }\\
+\vspace*{1cm}
+{\large Wygenerowano przez Doxygen 1.8.13}\\
+\end{center}
+\end{titlepage}
+\pagenumbering{roman}
+\tableofcontents
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true}
+
+%--- Begin generated contents ---
+\section{Dokumentacja struktur danych}
+\input{struct_button}
+\input{struct_element}
+\input{struct_touch_point}
+\input{struct_vector}
+\section{Dokumentacja plików}
+\input{_accelerometer_controller_8c}
+\input{_accelerometer_controller_8h}
+\input{_application_menu_8c}
+\input{_application_menu_8h}
+\input{_button_8c}
+\input{_button_8h}
+\input{_desktop_8c}
+\input{_desktop_8h}
+\input{_display_texts_8h}
+\input{_font_8c}
+\input{_font_8h}
+\input{_games_menu_8c}
+\input{_games_menu_8h}
+\input{_global_errors_8h}
+\input{_graphics_primitives_8c}
+\input{_graphics_primitives_8h}
+\input{_i2_c_controller_8c}
+\input{_i2_c_controller_8h}
+\input{_l_c_d_controller_8c}
+\input{_l_c_d_controller_8h}
+\input{_main_8c}
+\input{_main_menu_8c}
+\input{_main_menu_8h}
+\input{_menu_options_8h}
+\input{_paint_8c}
+\input{_paint_8h}
+\input{_ping_pong_8c}
+\input{_ping_pong_8h}
+\input{_question_8c}
+\input{_question_8h}
+\input{_snake_8c}
+\input{_snake_8h}
+\input{_snake_elements_8c}
+\input{_snake_elements_8h}
+\input{_snake_move_8c}
+\input{_snake_move_8h}
+\input{_s_p_i_controller_8c}
+\input{_s_p_i_controller_8h}
+\input{_tool_set_8c}
+\input{_tool_set_8h}
+\input{_touch_controller_8c}
+\input{_touch_controller_8h}
+\input{_welcome_8c}
+\input{_welcome_8h}
+%--- End generated contents ---
+
+% Index
+\newpage
+\phantomsection
+\clearemptydoublepage
+\addcontentsline{toc}{section}{Indeks}
+\printindex
+
+\end{document}

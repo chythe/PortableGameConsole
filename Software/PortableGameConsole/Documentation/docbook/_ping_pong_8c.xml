@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_ping_pong_8c">
+    <title>PingPong.c File Reference</title>
+    <programlisting>#include &lt;DisplayTexts.h&gt;</programlisting>
+    <programlisting>#include &quot;PingPong.h&quot;</programlisting>
+    <programlisting>#include &quot;GraphicsPrimitives.h&quot;</programlisting>
+    <programlisting>#include &quot;AccelerometerController.h&quot;</programlisting>
+    <programlisting>#include &quot;LCDController.h&quot;</programlisting>
+    <programlisting>#include &lt;stdint.h&gt;</programlisting>
+        <section>
+            <title>Funkcje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="_ping_pong_8c_1a89c61936fa9499d05aee007b20dfac8e">CalculateBallPosition</link> (
+uint8_t * newX, uint16_t * newY, uint8_t lineX, <link linkend="struct_vector">Vector</link> * moveVector)<para><emphasis>Oblicza nowe wspolrzedne pilki.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_ping_pong_8c_1ac8f18c7a8dd2b7e9fa1caf220921f3d8">CalculateLinePosition</link> (
+uint8_t * newX)<para><emphasis>Oblicza nowe wspolrzedne lini.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_ping_pong_8c_1a34cfa6e64d63dce3a7f8f597bcb1b93e">PingPongPlay</link> (
+void )<para><emphasis>Wlacza gre Ping Pong.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Opis szczegółowy</title>
+
+<para>Gra Ping Pong - source file. </para>
+
+<para><formalpara><title>Autor: </title>
+
+<para>Mateusz Chudy </para>
+</formalpara>
+</para>
+    <para>Definition in file C:/AVR/SMIW_M.Chudy_PrzenosnaKonsolaGier/Software/PortableGameConsole/Sources/Games/PingPong/PingPong.c</para>
+    </simplesect>
+</section>

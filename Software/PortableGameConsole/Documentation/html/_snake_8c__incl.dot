@@ -1,0 +1,30 @@
+digraph "Snake.c"
+{
+  edge [fontname="TimesNewRoman",fontsize="10",labelfontname="TimesNewRoman",labelfontsize="10"];
+  node [fontname="TimesNewRoman",fontsize="10",shape=record];
+  Node0 [label="Snake.c",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node1 [label="util/delay.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node2 [label="stdlib.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node3 [label="time.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node4 [label="Snake.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node5 [label="stdint.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node6 [label="LCDController.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node7 [label="C:/AVR/SMIW_M.Chudy\l_PrzenosnaKonsolaGier\l/Software/PortableGameConsole\l/Sources/Games/Snake/SnakeElements.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node8 [label="stdbool.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node9 [label="GraphicsPrimitives.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node10 [label="AccelerometerController.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node11 [label="ToolSet.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node12 [label="Font.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Portable Game Console: Plik źródłowy SnakeElements.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Portable Game Console
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','Szukaj');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a class="el" href="dir_7a8ccb56a9e8ce43d4dc66eeef1b5636.html">Games</a></li><li class="navelem"><a class="el" href="dir_08699772390e45925e35a396bbab0010.html">Snake</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">SnakeElements.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_snake_elements_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/**************************************************************************/</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef _SNAKE_ELEMENTS_H_</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define _SNAKE_ELEMENTS_H_</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_l_c_d_controller_8h.html" title="Kontroler sterownika wyswietlacza BD663474 - header file. ">LCDController.h</a>&quot;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_graphics_primitives_8h.html" title="Prymitywy graficzne - header file. ">GraphicsPrimitives.h</a>&quot;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_accelerometer_controller_8h.html" title="Kontroler akcelerometru - header file. ">AccelerometerController.h</a>&quot;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#define ELEMENT_SIZE                    20</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#define CHANGE_SIZE_FREQUENCY           100</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="struct_element.html">   21</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    uint8_t x;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    uint8_t y;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="_l_c_d_controller_8h.html#ab87bacfdad76e61b9412d7124be44c1c" title="Kolory. ">Color</a> color;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="_accelerometer_controller_8h.html#a224b9163917ac32fc95a60d8c1eec3aa" title="Kierunek wyznaczany przez nachylenie urzadzenia. ">Direction</a> newDirection;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="_accelerometer_controller_8h.html#a224b9163917ac32fc95a60d8c1eec3aa" title="Kierunek wyznaczany przez nachylenie urzadzenia. ">Direction</a> oldDirection;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;} <a class="code" href="struct_element.html" title="Wyswietlany element. ">Element</a>;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_snake_elements_8h.html#a6c80b2b3616efc81929191ba4cea1732" title="Wyswietla element. ">SnakeDiplayElement</a>(<a class="code" href="struct_element.html" title="Wyswietlany element. ">Element</a>* element, <span class="keywordtype">bool</span> clear);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_snake_elements_8h.html#af53169d87bbd209574aa79fc5b909747" title="Tworzy nowy pokarm i rysuje go. ">SnakeNewFood</a>(<a class="code" href="struct_element.html" title="Wyswietlany element. ">Element</a>** snakeElements, uint8_t snakeSize, <a class="code" href="struct_element.html" title="Wyswietlany element. ">Element</a>* food);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<a class="code" href="struct_element.html" title="Wyswietlany element. ">Element</a>** <a class="code" href="_snake_elements_8h.html#a51c6255aeb8e18e339b6a99906928976" title="Dodaje element do wenza. ">SnakeElementAdd</a>(<a class="code" href="struct_element.html" title="Wyswietlany element. ">Element</a>** snakeElements, uint8_t* snakeSize, <a class="code" href="_l_c_d_controller_8h.html#ab87bacfdad76e61b9412d7124be44c1c" title="Kolory. ">Color</a> color, uint8_t x, uint8_t y, <a class="code" href="_accelerometer_controller_8h.html#a224b9163917ac32fc95a60d8c1eec3aa" title="Kierunek wyznaczany przez nachylenie urzadzenia. ">Direction</a> direction);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<a class="code" href="struct_element.html" title="Wyswietlany element. ">Element</a>** <a class="code" href="_snake_elements_8h.html#a064042e2696fb6c482921aee45aa710e" title="Niszczy tablice elementow wenza. ">SnakeDestroy</a>(<a class="code" href="struct_element.html" title="Wyswietlany element. ">Element</a>** snakeElements, uint8_t* snakeSize);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif      // _SNAKE_ELEMENTS_H_</span></div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">// ----------------------------------------------------------------------------</span></div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">// End of file ----------------------------------------------------------------</span></div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">// ----------------------------------------------------------------------------</span></div></div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

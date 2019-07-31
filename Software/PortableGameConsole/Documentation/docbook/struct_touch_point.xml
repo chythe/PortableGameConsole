@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="struct_touch_point">
+<title>TouchPoint struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="_touch_controller_8h">&lt;TouchController.h&gt;</link></programlisting>
+</para>
+        <section>
+            <title>Atrybuty publiczne</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t x</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t y</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t xad</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t yad</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t status</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Punkt dotkniecia. </para>
+    </simplesect>
+        <section>
+            <title>Dokumentacja atrybutów składowych</title>
+        </section>
+</section>

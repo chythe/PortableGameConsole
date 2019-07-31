@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_accelerometer_controller_8h">
+    <title>AccelerometerController.h File Reference</title>
+    <programlisting>#include &lt;stdint.h&gt;</programlisting>
+        <section>
+            <title>Definicje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_accelerometer_controller_8h_1a8476f4a8de2c191433342c9ce896986a">X0</link> 0</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_accelerometer_controller_8h_1a0b0dcdd1ffa302474e907d3d7ad9dbfe">Y0</link> -5</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_accelerometer_controller_8h_1aa10f470e996d0f51210d24f442d25e1e">WRITE</link> 0x3A</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_accelerometer_controller_8h_1ada74e7db007a68e763f20c17f2985356">READ</link> 0x3B</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_accelerometer_controller_8h_1ac5051a059b95870acdde1272748c3f83">ACCE_SENSITIVITY</link> 10</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Wyliczenia</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para><literallayout>enum <link linkend="_accelerometer_controller_8h_1ae3996976d8ffb3e58d88f58227473f8e">Axis</link> {
+<link linkend="_accelerometer_controller_8h_1ae3996976d8ffb3e58d88f58227473f8ea96f9d79b61cc5f3a85c3905da30d9214">AXIS_X</link>= 0x29,
+<link linkend="_accelerometer_controller_8h_1ae3996976d8ffb3e58d88f58227473f8eabac2b599f684a034e45fbac20013a56b">AXIS_Y</link>= 0x2B,
+<link linkend="_accelerometer_controller_8h_1ae3996976d8ffb3e58d88f58227473f8eaf30d19a1a44e01420e4e5b86cde3ecd8">AXIS_Z</link>= 0x2D
+}</literallayout>
+<para><emphasis>Indeksy rejestrow, pod ktorymi znajduja sie dane proporcjonalne do kata nachylenia do danej osi.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para><literallayout>enum <link linkend="_accelerometer_controller_8h_1a224b9163917ac32fc95a60d8c1eec3aa">Direction</link> {
+<link linkend="_accelerometer_controller_8h_1a224b9163917ac32fc95a60d8c1eec3aaa3d044162d972156d897cea80f216b9ca">CONST</link>,
+<link linkend="_accelerometer_controller_8h_1a224b9163917ac32fc95a60d8c1eec3aaaba595d8bca8bc5e67c37c0a9d89becfa">UP</link>,
+<link linkend="_accelerometer_controller_8h_1a224b9163917ac32fc95a60d8c1eec3aaa9b0b4a95b99523966e0e34ffdadac9da">DOWN</link>,
+<link linkend="_accelerometer_controller_8h_1a224b9163917ac32fc95a60d8c1eec3aaadb45120aafd37a973140edee24708065">LEFT</link>,
+<link linkend="_accelerometer_controller_8h_1a224b9163917ac32fc95a60d8c1eec3aaaec8379af7490bb9eaaf579cf17876f38">RIGHT</link>
+}</literallayout>
+<para><emphasis>Kierunek wyznaczany przez nachylenie urzadzenia.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Funkcje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_accelerometer_controller_8h_1a3503c5a03dda05fa47abd5022c9609b6">AccelerometerInit</link> (
+void )<para><emphasis>Inicjalizuje akcelerometr.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int8_t <link linkend="_accelerometer_controller_8h_1a8c6d76397000c290219fa9ec3320e2dc">AccelerometerGetAngle</link> (
+<link linkend="_accelerometer_controller_8h_1ae3996976d8ffb3e58d88f58227473f8e">Axis</link> axis)<para><emphasis>Pobiera wartosc proporcjonalna do kata nachylenia do danej osi.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_accelerometer_controller_8h_1a224b9163917ac32fc95a60d8c1eec3aa">Direction</link> <link linkend="_accelerometer_controller_8h_1a20e54871d9dd61e2d49607176aeadb8d">AccelerometerGetDirection</link> (
+void )<para><emphasis>Pobiera kierunek nachylenia.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Opis szczegółowy</title>
+
+<para>Kontroler akcelerometru - header file. </para>
+
+<para><formalpara><title>Autor: </title>
+
+<para>Mateusz Chudy </para>
+</formalpara>
+</para>
+    <para>Definition in file C:/AVR/SMIW_M.Chudy_PrzenosnaKonsolaGier/Software/PortableGameConsole/Sources/Drivers/AccelerometerController.h</para>
+    </simplesect>
+</section>

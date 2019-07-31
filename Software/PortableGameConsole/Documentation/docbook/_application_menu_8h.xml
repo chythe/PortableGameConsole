@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_application_menu_8h">
+    <title>ApplicationMenu.h File Reference</title>
+    <programlisting>#include &lt;stdint.h&gt;</programlisting>
+    <programlisting>#include &quot;Desktop.h&quot;</programlisting>
+    <programlisting>#include &quot;LCDController.h&quot;</programlisting>
+        <section>
+            <title>Definicje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_application_menu_8h_1a029eaaa854eab88c7621730311713cc7">APP_PAINT_BUTTON_X1</link> 0</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_application_menu_8h_1a45ae0b1f4da26432dc6aa23c3dc5167d">APP_PAINT_BUTTON_Y1</link> 0</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_application_menu_8h_1acbb1869cf8b07d16208a4d3e73dcce69">APP_PAINT_BUTTON_X2</link> 240</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_application_menu_8h_1a6aaa540b3244ed7dd08bfbb7538a8130">APP_PAINT_BUTTON_Y2</link> 40</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_application_menu_8h_1afadf1d1c0f0432c72c99dc330adb8022">APP_PAINT_BUTTON_COLOR</link> DARKBLUE</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_application_menu_8h_1ad2272e505ab765e9a7df5a16ae783ce9">APP_PAINT_TEXT_COLOR</link> WHITE</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_application_menu_8h_1a8cd5f0a317739fe95c618a0259c82d3f">APP_SPIRIT_LEVEL_BUTTON_X1</link> 0</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_application_menu_8h_1ad315181550f232114a981f72ff4ae554">APP_SPIRIT_LEVEL_BUTTON_Y1</link> 40</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_application_menu_8h_1accce7b925104dfad0e8af3a961b73986">APP_SPIRIT_LEVEL_BUTTON_X2</link> 240</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_application_menu_8h_1a3e69b97e6e36c7a7dd62c45a944be4fa">APP_SPIRIT_LEVEL_BUTTON_Y2</link> 80</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_application_menu_8h_1a92e60e5ca54b1d653c6fd88b9f4599ed">APP_SPIRIT_LEVEL_BUTTON_COLOR</link> 0X01CA</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_application_menu_8h_1a8b36e4f0b23e20574a8ddaeb465f76e3">APP_SPIRIT_LEVEL_TEXT_COLOR</link> WHITE</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Funkcje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_application_menu_8h_1a42137996ca522458f6df0a2c5915f26e">ApplicationMenuShow</link> (
+void )<para><emphasis>Wyswietla menu z aplikacjami.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Opis szczegółowy</title>
+
+<para>Menu z aplikacjami - header file. </para>
+
+<para><formalpara><title>Autor: </title>
+
+<para>Mateusz Chudy </para>
+</formalpara>
+</para>
+    <para>Definition in file C:/AVR/SMIW_M.Chudy_PrzenosnaKonsolaGier/Software/PortableGameConsole/Sources/Menu/ApplicationMenu.h</para>
+    </simplesect>
+</section>

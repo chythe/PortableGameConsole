@@ -1,0 +1,57 @@
+\hypertarget{_ping_pong_8c}{}\subsection{Dokumentacja pliku Ping\+Pong.\+c}
+\label{_ping_pong_8c}\index{Ping\+Pong.\+c@{Ping\+Pong.\+c}}
+\subsubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{_ping_pong_8c_a89c61936fa9499d05aee007b20dfac8e}{Calculate\+Ball\+Position} (uint8\+\_\+t $\ast$newX, uint16\+\_\+t $\ast$newY, uint8\+\_\+t lineX, \hyperlink{struct_vector}{Vector} $\ast$move\+Vector)
+\item 
+void \hyperlink{_ping_pong_8c_ac8f18c7a8dd2b7e9fa1caf220921f3d8}{Calculate\+Line\+Position} (uint8\+\_\+t $\ast$newX)
+\item 
+\mbox{\Hypertarget{_ping_pong_8c_a34cfa6e64d63dce3a7f8f597bcb1b93e}\label{_ping_pong_8c_a34cfa6e64d63dce3a7f8f597bcb1b93e}} 
+void \hyperlink{_ping_pong_8c_a34cfa6e64d63dce3a7f8f597bcb1b93e}{Ping\+Pong\+Play} (void)
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Opis szczegółowy}
+\begin{DoxyAuthor}{Autor}
+Mateusz Chudy 
+\end{DoxyAuthor}
+
+
+\subsubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{_ping_pong_8c_a89c61936fa9499d05aee007b20dfac8e}\label{_ping_pong_8c_a89c61936fa9499d05aee007b20dfac8e}} 
+\index{Ping\+Pong.\+c@{Ping\+Pong.\+c}!Calculate\+Ball\+Position@{Calculate\+Ball\+Position}}
+\index{Calculate\+Ball\+Position@{Calculate\+Ball\+Position}!Ping\+Pong.\+c@{Ping\+Pong.\+c}}
+\paragraph{\texorpdfstring{Calculate\+Ball\+Position()}{CalculateBallPosition()}}
+{\footnotesize\ttfamily bool Calculate\+Ball\+Position (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{newX,  }\item[{uint16\+\_\+t $\ast$}]{newY,  }\item[{uint8\+\_\+t}]{lineX,  }\item[{\hyperlink{struct_vector}{Vector} $\ast$}]{move\+Vector }\end{DoxyParamCaption})}
+
+
+
+Oblicza nowe wspolrzedne pilki. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em newX} & -\/ nowa wartosc wspolrzednej x \\
+\hline
+{\em newX} & -\/ nowa wartosc wspolrzednej y \\
+\hline
+{\em lineX} & -\/ wspolrzedna x lini \\
+\hline
+{\em move\+Vector} & -\/ wskaznik na wektor przesuniecia pilki \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_ping_pong_8c_ac8f18c7a8dd2b7e9fa1caf220921f3d8}\label{_ping_pong_8c_ac8f18c7a8dd2b7e9fa1caf220921f3d8}} 
+\index{Ping\+Pong.\+c@{Ping\+Pong.\+c}!Calculate\+Line\+Position@{Calculate\+Line\+Position}}
+\index{Calculate\+Line\+Position@{Calculate\+Line\+Position}!Ping\+Pong.\+c@{Ping\+Pong.\+c}}
+\paragraph{\texorpdfstring{Calculate\+Line\+Position()}{CalculateLinePosition()}}
+{\footnotesize\ttfamily void Calculate\+Line\+Position (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{newX }\end{DoxyParamCaption})}
+
+
+
+Oblicza nowe wspolrzedne lini. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em newX} & -\/ nowa wartosc wspolrzednej x lini \\
+\hline
+\end{DoxyParams}

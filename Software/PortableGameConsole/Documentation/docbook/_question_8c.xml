@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_question_8c">
+    <title>Question.c File Reference</title>
+    <programlisting>#include &lt;DisplayTexts.h&gt;</programlisting>
+    <programlisting>#include &quot;Question.h&quot;</programlisting>
+    <programlisting>#include &quot;LCDController.h&quot;</programlisting>
+    <programlisting>#include &quot;MenuOptions.h&quot;</programlisting>
+    <programlisting>#include &quot;Desktop.h&quot;</programlisting>
+    <programlisting>#include &quot;Button.h&quot;</programlisting>
+        <section>
+            <title>Funkcje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_question_8c_1ad72b517c2d344afa770626e9615cef0e">QuestionDisplay</link> (
+char * string, <link linkend="_menu_options_8h_1a0e65ad13124ea2cb5e255b640464e35f">Option</link> yes, <link linkend="_menu_options_8h_1a0e65ad13124ea2cb5e255b640464e35f">Option</link> no)<para><emphasis>Wyswietla pytanie i przyciski odpowiedzi.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Opis szczegółowy</title>
+
+<para>Pytanie z funkcjami wyboru - source file. </para>
+
+<para><formalpara><title>Autor: </title>
+
+<para>Mateusz Chudy </para>
+</formalpara>
+</para>
+    <para>Definition in file C:/AVR/SMIW_M.Chudy_PrzenosnaKonsolaGier/Software/PortableGameConsole/Sources/GUI/Question.c</para>
+    </simplesect>
+</section>

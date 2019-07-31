@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_s_p_i_controller_8h">
+    <title>SPIController.h File Reference</title>
+    <programlisting>#include &lt;stdint.h&gt;</programlisting>
+        <section>
+            <title>Funkcje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_s_p_i_controller_8h_1aa738ada19c5774090d23f39b5beecb2b">SPIInit</link> (
+void )<para><emphasis>Inicjalizuje komunikacje po SPI.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t <link linkend="_s_p_i_controller_8h_1a071b0263438612a3a09c6c2a143a5ca1">SPICommunication</link> (
+uint8_t data)<para><emphasis>Wysyla / odbiera bajt danych z magistrali SPI.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Opis szczegółowy</title>
+
+<para>Kontroler interfejsu SPI - header file. </para>
+
+<para><formalpara><title>Autor: </title>
+
+<para>Mateusz Chudy </para>
+</formalpara>
+</para>
+    <para>Definition in file C:/AVR/SMIW_M.Chudy_PrzenosnaKonsolaGier/Software/PortableGameConsole/Sources/Communication/SPIController.h</para>
+    </simplesect>
+</section>

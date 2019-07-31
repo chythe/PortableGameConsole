@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Portable Game Console: Dokumentacja pliku TouchController.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Portable Game Console
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','Szukaj');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a class="el" href="dir_abb47d9036a42ab5431b8adc2735c9e9.html">Drivers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Struktury danych</a> &#124;
+<a href="#define-members">Definicje</a> &#124;
+<a href="#func-members">Funkcje</a> &#124;
+<a href="#var-members">Zmienne</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku TouchController.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="_touch_controller_8h_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Struktury danych</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_touch_point.html">TouchPoint</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definicje</h2></td></tr>
+<tr class="memitem:a6e617fa52aec8270317937d0ebf86a63"><td class="memItemLeft" align="right" valign="top"><a id="a6e617fa52aec8270317937d0ebf86a63"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOUCH_CS_H</b>()&#160;&#160;&#160;PORTD |= (1 &lt;&lt; PD4);</td></tr>
+<tr class="separator:a6e617fa52aec8270317937d0ebf86a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5f94799b55d5c52a0e0dad657dc47b2"><td class="memItemLeft" align="right" valign="top"><a id="ac5f94799b55d5c52a0e0dad657dc47b2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOUCH_CS_L</b>()&#160;&#160;&#160;PORTD &amp;= ~(1 &lt;&lt; PD4);</td></tr>
+<tr class="separator:ac5f94799b55d5c52a0e0dad657dc47b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad09ef803c6d09b0dabe40b228f93556d"><td class="memItemLeft" align="right" valign="top"><a id="ad09ef803c6d09b0dabe40b228f93556d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CMD_READ_X</b>&#160;&#160;&#160;0xD0</td></tr>
+<tr class="separator:ad09ef803c6d09b0dabe40b228f93556d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbb9f7d8a64df6f7c46af407258532e4"><td class="memItemLeft" align="right" valign="top"><a id="acbb9f7d8a64df6f7c46af407258532e4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CMD_READ_Y</b>&#160;&#160;&#160;0x90</td></tr>
+<tr class="separator:acbb9f7d8a64df6f7c46af407258532e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3630fbd3339b17f5dfd6164153e6b1ee"><td class="memItemLeft" align="right" valign="top"><a id="a3630fbd3339b17f5dfd6164153e6b1ee"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ERR_RANGE</b>&#160;&#160;&#160;50</td></tr>
+<tr class="separator:a3630fbd3339b17f5dfd6164153e6b1ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a551e21385ab900aa4e17805e22d6352a"><td class="memItemLeft" align="right" valign="top"><a id="a551e21385ab900aa4e17805e22d6352a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>READ_TIMES</b>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a551e21385ab900aa4e17805e22d6352a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10537494bf876335f6e8cbfb9e392cb9"><td class="memItemLeft" align="right" valign="top"><a id="a10537494bf876335f6e8cbfb9e392cb9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LOST_VAL</b>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a10537494bf876335f6e8cbfb9e392cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96ca70c48bbdb77688d2d40c614a6097"><td class="memItemLeft" align="right" valign="top"><a id="a96ca70c48bbdb77688d2d40c614a6097"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CORRECT_X</b>&#160;&#160;&#160;-20</td></tr>
+<tr class="separator:a96ca70c48bbdb77688d2d40c614a6097"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f1d6891ba42af32cd6345f8dfcc718a"><td class="memItemLeft" align="right" valign="top"><a id="a7f1d6891ba42af32cd6345f8dfcc718a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CORRECT_Y</b>&#160;&#160;&#160;-2</td></tr>
+<tr class="separator:a7f1d6891ba42af32cd6345f8dfcc718a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:afea150fcd685610cb9f7672fce361e53"><td class="memItemLeft" align="right" valign="top"><a id="afea150fcd685610cb9f7672fce361e53"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_touch_controller_8h.html#afea150fcd685610cb9f7672fce361e53">ISR</a> (INT0_vect)</td></tr>
+<tr class="separator:afea150fcd685610cb9f7672fce361e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13aa17f82bc27e0c9c4b625f6b7b3b4b"><td class="memItemLeft" align="right" valign="top"><a id="a13aa17f82bc27e0c9c4b625f6b7b3b4b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_touch_controller_8h.html#a13aa17f82bc27e0c9c4b625f6b7b3b4b">TouchInit</a> (void)</td></tr>
+<tr class="separator:a13aa17f82bc27e0c9c4b625f6b7b3b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd6b9fd0d9c6c8cd8c9207f77aee409b"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_touch_controller_8h.html#afd6b9fd0d9c6c8cd8c9207f77aee409b">TouchGetADC</a> (uint8_t cmdCode)</td></tr>
+<tr class="separator:afd6b9fd0d9c6c8cd8c9207f77aee409b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd900b25f07bb8edbad17c66c6df1ae7"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_touch_controller_8h.html#acd900b25f07bb8edbad17c66c6df1ae7">TouchGetADCEx</a> (uint8_t cmdCode)</td></tr>
+<tr class="separator:acd900b25f07bb8edbad17c66c6df1ae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48966a8d6c8270b2401c35b21ec45339"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_global_errors_8h.html#a24419a48e73982468e2a8efbec672928">ExecuteResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_touch_controller_8h.html#a48966a8d6c8270b2401c35b21ec45339">TouchReadADS</a> (uint16_t *xad, uint16_t *yad)</td></tr>
+<tr class="separator:a48966a8d6c8270b2401c35b21ec45339"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c991e05a075f348beb925569a21794f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_global_errors_8h.html#a24419a48e73982468e2a8efbec672928">ExecuteResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_touch_controller_8h.html#a9c991e05a075f348beb925569a21794f">TouchReadADS2</a> (uint32_t *xad, uint32_t *yad)</td></tr>
+<tr class="separator:a9c991e05a075f348beb925569a21794f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a669d365b06438c56d3186e03b4714a99"><td class="memItemLeft" align="right" valign="top"><a id="a669d365b06438c56d3186e03b4714a99"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_touch_controller_8h.html#a669d365b06438c56d3186e03b4714a99">TouchConvertAdToXy</a> (void)</td></tr>
+<tr class="separator:a669d365b06438c56d3186e03b4714a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29238080856992b4b2f5963da3dbb78a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_global_errors_8h.html#a24419a48e73982468e2a8efbec672928">ExecuteResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_touch_controller_8h.html#a29238080856992b4b2f5963da3dbb78a">TouchReadOnce</a> (void)</td></tr>
+<tr class="separator:a29238080856992b4b2f5963da3dbb78a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5be623bca9f4958335adf98549214d99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_global_errors_8h.html#a24419a48e73982468e2a8efbec672928">ExecuteResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_touch_controller_8h.html#a5be623bca9f4958335adf98549214d99">TouchReadContinue</a> (void)</td></tr>
+<tr class="separator:a5be623bca9f4958335adf98549214d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Zmienne</h2></td></tr>
+<tr class="memitem:aeb17df021cf2c222f3af8d36f2b2e4b9"><td class="memItemLeft" align="right" valign="top"><a id="aeb17df021cf2c222f3af8d36f2b2e4b9"></a>
+<a class="el" href="struct_touch_point.html">TouchPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_touch_controller_8h.html#aeb17df021cf2c222f3af8d36f2b2e4b9">touchPoint</a></td></tr>
+<tr class="separator:aeb17df021cf2c222f3af8d36f2b2e4b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac97f7d84499940d6525e3c741aff9607"><td class="memItemLeft" align="right" valign="top"><a id="ac97f7d84499940d6525e3c741aff9607"></a>
+volatile uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_touch_controller_8h.html#ac97f7d84499940d6525e3c741aff9607">interruptFlag</a></td></tr>
+<tr class="separator:ac97f7d84499940d6525e3c741aff9607"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><dl class="section author"><dt>Autor</dt><dd>Mateusz Chudy </dd></dl>
+</div><h2 class="groupheader">Dokumentacja funkcji</h2>
+<a id="afd6b9fd0d9c6c8cd8c9207f77aee409b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd6b9fd0d9c6c8cd8c9207f77aee409b">&#9670;&nbsp;</a></span>TouchGetADC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t TouchGetADC </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>cmdCode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pobiera ze sterownika pojedynczy wynik ADC. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmdCode</td><td>- komenda wskazujaca na os </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>wynik konwersji AD </dd></dl>
+
+</div>
+</div>
+<a id="acd900b25f07bb8edbad17c66c6df1ae7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd900b25f07bb8edbad17c66c6df1ae7">&#9670;&nbsp;</a></span>TouchGetADCEx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t TouchGetADCEx </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>cmdCode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pobiera ze sterownika kilka razy wynik ADC i filtruje zwracana wartosc. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmdCode</td><td>- komenda wskazujaca na os </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>przefiltrowany wynik konwersji AD </dd></dl>
+
+</div>
+</div>
+<a id="a48966a8d6c8270b2401c35b21ec45339"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48966a8d6c8270b2401c35b21ec45339">&#9670;&nbsp;</a></span>TouchReadADS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_global_errors_8h.html#a24419a48e73982468e2a8efbec672928">ExecuteResult</a> TouchReadADS </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>xad</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>yad</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pobiera ze sterownika przefiltrowane wyniki konwersji AD dla osi x i y. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xad</td><td>- przefiltrowany wynik konwersji AD dla osi x </td></tr>
+    <tr><td class="paramname">yad</td><td>- przefiltrowany wynik konwersji AD dla osi y </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>rezultat operacji </dd></dl>
+
+</div>
+</div>
+<a id="a9c991e05a075f348beb925569a21794f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c991e05a075f348beb925569a21794f">&#9670;&nbsp;</a></span>TouchReadADS2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_global_errors_8h.html#a24419a48e73982468e2a8efbec672928">ExecuteResult</a> TouchReadADS2 </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>xad</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>yad</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dwukrotnie pobiera ze sterownika przefiltrowane wyniki konwersji AD dla osi x i y. </p>
+<p>Wartosc obu odczytow dla porownania, w granicach dopuszczalnego bledu </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xad</td><td>- przefiltrowany wynik konwersji AD dla osi x </td></tr>
+    <tr><td class="paramname">yad</td><td>- przefiltrowany wynik konwersji AD dla osi y </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>rezultat operacji </dd></dl>
+
+</div>
+</div>
+<a id="a5be623bca9f4958335adf98549214d99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5be623bca9f4958335adf98549214d99">&#9670;&nbsp;</a></span>TouchReadContinue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_global_errors_8h.html#a24419a48e73982468e2a8efbec672928">ExecuteResult</a> TouchReadContinue </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pobiera wspolrzedne dotkniecia w sposob ciagly. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>rezultat operacji </dd></dl>
+
+</div>
+</div>
+<a id="a29238080856992b4b2f5963da3dbb78a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29238080856992b4b2f5963da3dbb78a">&#9670;&nbsp;</a></span>TouchReadOnce()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_global_errors_8h.html#a24419a48e73982468e2a8efbec672928">ExecuteResult</a> TouchReadOnce </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pobiera jednokrotnie wspolrzedne dotkniecia. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>rezultat operacji </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

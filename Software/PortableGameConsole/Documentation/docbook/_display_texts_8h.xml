@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_display_texts_8h">
+    <title>DisplayTexts.h File Reference</title>
+        <section>
+            <title>Definicje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_display_texts_8h_1a66528a80ced37406ff20a64ab91192e4">WELCOME_TEXT</link> &quot;WELCOME!&quot;</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_display_texts_8h_1a5f016a1b821afb0f52cda642168f1a70">MENU_TEXT</link> &quot;Menu&quot;</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_display_texts_8h_1a5bc3cfb6e347906c38724f237b56655f">GAMES_TEXT</link> &quot;Games&quot;</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_display_texts_8h_1a3c159ed79f17544367f3a0b545822d9a">APPLICATION_TEXT</link> &quot;Application&quot;</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_display_texts_8h_1a95eb79079c32c963cbf198a405c4308d">PING_PONG_TEXT</link> &quot;Ping Pong&quot;</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_display_texts_8h_1af1f1418cfc79d1a5a0e7948283c0e09d">SNAKE_TEXT</link> &quot;Snake&quot;</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_display_texts_8h_1a7f16d060f1d9ba8ef042cb2b97d89bf5">PAINT_TEXT</link> &quot;Paint&quot;</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_display_texts_8h_1a674d11c25e681f00592681ddb510f749">BACK_TEXT</link> &quot;Back&quot;</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_display_texts_8h_1a28363084837fb8301aabbef25b175085">EXIT_TEXT</link> &quot;Exit&quot;</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_display_texts_8h_1a332d65270514ab3d2e257cd139c4ec7d">UNKNOWN_OPTION_TEXT</link> &quot;Unknown option.&quot;</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_display_texts_8h_1afba9fdd4cf7d663d9186926d451ac6f5">GAME_OVER_TEXT</link> &quot;Game Over&quot;</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_display_texts_8h_1a81561582fb249bde13a14e330937a998">GAME_RETRY_QUESTION</link> &quot;If you want to play again?&quot;</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_display_texts_8h_1a2cea36819291b811e219b29d42df5447">YES_TEXT</link> &quot;Yes&quot;</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_display_texts_8h_1af2beb10431634eb5ebe85c8311690c9b">NO_TEXT</link> &quot;No&quot;</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Opis szczegółowy</title>
+
+<para>Plik zawierajacy wszystkie wyswietlane teksty - header file. </para>
+
+<para><formalpara><title>Autor: </title>
+
+<para>Mateusz Chudy </para>
+</formalpara>
+</para>
+    <para>Definition in file C:/AVR/SMIW_M.Chudy_PrzenosnaKonsolaGier/Software/PortableGameConsole/Sources/Config/DisplayTexts.h</para>
+    </simplesect>
+</section>

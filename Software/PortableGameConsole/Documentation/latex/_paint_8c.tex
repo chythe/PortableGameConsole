@@ -1,0 +1,58 @@
+\hypertarget{_paint_8c}{}\subsection{Dokumentacja pliku Paint.\+c}
+\label{_paint_8c}\index{Paint.\+c@{Paint.\+c}}
+\subsubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_paint_8c_ac99cfa10de8bd671ada04b2ba820fdc5}{Paint\+Init} (\hyperlink{_l_c_d_controller_8h_ab87bacfdad76e61b9412d7124be44c1c}{Color} $\ast$button\+Colors, struct \hyperlink{struct_button}{Button} $\ast$button)
+\item 
+\hyperlink{_l_c_d_controller_8h_ab87bacfdad76e61b9412d7124be44c1c}{Color} \hyperlink{_paint_8c_a236eb3c4337f5a009410093958e1cdfb}{Paint\+Check\+Color\+Change} (\hyperlink{_l_c_d_controller_8h_ab87bacfdad76e61b9412d7124be44c1c}{Color} $\ast$button\+Colors, \hyperlink{_l_c_d_controller_8h_ab87bacfdad76e61b9412d7124be44c1c}{Color} current\+Color)
+\item 
+\mbox{\Hypertarget{_paint_8c_a30e160c962706cff49c25c3adc27f42b}\label{_paint_8c_a30e160c962706cff49c25c3adc27f42b}} 
+void \hyperlink{_paint_8c_a30e160c962706cff49c25c3adc27f42b}{Paint\+Show} (void)
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Opis szczegółowy}
+\begin{DoxyAuthor}{Autor}
+Mateusz Chudy 
+\end{DoxyAuthor}
+
+
+\subsubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{_paint_8c_a236eb3c4337f5a009410093958e1cdfb}\label{_paint_8c_a236eb3c4337f5a009410093958e1cdfb}} 
+\index{Paint.\+c@{Paint.\+c}!Paint\+Check\+Color\+Change@{Paint\+Check\+Color\+Change}}
+\index{Paint\+Check\+Color\+Change@{Paint\+Check\+Color\+Change}!Paint.\+c@{Paint.\+c}}
+\paragraph{\texorpdfstring{Paint\+Check\+Color\+Change()}{PaintCheckColorChange()}}
+{\footnotesize\ttfamily \hyperlink{_l_c_d_controller_8h_ab87bacfdad76e61b9412d7124be44c1c}{Color} Paint\+Check\+Color\+Change (\begin{DoxyParamCaption}\item[{\hyperlink{_l_c_d_controller_8h_ab87bacfdad76e61b9412d7124be44c1c}{Color} $\ast$}]{button\+Colors,  }\item[{\hyperlink{_l_c_d_controller_8h_ab87bacfdad76e61b9412d7124be44c1c}{Color}}]{current\+Color }\end{DoxyParamCaption})}
+
+
+
+Sprawdza zmiane koloru przez urzytkownika. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em button\+Colors} & -\/ tablica dostepnych kolorow rysowania \\
+\hline
+{\em current\+Color} & -\/ obecny kolor rysowania \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+obecnie wybrany kolor 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_paint_8c_ac99cfa10de8bd671ada04b2ba820fdc5}\label{_paint_8c_ac99cfa10de8bd671ada04b2ba820fdc5}} 
+\index{Paint.\+c@{Paint.\+c}!Paint\+Init@{Paint\+Init}}
+\index{Paint\+Init@{Paint\+Init}!Paint.\+c@{Paint.\+c}}
+\paragraph{\texorpdfstring{Paint\+Init()}{PaintInit()}}
+{\footnotesize\ttfamily void Paint\+Init (\begin{DoxyParamCaption}\item[{\hyperlink{_l_c_d_controller_8h_ab87bacfdad76e61b9412d7124be44c1c}{Color} $\ast$}]{button\+Colors,  }\item[{struct \hyperlink{struct_button}{Button} $\ast$}]{button }\end{DoxyParamCaption})}
+
+
+
+Inicjalizuje aplikacje Paint. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em button\+Colors} & -\/ tablica dostepnych kolorow rysowania \\
+\hline
+{\em button} & -\/ wskaźnik na strukture reprezentujaca przycisk exit \\
+\hline
+\end{DoxyParams}

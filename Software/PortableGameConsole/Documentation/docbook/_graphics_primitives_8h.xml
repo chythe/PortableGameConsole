@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_graphics_primitives_8h">
+    <title>GraphicsPrimitives.h File Reference</title>
+    <programlisting>#include &lt;GlobalErrors.h&gt;</programlisting>
+    <programlisting>#include &lt;stdint.h&gt;</programlisting>
+        <section>
+            <title>Definicje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_graphics_primitives_8h_1ab6b6ac34284e84eb5a020e5fd653353f">MIN_ALPHA_SIZE</link> -180</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_graphics_primitives_8h_1a93cb0d80c241032482a09aabe5832112">MAX_ALPHA_SIZE</link> 180</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Zmienne</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t <link linkend="_graphics_primitives_8h_1a0f561e77fa0f040b637f4e04f6cd8078">x</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t uint16_t <link linkend="_graphics_primitives_8h_1a3eeab7636c14875aacb755081ddde677">y</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t uint16_t uint8_t <link linkend="_graphics_primitives_8h_1a676642aeed6db3f79e11f785b8d3cfdd">width</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t uint16_t uint8_t uint16_t <link linkend="_graphics_primitives_8h_1a3059945b09c199c8ed1c3b5d704e9fed">height</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Funkcje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_graphics_primitives_8h_1aa20846fe04c855cdb41b0975c9eba657">GraphicsClearScreen</link> (
+uint16_t color)<para><emphasis>Czysci ekran na zadany kolor.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_graphics_primitives_8h_1a642cb30a9efda318ea6f1c44ed22203b">GraphicsClearArea</link> (
+uint16_t color, uint8_t x, uint16_t y, uint8_t width, uint16_t height)<para><emphasis>Zamalowuje obszar na zadany kolor.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_graphics_primitives_8h_1a120096c95bb350f816bdd97e364b595d">GraphicsSetCursor</link> (
+uint8_t x, uint16_t y)<para><emphasis>Ustawia kursor w punkcie o zadanych wspolrzednych.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_graphics_primitives_8h_1a595fda74dcbc674296db9bdd5754265b">GraphicsPutPixel</link> (
+uint16_t color, uint8_t x, uint16_t y)<para><emphasis>Wyswietla punkt o zadanych wspolrzednych.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_graphics_primitives_8h_1adce3b50b6784b018392e00426643f0d2">GraphicsDrawBigDot</link> (
+uint16_t color, uint8_t x, uint16_t y)<para><emphasis>Wyswietla kropke 3x3 piksele o zadanych wspolrzednych.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_graphics_primitives_8h_1a918204525652928b38335c666b14bbd7">GraphicsDrawCircle</link> (
+uint16_t color, uint8_t x, uint16_t y, uint8_t r)<para><emphasis>Wyswietla okrag o srodku w zadanych wspolrzednych.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_global_errors_8h_1a24419a48e73982468e2a8efbec672928">ExecuteResult</link> <link linkend="_graphics_primitives_8h_1a82cf59bae124939047643248072ca50a">GraphicsDrawLine</link> (
+uint16_t color, uint8_t x1, uint16_t y1, uint8_t x2, uint16_t y2)<para><emphasis>Wyswietla linie pomiedzy dwoma punktami.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_graphics_primitives_8h_1ab407bb94474cfdce93815ad2b763729b">GraphicsDrawSimpleLine</link> (
+uint16_t color, uint8_t x1, uint16_t y1, uint8_t x2, uint16_t y2)<para><emphasis>Wyswietla linie w poziomie lub w pionie.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="_graphics_primitives_8h_1ab0356148cd4cab95b4f7940f0d9b7d82">__attribute__</link> (
+(__deprecated__) )<para><emphasis>Wyswietla obrazek.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Opis szczegółowy</title>
+
+<para>Prymitywy graficzne - header file. </para>
+
+<para><formalpara><title>Autor: </title>
+
+<para>Mateusz Chudy </para>
+</formalpara>
+</para>
+    <para>Definition in file C:/AVR/SMIW_M.Chudy_PrzenosnaKonsolaGier/Software/PortableGameConsole/Sources/GUI/GraphicsPrimitives.h</para>
+    </simplesect>
+</section>

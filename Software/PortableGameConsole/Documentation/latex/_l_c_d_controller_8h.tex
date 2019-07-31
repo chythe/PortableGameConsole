@@ -1,0 +1,276 @@
+\hypertarget{_l_c_d_controller_8h}{}\subsection{Dokumentacja pliku L\+C\+D\+Controller.\+h}
+\label{_l_c_d_controller_8h}\index{L\+C\+D\+Controller.\+h@{L\+C\+D\+Controller.\+h}}
+\subsubsection*{Definicje}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_adb4896a8d3a0821a86d2f68487ed3a7d}\label{_l_c_d_controller_8h_adb4896a8d3a0821a86d2f68487ed3a7d}} 
+\#define {\bfseries L\+C\+D\+\_\+\+S\+I\+Z\+E\+\_\+X}~240
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_aa3ee1c378bb5c697eea544e8685dbd98}\label{_l_c_d_controller_8h_aa3ee1c378bb5c697eea544e8685dbd98}} 
+\#define {\bfseries L\+C\+D\+\_\+\+S\+I\+Z\+E\+\_\+Y}~320
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_a14192c7862a227f6fabb37414ff6a933}\label{_l_c_d_controller_8h_a14192c7862a227f6fabb37414ff6a933}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+S\+T\+A\+R\+T\+\_\+\+O\+S\+C\+I\+L\+L\+A\+T\+I\+ON}~0x000
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_a4b020bad9efd30dd236525d75b882c82}\label{_l_c_d_controller_8h_a4b020bad9efd30dd236525d75b882c82}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+D\+R\+I\+V\+E\+R\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+C\+O\+N\+T\+R\+OL}~0x001
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_ab1d862cfc06c32554f74f68412a94d4d}\label{_l_c_d_controller_8h_ab1d862cfc06c32554f74f68412a94d4d}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+C\+R\+Y\+S\+T\+A\+L\+\_\+\+D\+R\+I\+V\+E\+\_\+\+I\+N\+V\+E\+R\+S\+I\+O\+N\+\_\+\+C\+O\+N\+T\+R\+OL}~0x002
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_afd5787e716e8e12765ee036c3d1bb80f}\label{_l_c_d_controller_8h_afd5787e716e8e12765ee036c3d1bb80f}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+E\+N\+T\+R\+Y\+\_\+\+M\+O\+DE}~0x003
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_aefa77cc271c259826dfd6d658fdeb983}\label{_l_c_d_controller_8h_aefa77cc271c259826dfd6d658fdeb983}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+M\+O\+V\+I\+N\+G\+\_\+\+I\+M\+A\+G\+E\+\_\+\+D\+I\+S\+P\+L\+A\+Y\+\_\+\+C\+O\+N\+T\+R\+OL}~0x006
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_a0e20e8e60ed80bc872460fb6c87a1405}\label{_l_c_d_controller_8h_a0e20e8e60ed80bc872460fb6c87a1405}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+D\+I\+S\+P\+L\+A\+Y\+\_\+\+C\+O\+N\+T\+R\+O\+L1}~0x007
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_a828e0f7bc8d8795e3427e65c25bf8610}\label{_l_c_d_controller_8h_a828e0f7bc8d8795e3427e65c25bf8610}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+D\+I\+S\+P\+L\+A\+Y\+\_\+\+C\+O\+N\+T\+R\+O\+L2}~0x008
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_a7d1066464f9a0b69b9c74a3516cc42f5}\label{_l_c_d_controller_8h_a7d1066464f9a0b69b9c74a3516cc42f5}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+D\+I\+S\+P\+L\+A\+Y\+\_\+\+C\+O\+N\+T\+R\+O\+L3}~0x009
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_ac9e231237475aa574fd7d5ee6699cf12}\label{_l_c_d_controller_8h_ac9e231237475aa574fd7d5ee6699cf12}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+D\+I\+S\+P\+L\+A\+Y\+\_\+\+C\+O\+N\+T\+R\+O\+L4}~0x00B
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_a8394e73fe3171db6916cae6ccbf0320d}\label{_l_c_d_controller_8h_a8394e73fe3171db6916cae6ccbf0320d}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+E\+X\+T\+E\+R\+N\+A\+L\+\_\+\+D\+I\+S\+P\+L\+A\+Y\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L1}~0x00C
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_a8d442b0da26154469cb66338d58fba44}\label{_l_c_d_controller_8h_a8d442b0da26154469cb66338d58fba44}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+F\+R\+A\+M\+E\+\_\+\+C\+Y\+C\+L\+E\+\_\+\+A\+D\+J\+U\+S\+T\+M\+E\+N\+T\+\_\+\+C\+O\+N\+T\+R\+OL}~0x00D
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_a06dfccd15f65a6c657b8429a799730b0}\label{_l_c_d_controller_8h_a06dfccd15f65a6c657b8429a799730b0}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+D\+R\+I\+V\+E\+R\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L1}~0x012
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_a0222f910a57ee962aea95971e9de8b58}\label{_l_c_d_controller_8h_a0222f910a57ee962aea95971e9de8b58}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+G\+A\+T\+E\+\_\+\+D\+R\+I\+V\+E\+R\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L1}~0x013
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_ad240657fadb68d5cd1ad432059ccb292}\label{_l_c_d_controller_8h_ad240657fadb68d5cd1ad432059ccb292}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+D\+R\+I\+V\+E\+R\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L2}~0x018
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_a669703458a1456ac41075c278c69fa31}\label{_l_c_d_controller_8h_a669703458a1456ac41075c278c69fa31}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+G\+A\+T\+E\+\_\+\+D\+R\+I\+V\+E\+R\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L2}~0x019
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_a170a50340cf2249c7cbcb4d8dd6ec58a}\label{_l_c_d_controller_8h_a170a50340cf2249c7cbcb4d8dd6ec58a}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+P\+O\+W\+E\+R\+\_\+\+C\+O\+N\+T\+R\+O\+L1}~0x100
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_af6622927796a6b208d33c7880e28b55c}\label{_l_c_d_controller_8h_af6622927796a6b208d33c7880e28b55c}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+P\+O\+W\+E\+R\+\_\+\+C\+O\+N\+T\+R\+O\+L2}~0x101
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_a333a63700b8d48c5b12f9f0168bce66e}\label{_l_c_d_controller_8h_a333a63700b8d48c5b12f9f0168bce66e}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+P\+O\+W\+E\+R\+\_\+\+C\+O\+N\+T\+R\+O\+L3}~0x102
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_a9ea0d7eb720c4649e8a48f6a11361e44}\label{_l_c_d_controller_8h_a9ea0d7eb720c4649e8a48f6a11361e44}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+P\+O\+W\+E\+R\+\_\+\+C\+O\+N\+T\+R\+O\+L4}~0x103
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_a9de74c8fa4f2b72e497c28e0d1561ee2}\label{_l_c_d_controller_8h_a9de74c8fa4f2b72e497c28e0d1561ee2}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+P\+O\+W\+E\+R\+\_\+\+C\+O\+N\+T\+R\+O\+L5}~0x110
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_ab1387233de6e8e16dec1bb04a41c1552}\label{_l_c_d_controller_8h_ab1387233de6e8e16dec1bb04a41c1552}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+P\+O\+W\+E\+R\+\_\+\+C\+O\+N\+T\+R\+O\+L6}~0x111
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_abe093e18ec19e5f0d97e68389946c638}\label{_l_c_d_controller_8h_abe093e18ec19e5f0d97e68389946c638}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+H\+O\+R\+I\+Z\+O\+N\+T\+A\+L\+\_\+\+R\+A\+M\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+S\+ET}~0x200
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_a861678b01246e12b9c1cd97f1e939acb}\label{_l_c_d_controller_8h_a861678b01246e12b9c1cd97f1e939acb}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+V\+E\+R\+T\+I\+C\+A\+L\+\_\+\+R\+A\+M\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+S\+ET}~0x201
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_ae2aa3cce27868eeda6b65a61d2d71482}\label{_l_c_d_controller_8h_ae2aa3cce27868eeda6b65a61d2d71482}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+R\+A\+M\+\_\+\+D\+A\+T\+A\+\_\+\+W\+R\+I\+TE}~0x202
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_a97313c33b091278ede7682a187e3f349}\label{_l_c_d_controller_8h_a97313c33b091278ede7682a187e3f349}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+R\+A\+M\+\_\+\+W\+R\+I\+T\+E\+\_\+\+D\+A\+T\+A\+\_\+\+M\+A\+S\+K1}~0x203
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_a3fc89d91b0f41c0e153d9d1b2aef4ace}\label{_l_c_d_controller_8h_a3fc89d91b0f41c0e153d9d1b2aef4ace}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+R\+A\+M\+\_\+\+W\+R\+I\+T\+E\+\_\+\+D\+A\+T\+A\+\_\+\+M\+A\+S\+K2}~0x204
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_ada67175df67944e38e143fd1a4f55d0f}\label{_l_c_d_controller_8h_ada67175df67944e38e143fd1a4f55d0f}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+H\+O\+R\+I\+Z\+O\+N\+T\+A\+L\+\_\+\+R\+A\+M\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+S\+T\+A\+R\+T\+\_\+\+P\+O\+S\+I\+T\+I\+ON}~0x210
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_ac94df50af44d1d9a1f4c27ea140dc3a6}\label{_l_c_d_controller_8h_ac94df50af44d1d9a1f4c27ea140dc3a6}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+H\+O\+R\+I\+Z\+O\+N\+T\+A\+L\+\_\+\+R\+A\+M\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+E\+N\+D\+\_\+\+P\+O\+S\+I\+T\+I\+ON}~0x211
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_a4c69565133ac47c89fe2369533b0a395}\label{_l_c_d_controller_8h_a4c69565133ac47c89fe2369533b0a395}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+V\+E\+R\+T\+I\+C\+A\+L\+\_\+\+R\+A\+M\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+S\+T\+A\+R\+T\+\_\+\+P\+O\+S\+I\+T\+I\+ON}~0x212
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_a81d9769de496df680d4105f83681698d}\label{_l_c_d_controller_8h_a81d9769de496df680d4105f83681698d}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+V\+E\+R\+T\+I\+C\+A\+L\+\_\+\+R\+A\+M\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+E\+N\+D\+\_\+\+P\+O\+S\+I\+T\+I\+ON}~0x213
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_adc7a350c775209d4dc9e6d76d6299ed1}\label{_l_c_d_controller_8h_adc7a350c775209d4dc9e6d76d6299ed1}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+M\+O\+V\+I\+N\+G\+\_\+\+P\+I\+C\+T\+U\+R\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+S\+T\+A\+R\+T\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N1}~0x214
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_a30e7e0e85c0b0573e6f2ed1f7c6c0018}\label{_l_c_d_controller_8h_a30e7e0e85c0b0573e6f2ed1f7c6c0018}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+M\+O\+V\+I\+N\+G\+\_\+\+P\+I\+C\+T\+U\+R\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+E\+N\+D\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N1}~0x215
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_a72174ab405db2076208c54ece7c6ed55}\label{_l_c_d_controller_8h_a72174ab405db2076208c54ece7c6ed55}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+M\+O\+V\+I\+N\+G\+\_\+\+P\+I\+C\+T\+U\+R\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+S\+T\+A\+R\+T\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N2}~0x216
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_a5cd2722681a7c419e0abbf18febdaeab}\label{_l_c_d_controller_8h_a5cd2722681a7c419e0abbf18febdaeab}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+M\+O\+V\+I\+N\+G\+\_\+\+P\+I\+C\+T\+U\+R\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+E\+N\+D\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N2}~0x217
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_abfcc8f2f0a0e42a3762a529dfefcc568}\label{_l_c_d_controller_8h_abfcc8f2f0a0e42a3762a529dfefcc568}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+G\+A\+M\+M\+A\+\_\+\+C\+O\+N\+T\+R\+O\+L1}~0x300
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_a1cfff1ce8f7d223570d26854f6e39000}\label{_l_c_d_controller_8h_a1cfff1ce8f7d223570d26854f6e39000}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+G\+A\+M\+M\+A\+\_\+\+C\+O\+N\+T\+R\+O\+L2}~0x301
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_a0393dc223aab529be482233ec9355a9f}\label{_l_c_d_controller_8h_a0393dc223aab529be482233ec9355a9f}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+G\+A\+M\+M\+A\+\_\+\+C\+O\+N\+T\+R\+O\+L3}~0x302
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_ac7fbbf1b56108737577808799700a452}\label{_l_c_d_controller_8h_ac7fbbf1b56108737577808799700a452}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+G\+A\+M\+M\+A\+\_\+\+C\+O\+N\+T\+R\+O\+L4}~0x303
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_a7e67b1543f756ec4662828d93cbcfdf0}\label{_l_c_d_controller_8h_a7e67b1543f756ec4662828d93cbcfdf0}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+G\+A\+M\+M\+A\+\_\+\+C\+O\+N\+T\+R\+O\+L5}~0x304
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_af67a66a92b28ae924aba97b7eb962d06}\label{_l_c_d_controller_8h_af67a66a92b28ae924aba97b7eb962d06}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+G\+A\+M\+M\+A\+\_\+\+C\+O\+N\+T\+R\+O\+L6}~0x305
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_a66044f5d14485cd24c708d97bb8db948}\label{_l_c_d_controller_8h_a66044f5d14485cd24c708d97bb8db948}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+G\+A\+M\+M\+A\+\_\+\+C\+O\+N\+T\+R\+O\+L7}~0x306
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_aaca7d969cd7d989df1ca13cd37c06ae2}\label{_l_c_d_controller_8h_aaca7d969cd7d989df1ca13cd37c06ae2}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+G\+A\+M\+M\+A\+\_\+\+C\+O\+N\+T\+R\+O\+L8}~0x307
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_a6a1a5d32030b5d8fa4d3f974b3e15972}\label{_l_c_d_controller_8h_a6a1a5d32030b5d8fa4d3f974b3e15972}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+G\+A\+M\+M\+A\+\_\+\+C\+O\+N\+T\+R\+O\+L9}~0x308
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_a92092cf0d63c47d9524bead495b6daca}\label{_l_c_d_controller_8h_a92092cf0d63c47d9524bead495b6daca}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+G\+A\+M\+M\+A\+\_\+\+C\+O\+N\+T\+R\+O\+L10}~0x309
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_a3d70e8c9165b07d02fb57eadf84545de}\label{_l_c_d_controller_8h_a3d70e8c9165b07d02fb57eadf84545de}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+L\+I\+N\+E\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+C\+O\+N\+T\+R\+OL}~0x400
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_abac753dba4002f82753914ab816b1816}\label{_l_c_d_controller_8h_abac753dba4002f82753914ab816b1816}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+S\+C\+R\+E\+E\+N\+\_\+\+C\+O\+N\+T\+R\+OL}~0x401
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_aca0c63edfd3f81c02f1203e4ac0ace0b}\label{_l_c_d_controller_8h_aca0c63edfd3f81c02f1203e4ac0ace0b}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+F\+U\+L\+L\+\_\+\+S\+C\+R\+E\+E\+N\+\_\+\+I\+M\+A\+G\+E\+\_\+\+R\+A\+M\+\_\+\+A\+R\+E\+A\+\_\+\+S\+T\+A\+R\+T\+\_\+\+L\+I\+NE}~0x402
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_a1e3046145924808f2c943ebc62a43ff7}\label{_l_c_d_controller_8h_a1e3046145924808f2c943ebc62a43ff7}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+F\+U\+L\+L\+\_\+\+S\+C\+R\+E\+E\+N\+\_\+\+I\+M\+A\+G\+E\+\_\+\+R\+A\+M\+\_\+\+A\+R\+E\+A\+\_\+\+E\+N\+D\+\_\+\+L\+I\+NE}~0x403
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_af7de05dc2d9f6de3c6eaf22ca78270a3}\label{_l_c_d_controller_8h_af7de05dc2d9f6de3c6eaf22ca78270a3}} 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+V\+E\+R\+T\+I\+C\+A\+L\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+C\+O\+N\+T\+R\+OL}~0x404
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_a3534a292b8c135962395055d1f02d7f9}\label{_l_c_d_controller_8h_a3534a292b8c135962395055d1f02d7f9}} 
+\#define {\bfseries L\+C\+D\+\_\+\+R\+S\+T\+\_\+H}()~P\+O\+R\+TB $\vert$= (1 $<$$<$ P\+B0);
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_a938e5e2887fc2ac51db1b837f8c28c06}\label{_l_c_d_controller_8h_a938e5e2887fc2ac51db1b837f8c28c06}} 
+\#define {\bfseries L\+C\+D\+\_\+\+R\+S\+T\+\_\+L}()~P\+O\+R\+TB \&= $\sim$(1 $<$$<$ P\+B0);
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_a55730e1e119f4dd31e8056b8d322ca7d}\label{_l_c_d_controller_8h_a55730e1e119f4dd31e8056b8d322ca7d}} 
+\#define {\bfseries L\+C\+D\+\_\+\+R\+S\+\_\+H}()~P\+O\+R\+TB $\vert$= (1 $<$$<$ P\+B1);
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_a0ff98deef0b5e865767281a0e439dc42}\label{_l_c_d_controller_8h_a0ff98deef0b5e865767281a0e439dc42}} 
+\#define {\bfseries L\+C\+D\+\_\+\+R\+S\+\_\+L}()~P\+O\+R\+TB \&= $\sim$(1 $<$$<$ P\+B1);
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_a954ced03b5814a3ec7d0766eb13cbc37}\label{_l_c_d_controller_8h_a954ced03b5814a3ec7d0766eb13cbc37}} 
+\#define {\bfseries L\+C\+D\+\_\+\+C\+S\+\_\+H}()~P\+O\+R\+TB $\vert$= (1 $<$$<$ P\+B2);
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_aaaa58e1d932ba98f85bee92ae730773c}\label{_l_c_d_controller_8h_aaaa58e1d932ba98f85bee92ae730773c}} 
+\#define {\bfseries L\+C\+D\+\_\+\+C\+S\+\_\+L}()~P\+O\+R\+TB \&= $\sim$(1 $<$$<$ P\+B2);
+\end{DoxyCompactItemize}
+\subsubsection*{Wyliczenia}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_ab87bacfdad76e61b9412d7124be44c1c}\label{_l_c_d_controller_8h_ab87bacfdad76e61b9412d7124be44c1c}} 
+enum \hyperlink{_l_c_d_controller_8h_ab87bacfdad76e61b9412d7124be44c1c}{Color} \{ \newline
+{\bfseries B\+L\+A\+CK} = 0\+X0000, 
+{\bfseries C\+Y\+AN} = 0x07\+FF, 
+{\bfseries P\+U\+R\+P\+LE} = 0x\+F81F, 
+{\bfseries R\+ED} = 0\+X\+F800, 
+\newline
+{\bfseries G\+R\+E\+EN} = 0\+X07\+E0, 
+{\bfseries B\+L\+UE} = 0\+X001F, 
+{\bfseries Y\+E\+L\+L\+OW} = 0\+X\+F\+F\+E0, 
+{\bfseries O\+R\+A\+N\+GE} = 0\+X\+F\+C08, 
+\newline
+{\bfseries G\+R\+AY} = 0\+X8430, 
+{\bfseries L\+G\+R\+AY} = 0\+X\+C618, 
+{\bfseries D\+A\+R\+K\+G\+R\+AY} = 0\+X8410, 
+{\bfseries P\+O\+R\+PO} = 0\+X801F, 
+\newline
+{\bfseries P\+I\+NK} = 0\+X\+F81F, 
+{\bfseries G\+R\+A\+Y\+B\+L\+UE} = 0\+X5458, 
+{\bfseries L\+G\+R\+A\+Y\+B\+L\+UE} = 0\+X\+A651, 
+{\bfseries D\+A\+R\+K\+B\+L\+UE} = 0\+X01\+CF, 
+\newline
+{\bfseries L\+I\+G\+H\+T\+B\+L\+UE} = 0\+X7\+D7C, 
+{\bfseries W\+H\+I\+TE} = 0\+X\+F\+F\+FF
+ \}
+\end{DoxyCompactItemize}
+\subsubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_ad73cbdb125a38140802550653f243fca}\label{_l_c_d_controller_8h_ad73cbdb125a38140802550653f243fca}} 
+void \hyperlink{_l_c_d_controller_8h_ad73cbdb125a38140802550653f243fca}{L\+C\+D\+P\+W\+M\+Init} (void)
+\item 
+void \hyperlink{_l_c_d_controller_8h_ae36ba846363b79a812be19300f843576}{L\+C\+D\+Write\+Index} (uint16\+\_\+t index)
+\item 
+void \hyperlink{_l_c_d_controller_8h_a30bbc98d8f283ea2b5bab632e48543d3}{L\+C\+D\+Write\+Reg} (uint16\+\_\+t index, uint16\+\_\+t data)
+\item 
+void \hyperlink{_l_c_d_controller_8h_a34085397b2bf54f843b9196a9b787e6b}{L\+C\+D\+Write\+Data} (uint16\+\_\+t data)
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8h_a410f02e534a63d1f6e7a168dae003d6d}\label{_l_c_d_controller_8h_a410f02e534a63d1f6e7a168dae003d6d}} 
+void \hyperlink{_l_c_d_controller_8h_a410f02e534a63d1f6e7a168dae003d6d}{L\+C\+D\+Init} (void)
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Opis szczegółowy}
+\begin{DoxyAuthor}{Autor}
+Mateusz Chudy 
+\end{DoxyAuthor}
+
+
+\subsubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{_l_c_d_controller_8h_a34085397b2bf54f843b9196a9b787e6b}\label{_l_c_d_controller_8h_a34085397b2bf54f843b9196a9b787e6b}} 
+\index{L\+C\+D\+Controller.\+h@{L\+C\+D\+Controller.\+h}!L\+C\+D\+Write\+Data@{L\+C\+D\+Write\+Data}}
+\index{L\+C\+D\+Write\+Data@{L\+C\+D\+Write\+Data}!L\+C\+D\+Controller.\+h@{L\+C\+D\+Controller.\+h}}
+\paragraph{\texorpdfstring{L\+C\+D\+Write\+Data()}{LCDWriteData()}}
+{\footnotesize\ttfamily void L\+C\+D\+Write\+Data (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{data }\end{DoxyParamCaption})}
+
+
+
+Wpisuje dane. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em data} & -\/ wpisywane dane \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_l_c_d_controller_8h_ae36ba846363b79a812be19300f843576}\label{_l_c_d_controller_8h_ae36ba846363b79a812be19300f843576}} 
+\index{L\+C\+D\+Controller.\+h@{L\+C\+D\+Controller.\+h}!L\+C\+D\+Write\+Index@{L\+C\+D\+Write\+Index}}
+\index{L\+C\+D\+Write\+Index@{L\+C\+D\+Write\+Index}!L\+C\+D\+Controller.\+h@{L\+C\+D\+Controller.\+h}}
+\paragraph{\texorpdfstring{L\+C\+D\+Write\+Index()}{LCDWriteIndex()}}
+{\footnotesize\ttfamily void L\+C\+D\+Write\+Index (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{index }\end{DoxyParamCaption})}
+
+
+
+Wpisuje do sterownika indeks rejestru. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em index} & -\/ indeks rejestru \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_l_c_d_controller_8h_a30bbc98d8f283ea2b5bab632e48543d3}\label{_l_c_d_controller_8h_a30bbc98d8f283ea2b5bab632e48543d3}} 
+\index{L\+C\+D\+Controller.\+h@{L\+C\+D\+Controller.\+h}!L\+C\+D\+Write\+Reg@{L\+C\+D\+Write\+Reg}}
+\index{L\+C\+D\+Write\+Reg@{L\+C\+D\+Write\+Reg}!L\+C\+D\+Controller.\+h@{L\+C\+D\+Controller.\+h}}
+\paragraph{\texorpdfstring{L\+C\+D\+Write\+Reg()}{LCDWriteReg()}}
+{\footnotesize\ttfamily void L\+C\+D\+Write\+Reg (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{index,  }\item[{uint16\+\_\+t}]{data }\end{DoxyParamCaption})}
+
+
+
+Wpisuje dane do rejestru. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em index} & -\/ indeks rejestru \\
+\hline
+{\em data} & -\/ wpisywane dane \\
+\hline
+\end{DoxyParams}

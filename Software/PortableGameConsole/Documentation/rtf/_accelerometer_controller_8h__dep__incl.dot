@@ -1,0 +1,30 @@
+digraph "AccelerometerController.h"
+{
+  edge [fontname="TimesNewRoman",fontsize="10",labelfontname="TimesNewRoman",labelfontsize="10"];
+  node [fontname="TimesNewRoman",fontsize="10",shape=record];
+  Node2 [label="AccelerometerController.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node3 [label="AccelerometerController.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_accelerometer_controller_8c.html",tooltip="Kontroler akcelerometru - source file. "];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node4 [label="PingPong.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_ping_pong_8c.html",tooltip="Gra Ping Pong - source file. "];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node5 [label="SnakeElements.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_snake_elements_8h.html",tooltip="Elementy weza dla gry Snake - header file. "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node6 [label="Snake.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_snake_8h.html",tooltip="Gra Snake - header file. "];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node7 [label="Snake.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_snake_8c.html",tooltip="Gra Snake - source file. "];
+  Node6 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node8 [label="SnakeElements.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_snake_elements_8c.html",tooltip="Elementy weza dla gry Snake - source file. "];
+  Node6 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node9 [label="SnakeMove.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_snake_move_8c.html",tooltip="Ruch weza dla gry Snake - source file. "];
+  Node6 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node10 [label="Desktop.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_desktop_8c.html",tooltip="Pulpit z wejsciem menu - source file. "];
+  Node5 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node5 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node11 [label="SnakeMove.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_snake_move_8h.html",tooltip="Ruch weza dla gry Snake - header file. "];
+  Node11 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node2 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node2 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node12 [label="Main.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_main_8c.html",tooltip="Zrodlo z glowna funkcja programu - source file. "];
+}

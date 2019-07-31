@@ -1,0 +1,68 @@
+\hypertarget{_accelerometer_controller_8h}{}\subsection{Dokumentacja pliku Accelerometer\+Controller.\+h}
+\label{_accelerometer_controller_8h}\index{Accelerometer\+Controller.\+h@{Accelerometer\+Controller.\+h}}
+
+
+Kontroler akcelerometru -\/ header file.  
+
+
+Wykres zależności załączania dla Accelerometer\+Controller.\+h\+:
+% FIG 0
+Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik\+:
+% FIG 1
+\subsubsection*{Definicje}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_accelerometer_controller_8h_a8476f4a8de2c191433342c9ce896986a}\label{_accelerometer_controller_8h_a8476f4a8de2c191433342c9ce896986a}} 
+\#define {\bfseries X0}~0
+\item 
+\mbox{\Hypertarget{_accelerometer_controller_8h_a0b0dcdd1ffa302474e907d3d7ad9dbfe}\label{_accelerometer_controller_8h_a0b0dcdd1ffa302474e907d3d7ad9dbfe}} 
+\#define {\bfseries Y0}~-\/5
+\item 
+\mbox{\Hypertarget{_accelerometer_controller_8h_aa10f470e996d0f51210d24f442d25e1e}\label{_accelerometer_controller_8h_aa10f470e996d0f51210d24f442d25e1e}} 
+\#define {\bfseries W\+R\+I\+TE}~0x3A
+\item 
+\mbox{\Hypertarget{_accelerometer_controller_8h_ada74e7db007a68e763f20c17f2985356}\label{_accelerometer_controller_8h_ada74e7db007a68e763f20c17f2985356}} 
+\#define {\bfseries R\+E\+AD}~0x3B
+\item 
+\mbox{\Hypertarget{_accelerometer_controller_8h_ac5051a059b95870acdde1272748c3f83}\label{_accelerometer_controller_8h_ac5051a059b95870acdde1272748c3f83}} 
+\#define {\bfseries A\+C\+C\+E\+\_\+\+S\+E\+N\+S\+I\+T\+I\+V\+I\+TY}~10
+\end{DoxyCompactItemize}
+\subsubsection*{Wyliczenia}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_accelerometer_controller_8h_ae3996976d8ffb3e58d88f58227473f8e}\label{_accelerometer_controller_8h_ae3996976d8ffb3e58d88f58227473f8e}} 
+enum \hyperlink{_accelerometer_controller_8h_ae3996976d8ffb3e58d88f58227473f8e}{Axis} \{ {\bfseries A\+X\+I\+S\+\_\+X} = 0x29, 
+{\bfseries A\+X\+I\+S\+\_\+Y} = 0x2B, 
+{\bfseries A\+X\+I\+S\+\_\+Z} = 0x2D
+ \}\begin{DoxyCompactList}\small\item\em Indeksy rejestrow, pod ktorymi znajduja sie dane proporcjonalne do kata nachylenia do danej osi. \end{DoxyCompactList}
+\item 
+\mbox{\Hypertarget{_accelerometer_controller_8h_a224b9163917ac32fc95a60d8c1eec3aa}\label{_accelerometer_controller_8h_a224b9163917ac32fc95a60d8c1eec3aa}} 
+enum \hyperlink{_accelerometer_controller_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction} \{ \newline
+{\bfseries C\+O\+N\+ST}, 
+{\bfseries UP}, 
+{\bfseries D\+O\+WN}, 
+{\bfseries L\+E\+FT}, 
+\newline
+{\bfseries R\+I\+G\+HT}
+ \}\begin{DoxyCompactList}\small\item\em Kierunek wyznaczany przez nachylenie urzadzenia. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_accelerometer_controller_8h_a3503c5a03dda05fa47abd5022c9609b6}\label{_accelerometer_controller_8h_a3503c5a03dda05fa47abd5022c9609b6}} 
+void \hyperlink{_accelerometer_controller_8h_a3503c5a03dda05fa47abd5022c9609b6}{Accelerometer\+Init} (void)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje akcelerometr. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_accelerometer_controller_8h_a8c6d76397000c290219fa9ec3320e2dc}\label{_accelerometer_controller_8h_a8c6d76397000c290219fa9ec3320e2dc}} 
+int8\+\_\+t \hyperlink{_accelerometer_controller_8h_a8c6d76397000c290219fa9ec3320e2dc}{Accelerometer\+Get\+Angle} (\hyperlink{_accelerometer_controller_8h_ae3996976d8ffb3e58d88f58227473f8e}{Axis} axis)
+\begin{DoxyCompactList}\small\item\em Pobiera wartosc proporcjonalna do kata nachylenia do danej osi. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_accelerometer_controller_8h_a20e54871d9dd61e2d49607176aeadb8d}\label{_accelerometer_controller_8h_a20e54871d9dd61e2d49607176aeadb8d}} 
+\hyperlink{_accelerometer_controller_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction} \hyperlink{_accelerometer_controller_8h_a20e54871d9dd61e2d49607176aeadb8d}{Accelerometer\+Get\+Direction} (void)
+\begin{DoxyCompactList}\small\item\em Pobiera kierunek nachylenia. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Opis szczegółowy}
+Kontroler akcelerometru -\/ header file. 
+
+\begin{DoxyAuthor}{Autor}
+Mateusz Chudy 
+\end{DoxyAuthor}

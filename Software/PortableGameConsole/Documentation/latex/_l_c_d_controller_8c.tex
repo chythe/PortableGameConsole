@@ -1,0 +1,79 @@
+\hypertarget{_l_c_d_controller_8c}{}\subsection{Dokumentacja pliku L\+C\+D\+Controller.\+c}
+\label{_l_c_d_controller_8c}\index{L\+C\+D\+Controller.\+c@{L\+C\+D\+Controller.\+c}}
+\subsubsection*{Definicje}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8c_a43bafb28b29491ec7f871319b5a3b2f8}\label{_l_c_d_controller_8c_a43bafb28b29491ec7f871319b5a3b2f8}} 
+\#define {\bfseries F\+\_\+\+C\+PU}~16000000\+UL
+\end{DoxyCompactItemize}
+\subsubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8c_ad73cbdb125a38140802550653f243fca}\label{_l_c_d_controller_8c_ad73cbdb125a38140802550653f243fca}} 
+void \hyperlink{_l_c_d_controller_8c_ad73cbdb125a38140802550653f243fca}{L\+C\+D\+P\+W\+M\+Init} (void)
+\item 
+void \hyperlink{_l_c_d_controller_8c_ae36ba846363b79a812be19300f843576}{L\+C\+D\+Write\+Index} (uint16\+\_\+t index)
+\item 
+void \hyperlink{_l_c_d_controller_8c_a30bbc98d8f283ea2b5bab632e48543d3}{L\+C\+D\+Write\+Reg} (uint16\+\_\+t index, uint16\+\_\+t data)
+\item 
+void \hyperlink{_l_c_d_controller_8c_a34085397b2bf54f843b9196a9b787e6b}{L\+C\+D\+Write\+Data} (uint16\+\_\+t data)
+\item 
+\mbox{\Hypertarget{_l_c_d_controller_8c_a410f02e534a63d1f6e7a168dae003d6d}\label{_l_c_d_controller_8c_a410f02e534a63d1f6e7a168dae003d6d}} 
+void \hyperlink{_l_c_d_controller_8c_a410f02e534a63d1f6e7a168dae003d6d}{L\+C\+D\+Init} (void)
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Opis szczegółowy}
+\begin{DoxyAuthor}{Autor}
+Mateusz Chudy 
+\end{DoxyAuthor}
+
+
+\subsubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{_l_c_d_controller_8c_a34085397b2bf54f843b9196a9b787e6b}\label{_l_c_d_controller_8c_a34085397b2bf54f843b9196a9b787e6b}} 
+\index{L\+C\+D\+Controller.\+c@{L\+C\+D\+Controller.\+c}!L\+C\+D\+Write\+Data@{L\+C\+D\+Write\+Data}}
+\index{L\+C\+D\+Write\+Data@{L\+C\+D\+Write\+Data}!L\+C\+D\+Controller.\+c@{L\+C\+D\+Controller.\+c}}
+\paragraph{\texorpdfstring{L\+C\+D\+Write\+Data()}{LCDWriteData()}}
+{\footnotesize\ttfamily void L\+C\+D\+Write\+Data (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{data }\end{DoxyParamCaption})}
+
+
+
+Wpisuje dane. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em data} & -\/ wpisywane dane \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_l_c_d_controller_8c_ae36ba846363b79a812be19300f843576}\label{_l_c_d_controller_8c_ae36ba846363b79a812be19300f843576}} 
+\index{L\+C\+D\+Controller.\+c@{L\+C\+D\+Controller.\+c}!L\+C\+D\+Write\+Index@{L\+C\+D\+Write\+Index}}
+\index{L\+C\+D\+Write\+Index@{L\+C\+D\+Write\+Index}!L\+C\+D\+Controller.\+c@{L\+C\+D\+Controller.\+c}}
+\paragraph{\texorpdfstring{L\+C\+D\+Write\+Index()}{LCDWriteIndex()}}
+{\footnotesize\ttfamily void L\+C\+D\+Write\+Index (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{index }\end{DoxyParamCaption})}
+
+
+
+Wpisuje do sterownika indeks rejestru. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em index} & -\/ indeks rejestru \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_l_c_d_controller_8c_a30bbc98d8f283ea2b5bab632e48543d3}\label{_l_c_d_controller_8c_a30bbc98d8f283ea2b5bab632e48543d3}} 
+\index{L\+C\+D\+Controller.\+c@{L\+C\+D\+Controller.\+c}!L\+C\+D\+Write\+Reg@{L\+C\+D\+Write\+Reg}}
+\index{L\+C\+D\+Write\+Reg@{L\+C\+D\+Write\+Reg}!L\+C\+D\+Controller.\+c@{L\+C\+D\+Controller.\+c}}
+\paragraph{\texorpdfstring{L\+C\+D\+Write\+Reg()}{LCDWriteReg()}}
+{\footnotesize\ttfamily void L\+C\+D\+Write\+Reg (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{index,  }\item[{uint16\+\_\+t}]{data }\end{DoxyParamCaption})}
+
+
+
+Wpisuje dane do rejestru. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em index} & -\/ indeks rejestru \\
+\hline
+{\em data} & -\/ wpisywane dane \\
+\hline
+\end{DoxyParams}

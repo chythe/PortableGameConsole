@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Portable Game Console: Dokumentacja pliku Button.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Portable Game Console
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','Szukaj');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a class="el" href="dir_2e65faa0945d6e1f05f940285ea6dae8.html">GUI</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definicje</a> &#124;
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku Button.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definicje</h2></td></tr>
+<tr class="memitem:a43bafb28b29491ec7f871319b5a3b2f8"><td class="memItemLeft" align="right" valign="top"><a id="a43bafb28b29491ec7f871319b5a3b2f8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>F_CPU</b>&#160;&#160;&#160;16000000UL</td></tr>
+<tr class="separator:a43bafb28b29491ec7f871319b5a3b2f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:a367c2772e3110d433c77ee3443031ec2"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_button.html">Button</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_button_8c.html#a367c2772e3110d433c77ee3443031ec2">ButtonCreate</a> (char *string, <a class="el" href="_menu_options_8h.html#a0e65ad13124ea2cb5e255b640464e35f">Option</a> option, uint16_t textColor, uint16_t buttonColor, uint8_t x, uint16_t y, uint8_t width, uint16_t height)</td></tr>
+<tr class="separator:a367c2772e3110d433c77ee3443031ec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8a436f5506fa2dc818138be7b3c9cf3"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_button.html">Button</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_button_8c.html#af8a436f5506fa2dc818138be7b3c9cf3">ButtonDestroy</a> (struct <a class="el" href="struct_button.html">Button</a> *button)</td></tr>
+<tr class="separator:af8a436f5506fa2dc818138be7b3c9cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7617ae84fbfa553843b5d899dc685866"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_button_8c.html#a7617ae84fbfa553843b5d899dc685866">ButtonDisplay</a> (struct <a class="el" href="struct_button.html">Button</a> *button)</td></tr>
+<tr class="separator:a7617ae84fbfa553843b5d899dc685866"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3ba40afe7ec1a5a1f74a68541eefa2a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_button_8c.html#aa3ba40afe7ec1a5a1f74a68541eefa2a">ButtonCheck</a> (struct <a class="el" href="struct_button.html">Button</a> *button)</td></tr>
+<tr class="separator:aa3ba40afe7ec1a5a1f74a68541eefa2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><dl class="section author"><dt>Autor</dt><dd>Mateusz Chudy </dd></dl>
+</div><h2 class="groupheader">Dokumentacja funkcji</h2>
+<a id="aa3ba40afe7ec1a5a1f74a68541eefa2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3ba40afe7ec1a5a1f74a68541eefa2a">&#9670;&nbsp;</a></span>ButtonCheck()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ButtonCheck </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="struct_button.html">Button</a> *&#160;</td>
+          <td class="paramname"><em>button</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sprawdza czy przycisk zostal nacisniety. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">button</td><td>- wskaznik na strukture przycisku </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>wartosc logiczna oznaczajaca czy przycisk zostal wcisniety </dd></dl>
+
+</div>
+</div>
+<a id="a367c2772e3110d433c77ee3443031ec2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a367c2772e3110d433c77ee3443031ec2">&#9670;&nbsp;</a></span>ButtonCreate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="struct_button.html">Button</a>* ButtonCreate </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_menu_options_8h.html#a0e65ad13124ea2cb5e255b640464e35f">Option</a>&#160;</td>
+          <td class="paramname"><em>option</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>textColor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>buttonColor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tworzy nowy przycik. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td>- napis na przycisku </td></tr>
+    <tr><td class="paramname">option</td><td>- opcja z ktorej powstal przycisk </td></tr>
+    <tr><td class="paramname">textColor</td><td>- kolor tekstu </td></tr>
+    <tr><td class="paramname">buttonColor</td><td>- kolor przycisku </td></tr>
+    <tr><td class="paramname">x</td><td>- wspolrzedna x przycisku </td></tr>
+    <tr><td class="paramname">y</td><td>- wspolrzedna y przycisku </td></tr>
+    <tr><td class="paramname">width</td><td>- szerokosc przycisku </td></tr>
+    <tr><td class="paramname">height</td><td>- wysokosc przycisku </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>wskaznik na strukture nowego przycisku </dd></dl>
+
+</div>
+</div>
+<a id="af8a436f5506fa2dc818138be7b3c9cf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8a436f5506fa2dc818138be7b3c9cf3">&#9670;&nbsp;</a></span>ButtonDestroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="struct_button.html">Button</a>** ButtonDestroy </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="struct_button.html">Button</a> *&#160;</td>
+          <td class="paramname"><em>button</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Niszczy przycisk. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">button</td><td>- wskaznik na strukture przycisku </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>wskaznik na strukture przycisku </dd></dl>
+
+</div>
+</div>
+<a id="a7617ae84fbfa553843b5d899dc685866"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7617ae84fbfa553843b5d899dc685866">&#9670;&nbsp;</a></span>ButtonDisplay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ButtonDisplay </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="struct_button.html">Button</a> *&#160;</td>
+          <td class="paramname"><em>button</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wyswietla przycisk. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">button</td><td>- wskaznik na strukture przycisku </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

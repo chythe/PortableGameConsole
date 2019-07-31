@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="struct_vector">
+<title>Vector struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="_ping_pong_8h">&lt;PingPong.h&gt;</link></programlisting>
+</para>
+        <section>
+            <title>Atrybuty publiczne</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int8_t x</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int8_t y</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Wektor. </para>
+    </simplesect>
+        <section>
+            <title>Dokumentacja atrybutów składowych</title>
+        </section>
+</section>

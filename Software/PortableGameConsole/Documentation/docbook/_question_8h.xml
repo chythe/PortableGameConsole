@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_question_8h">
+    <title>Question.h File Reference</title>
+    <programlisting>#include &lt;stdint.h&gt;</programlisting>
+    <programlisting>#include &lt;stdbool.h&gt;</programlisting>
+    <programlisting>#include &quot;MenuOptions.h&quot;</programlisting>
+        <section>
+            <title>Definicje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_question_8h_1a1e6bbd283e86416b8f113b5bab148dd1">QUESTION_BACKGROUND_COLOR</link> GRAY</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_question_8h_1a53b062fe481d26177a5dc872268de1c5">QUESTION_TEXT_COLOR</link> BLACK</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_question_8h_1a8ca3595f5a5aba94f93421ab8b7cf993">QUESTION_Y_POS</link> 80</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_question_8h_1a03de2fc0eab1c134e5ddcefb2785f591">ANSWER_Y_POS</link> 160</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_question_8h_1afd534d91373273e7c0143cc0bbecc5cc">YES_X_POS</link> 30</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_question_8h_1ade780e5d2f07d1057a05dbd1426756ff">NO_X_POS</link> 150</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_question_8h_1afd670612643d66198cde93d85f2a1321">YES_COLOR</link> GREEN</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_question_8h_1a69d859e537f858ca285d77a66755ded6">NO_COLOR</link> RED</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_question_8h_1a2fd6ef49f4db5f4d14275efd18ac713b">QUEST_BUTTON_WIDTH</link> 60</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_question_8h_1af2efe6d2fa77f5d39f78dd1b8e439ec5">QUEST_BUTTON_HEIGHT</link> 40</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Funkcje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_question_8h_1ad72b517c2d344afa770626e9615cef0e">QuestionDisplay</link> (
+char * string, <link linkend="_menu_options_8h_1a0e65ad13124ea2cb5e255b640464e35f">Option</link> yes, <link linkend="_menu_options_8h_1a0e65ad13124ea2cb5e255b640464e35f">Option</link> no)<para><emphasis>Wyswietla pytanie i przyciski odpowiedzi.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Opis szczegółowy</title>
+
+<para>Pytanie z funkcjami wyboru - header file. </para>
+
+<para><formalpara><title>Autor: </title>
+
+<para>Mateusz Chudy </para>
+</formalpara>
+</para>
+    <para>Definition in file C:/AVR/SMIW_M.Chudy_PrzenosnaKonsolaGier/Software/PortableGameConsole/Sources/GUI/Question.h</para>
+    </simplesect>
+</section>

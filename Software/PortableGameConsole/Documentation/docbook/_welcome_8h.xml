@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_welcome_8h">
+    <title>Welcome.h File Reference</title>
+    <programlisting>#include &lt;stdint.h&gt;</programlisting>
+    <programlisting>#include &quot;LCDController.h&quot;</programlisting>
+        <section>
+            <title>Definicje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_welcome_8h_1a6997278fce29e7db542b30cc9eaa9239">WELCOME_X_POS</link> 88</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_welcome_8h_1abd32d6436c9f91e9623e8b5d855d5182">WELCOME_Y_POS</link> 140</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_welcome_8h_1a4f2761030074ea48deaa2b1aea55d9ef">WELCOME_STRING_COLOR</link> WHITE</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_welcome_8h_1a87a954d4e3598d58259a00af01dff6cd">WELCOME_TIME</link> 2000</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Funkcje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_welcome_8h_1a817e3d0a7ea6bb5468535fe258a21b50">WelcomeShow</link> (
+void )<para><emphasis>Wyswietla ekran powitalny.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Opis szczegółowy</title>
+
+<para>Ekran powitalny - header file. </para>
+
+<para><formalpara><title>Autor: </title>
+
+<para>Mateusz Chudy </para>
+</formalpara>
+</para>
+    <para>Definition in file C:/AVR/SMIW_M.Chudy_PrzenosnaKonsolaGier/Software/PortableGameConsole/Sources/Menu/Welcome.h</para>
+    </simplesect>
+</section>

@@ -1,0 +1,18 @@
+digraph "Font.h"
+{
+  edge [fontname="TimesNewRoman",fontsize="10",labelfontname="TimesNewRoman",labelfontsize="10"];
+  node [fontname="TimesNewRoman",fontsize="10",shape=record];
+  Node2 [label="Font.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node3 [label="Snake.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_snake_8c.html",tooltip="Gra Snake - source file. "];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node4 [label="Button.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_button_8c.html",tooltip="Przycisk na ekranie - source file. "];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node5 [label="Font.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_font_8c.html",tooltip="Czionka i zarzadzanie tekstami - souce file. "];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node6 [label="Desktop.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_desktop_8c.html",tooltip="Pulpit z wejsciem menu - source file. "];
+  Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node7 [label="MainMenu.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_main_menu_8c.html",tooltip="Menu glowne - source file. "];
+  Node2 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node8 [label="Welcome.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_welcome_8c.html",tooltip="Ekran powitalny - source file. "];
+}

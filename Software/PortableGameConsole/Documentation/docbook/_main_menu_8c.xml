@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_main_menu_8c">
+    <title>MainMenu.c File Reference</title>
+    <programlisting>#include &lt;util/delay.h&gt;</programlisting>
+    <programlisting>#include &quot;MainMenu.h&quot;</programlisting>
+    <programlisting>#include &quot;GraphicsPrimitives.h&quot;</programlisting>
+    <programlisting>#include &quot;Font.h&quot;</programlisting>
+    <programlisting>#include &lt;DisplayTexts.h&gt;</programlisting>
+    <programlisting>#include &quot;Button.h&quot;</programlisting>
+    <programlisting>#include &quot;TouchController.h&quot;</programlisting>
+        <section>
+            <title>Definicje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_main_menu_8c_1a43bafb28b29491ec7f871319b5a3b2f8">F_CPU</link> 16000000UL</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Funkcje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_main_menu_8c_1af93087fa3ef2be7df6b330520d4e32ed">MainMenuShow</link> (
+void )<para><emphasis>Wyswietla menu glowne.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Opis szczegółowy</title>
+
+<para>Menu glowne - source file. </para>
+
+<para><formalpara><title>Autor: </title>
+
+<para>Mateusz Chudy </para>
+</formalpara>
+</para>
+    <para>Definition in file C:/AVR/SMIW_M.Chudy_PrzenosnaKonsolaGier/Software/PortableGameConsole/Sources/Menu/MainMenu.c</para>
+    </simplesect>
+</section>

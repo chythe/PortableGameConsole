@@ -1,0 +1,106 @@
+\hypertarget{_snake_elements_8c}{}\subsection{Dokumentacja pliku Snake\+Elements.\+c}
+\label{_snake_elements_8c}\index{Snake\+Elements.\+c@{Snake\+Elements.\+c}}
+\subsubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_snake_elements_8c_a6c80b2b3616efc81929191ba4cea1732}{Snake\+Diplay\+Element} (\hyperlink{struct_element}{Element} $\ast$element, bool clear)
+\item 
+void \hyperlink{_snake_elements_8c_af53169d87bbd209574aa79fc5b909747}{Snake\+New\+Food} (\hyperlink{struct_element}{Element} $\ast$$\ast$snake\+Elements, uint8\+\_\+t snake\+Size, \hyperlink{struct_element}{Element} $\ast$food)
+\item 
+\hyperlink{struct_element}{Element} $\ast$$\ast$ \hyperlink{_snake_elements_8c_a51c6255aeb8e18e339b6a99906928976}{Snake\+Element\+Add} (\hyperlink{struct_element}{Element} $\ast$$\ast$snake\+Elements, uint8\+\_\+t $\ast$snake\+Size, \hyperlink{_l_c_d_controller_8h_ab87bacfdad76e61b9412d7124be44c1c}{Color} color, uint8\+\_\+t x, uint8\+\_\+t y, \hyperlink{_accelerometer_controller_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction} direction)
+\item 
+\hyperlink{struct_element}{Element} $\ast$$\ast$ \hyperlink{_snake_elements_8c_a064042e2696fb6c482921aee45aa710e}{Snake\+Destroy} (\hyperlink{struct_element}{Element} $\ast$$\ast$snake\+Elements, uint8\+\_\+t $\ast$snake\+Size)
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Opis szczegółowy}
+\begin{DoxyAuthor}{Autor}
+Mateusz Chudy 
+\end{DoxyAuthor}
+
+
+\subsubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{_snake_elements_8c_a064042e2696fb6c482921aee45aa710e}\label{_snake_elements_8c_a064042e2696fb6c482921aee45aa710e}} 
+\index{Snake\+Elements.\+c@{Snake\+Elements.\+c}!Snake\+Destroy@{Snake\+Destroy}}
+\index{Snake\+Destroy@{Snake\+Destroy}!Snake\+Elements.\+c@{Snake\+Elements.\+c}}
+\paragraph{\texorpdfstring{Snake\+Destroy()}{SnakeDestroy()}}
+{\footnotesize\ttfamily \hyperlink{struct_element}{Element}$\ast$$\ast$ Snake\+Destroy (\begin{DoxyParamCaption}\item[{\hyperlink{struct_element}{Element} $\ast$$\ast$}]{snake\+Elements,  }\item[{uint8\+\_\+t $\ast$}]{snake\+Size }\end{DoxyParamCaption})}
+
+
+
+Niszczy tablice elementow wenza. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em snake\+Elements} & -\/ wskaznik na tablice elementow weza \\
+\hline
+{\em snake\+Size} & -\/ wskaznik na rozmiar weza \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wskaznik na tablice elementow weza 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_snake_elements_8c_a6c80b2b3616efc81929191ba4cea1732}\label{_snake_elements_8c_a6c80b2b3616efc81929191ba4cea1732}} 
+\index{Snake\+Elements.\+c@{Snake\+Elements.\+c}!Snake\+Diplay\+Element@{Snake\+Diplay\+Element}}
+\index{Snake\+Diplay\+Element@{Snake\+Diplay\+Element}!Snake\+Elements.\+c@{Snake\+Elements.\+c}}
+\paragraph{\texorpdfstring{Snake\+Diplay\+Element()}{SnakeDiplayElement()}}
+{\footnotesize\ttfamily void Snake\+Diplay\+Element (\begin{DoxyParamCaption}\item[{\hyperlink{struct_element}{Element} $\ast$}]{element,  }\item[{bool}]{clear }\end{DoxyParamCaption})}
+
+
+
+Wyswietla element. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em element} & -\/ wskaznik na wyswietlany element \\
+\hline
+{\em clear} & -\/ flaga oznaczajaca czy zamazujemy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_snake_elements_8c_a51c6255aeb8e18e339b6a99906928976}\label{_snake_elements_8c_a51c6255aeb8e18e339b6a99906928976}} 
+\index{Snake\+Elements.\+c@{Snake\+Elements.\+c}!Snake\+Element\+Add@{Snake\+Element\+Add}}
+\index{Snake\+Element\+Add@{Snake\+Element\+Add}!Snake\+Elements.\+c@{Snake\+Elements.\+c}}
+\paragraph{\texorpdfstring{Snake\+Element\+Add()}{SnakeElementAdd()}}
+{\footnotesize\ttfamily \hyperlink{struct_element}{Element}$\ast$$\ast$ Snake\+Element\+Add (\begin{DoxyParamCaption}\item[{\hyperlink{struct_element}{Element} $\ast$$\ast$}]{snake\+Elements,  }\item[{uint8\+\_\+t $\ast$}]{snake\+Size,  }\item[{\hyperlink{_l_c_d_controller_8h_ab87bacfdad76e61b9412d7124be44c1c}{Color}}]{color,  }\item[{uint8\+\_\+t}]{x,  }\item[{uint8\+\_\+t}]{y,  }\item[{\hyperlink{_accelerometer_controller_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}}]{direction }\end{DoxyParamCaption})}
+
+
+
+Dodaje element do wenza. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em snake\+Elements} & -\/ wskaznik na tablice elementow weza \\
+\hline
+{\em snake\+Size} & -\/ wskaznik na rozmiar weza \\
+\hline
+{\em color} & -\/ kolor elementu \\
+\hline
+{\em x} & -\/ wspolrzedna x elementu \\
+\hline
+{\em y} & -\/ wspolrzedna y elementu \\
+\hline
+{\em direction} & -\/ kierunek ruchu elementu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wskaznik na tablice elementow weza 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_snake_elements_8c_af53169d87bbd209574aa79fc5b909747}\label{_snake_elements_8c_af53169d87bbd209574aa79fc5b909747}} 
+\index{Snake\+Elements.\+c@{Snake\+Elements.\+c}!Snake\+New\+Food@{Snake\+New\+Food}}
+\index{Snake\+New\+Food@{Snake\+New\+Food}!Snake\+Elements.\+c@{Snake\+Elements.\+c}}
+\paragraph{\texorpdfstring{Snake\+New\+Food()}{SnakeNewFood()}}
+{\footnotesize\ttfamily void Snake\+New\+Food (\begin{DoxyParamCaption}\item[{\hyperlink{struct_element}{Element} $\ast$$\ast$}]{snake\+Elements,  }\item[{uint8\+\_\+t}]{snake\+Size,  }\item[{\hyperlink{struct_element}{Element} $\ast$}]{food }\end{DoxyParamCaption})}
+
+
+
+Tworzy nowy pokarm i rysuje go. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em snake\+Elements} & -\/ wskaznik na tablice elementow weza \\
+\hline
+{\em snake\+Size} & -\/ rozmiar weza \\
+\hline
+{\em food} & -\/ wskaznik na element pokarmu \\
+\hline
+\end{DoxyParams}

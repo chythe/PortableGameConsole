@@ -1,0 +1,45 @@
+digraph "MainMenu.c"
+{
+  edge [fontname="TimesNewRoman",fontsize="10",labelfontname="TimesNewRoman",labelfontsize="10"];
+  node [fontname="TimesNewRoman",fontsize="10",shape=record];
+  Node0 [label="MainMenu.c",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node1 [label="util/delay.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node2 [label="MainMenu.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_main_menu_8h.html",tooltip="Menu glowne - header file. "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node3 [label="stdint.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node4 [label="Desktop.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_desktop_8h.html",tooltip="Pulpit z wejsciem menu - header file. "];
+  Node4 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node5 [label="avr/interrupt.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node6 [label="LCDController.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_l_c_d_controller_8h.html",tooltip="Kontroler sterownika wyswietlacza BD663474 - header file. "];
+  Node6 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node4 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node7 [label="Button.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_button_8h.html",tooltip="Przycisk na ekranie - header file. "];
+  Node7 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node8 [label="stdbool.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node7 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node9 [label="MenuOptions.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_menu_options_8h.html",tooltip="Plik zawierajacy wszystkie opcje menu - header file. "];
+  Node4 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node0 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node10 [label="GraphicsPrimitives.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_graphics_primitives_8h.html",tooltip="Prymitywy graficzne - header file. "];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node11 [label="GlobalErrors.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_global_errors_8h.html",tooltip="Plik zawierajacy wszystkie definicje bledow - header file. "];
+  Node10 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node0 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node12 [label="Font.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_font_8h.html",tooltip="Czionka i zarzadzanie tekstami - header file. "];
+  Node12 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node0 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node13 [label="DisplayTexts.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_display_texts_8h.html",tooltip="Plik zawierajacy wszystkie wyswietlane teksty - header file. "];
+  Node0 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node0 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node14 [label="TouchController.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_touch_controller_8h.html",tooltip="Kontroler sterownika dotyku XPT2046 - header file. "];
+  Node14 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node14 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node14 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+}

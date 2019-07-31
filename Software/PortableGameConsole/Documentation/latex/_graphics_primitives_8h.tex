@@ -1,0 +1,220 @@
+\hypertarget{_graphics_primitives_8h}{}\subsection{Dokumentacja pliku Graphics\+Primitives.\+h}
+\label{_graphics_primitives_8h}\index{Graphics\+Primitives.\+h@{Graphics\+Primitives.\+h}}
+\subsubsection*{Definicje}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_graphics_primitives_8h_ab6b6ac34284e84eb5a020e5fd653353f}\label{_graphics_primitives_8h_ab6b6ac34284e84eb5a020e5fd653353f}} 
+\#define {\bfseries M\+I\+N\+\_\+\+A\+L\+P\+H\+A\+\_\+\+S\+I\+ZE}~-\/180
+\item 
+\mbox{\Hypertarget{_graphics_primitives_8h_a93cb0d80c241032482a09aabe5832112}\label{_graphics_primitives_8h_a93cb0d80c241032482a09aabe5832112}} 
+\#define {\bfseries M\+A\+X\+\_\+\+A\+L\+P\+H\+A\+\_\+\+S\+I\+ZE}~180
+\end{DoxyCompactItemize}
+\subsubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_graphics_primitives_8h_aa20846fe04c855cdb41b0975c9eba657}{Graphics\+Clear\+Screen} (uint16\+\_\+t color)
+\item 
+void \hyperlink{_graphics_primitives_8h_a642cb30a9efda318ea6f1c44ed22203b}{Graphics\+Clear\+Area} (uint16\+\_\+t color, uint8\+\_\+t x, uint16\+\_\+t y, uint8\+\_\+t width, uint16\+\_\+t height)
+\item 
+void \hyperlink{_graphics_primitives_8h_a120096c95bb350f816bdd97e364b595d}{Graphics\+Set\+Cursor} (uint8\+\_\+t x, uint16\+\_\+t y)
+\item 
+void \hyperlink{_graphics_primitives_8h_a595fda74dcbc674296db9bdd5754265b}{Graphics\+Put\+Pixel} (uint16\+\_\+t color, uint8\+\_\+t x, uint16\+\_\+t y)
+\item 
+void \hyperlink{_graphics_primitives_8h_adce3b50b6784b018392e00426643f0d2}{Graphics\+Draw\+Big\+Dot} (uint16\+\_\+t color, uint8\+\_\+t x, uint16\+\_\+t y)
+\item 
+void \hyperlink{_graphics_primitives_8h_a918204525652928b38335c666b14bbd7}{Graphics\+Draw\+Circle} (uint16\+\_\+t color, uint8\+\_\+t x, uint16\+\_\+t y, uint8\+\_\+t r)
+\item 
+\hyperlink{_global_errors_8h_a24419a48e73982468e2a8efbec672928}{Execute\+Result} \hyperlink{_graphics_primitives_8h_a82cf59bae124939047643248072ca50a}{Graphics\+Draw\+Line} (uint16\+\_\+t color, uint8\+\_\+t x1, uint16\+\_\+t y1, uint8\+\_\+t x2, uint16\+\_\+t y2)
+\item 
+void \hyperlink{_graphics_primitives_8h_ab407bb94474cfdce93815ad2b763729b}{Graphics\+Draw\+Simple\+Line} (uint16\+\_\+t color, uint8\+\_\+t x1, uint16\+\_\+t y1, uint8\+\_\+t x2, uint16\+\_\+t y2)
+\item 
+\mbox{\Hypertarget{_graphics_primitives_8h_ab0356148cd4cab95b4f7940f0d9b7d82}\label{_graphics_primitives_8h_ab0356148cd4cab95b4f7940f0d9b7d82}} 
+\hyperlink{_graphics_primitives_8h_ab0356148cd4cab95b4f7940f0d9b7d82}{\+\_\+\+\_\+attribute\+\_\+\+\_\+} ((\+\_\+\+\_\+deprecated\+\_\+\+\_\+)) void \hyperlink{_graphics_primitives_8c_a8d2551f1811ea9739581eac4f000e38c}{Graphics\+Display\+Image}(const uint8\+\_\+t $\ast$image
+\end{DoxyCompactItemize}
+\subsubsection*{Zmienne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_graphics_primitives_8h_a0f561e77fa0f040b637f4e04f6cd8078}\label{_graphics_primitives_8h_a0f561e77fa0f040b637f4e04f6cd8078}} 
+uint8\+\_\+t {\bfseries x}
+\item 
+\mbox{\Hypertarget{_graphics_primitives_8h_a3eeab7636c14875aacb755081ddde677}\label{_graphics_primitives_8h_a3eeab7636c14875aacb755081ddde677}} 
+uint8\+\_\+t uint16\+\_\+t {\bfseries y}
+\item 
+\mbox{\Hypertarget{_graphics_primitives_8h_a676642aeed6db3f79e11f785b8d3cfdd}\label{_graphics_primitives_8h_a676642aeed6db3f79e11f785b8d3cfdd}} 
+uint8\+\_\+t uint16\+\_\+t uint8\+\_\+t {\bfseries width}
+\item 
+\mbox{\Hypertarget{_graphics_primitives_8h_a3059945b09c199c8ed1c3b5d704e9fed}\label{_graphics_primitives_8h_a3059945b09c199c8ed1c3b5d704e9fed}} 
+uint8\+\_\+t uint16\+\_\+t uint8\+\_\+t uint16\+\_\+t {\bfseries height}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Opis szczegółowy}
+\begin{DoxyAuthor}{Autor}
+Mateusz Chudy 
+\end{DoxyAuthor}
+
+
+\subsubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{_graphics_primitives_8h_a642cb30a9efda318ea6f1c44ed22203b}\label{_graphics_primitives_8h_a642cb30a9efda318ea6f1c44ed22203b}} 
+\index{Graphics\+Primitives.\+h@{Graphics\+Primitives.\+h}!Graphics\+Clear\+Area@{Graphics\+Clear\+Area}}
+\index{Graphics\+Clear\+Area@{Graphics\+Clear\+Area}!Graphics\+Primitives.\+h@{Graphics\+Primitives.\+h}}
+\paragraph{\texorpdfstring{Graphics\+Clear\+Area()}{GraphicsClearArea()}}
+{\footnotesize\ttfamily void Graphics\+Clear\+Area (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{color,  }\item[{uint8\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint8\+\_\+t}]{width,  }\item[{uint16\+\_\+t}]{height }\end{DoxyParamCaption})}
+
+
+
+Zamalowuje obszar na zadany kolor. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em color} & -\/ kolor zamalowania obszaru \\
+\hline
+{\em x} & -\/ wspolrzedna x lewego gornego konca obszaru \\
+\hline
+{\em y} & -\/ wspolrzedna y lewego gornego konca obszaru \\
+\hline
+{\em width} & -\/ szerokosc obszaru \\
+\hline
+{\em height} & -\/ wysokosc obszaru \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_graphics_primitives_8h_aa20846fe04c855cdb41b0975c9eba657}\label{_graphics_primitives_8h_aa20846fe04c855cdb41b0975c9eba657}} 
+\index{Graphics\+Primitives.\+h@{Graphics\+Primitives.\+h}!Graphics\+Clear\+Screen@{Graphics\+Clear\+Screen}}
+\index{Graphics\+Clear\+Screen@{Graphics\+Clear\+Screen}!Graphics\+Primitives.\+h@{Graphics\+Primitives.\+h}}
+\paragraph{\texorpdfstring{Graphics\+Clear\+Screen()}{GraphicsClearScreen()}}
+{\footnotesize\ttfamily void Graphics\+Clear\+Screen (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Czysci ekran na zadany kolor. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em color} & -\/ kolor czyszczenia ekranu \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_graphics_primitives_8h_adce3b50b6784b018392e00426643f0d2}\label{_graphics_primitives_8h_adce3b50b6784b018392e00426643f0d2}} 
+\index{Graphics\+Primitives.\+h@{Graphics\+Primitives.\+h}!Graphics\+Draw\+Big\+Dot@{Graphics\+Draw\+Big\+Dot}}
+\index{Graphics\+Draw\+Big\+Dot@{Graphics\+Draw\+Big\+Dot}!Graphics\+Primitives.\+h@{Graphics\+Primitives.\+h}}
+\paragraph{\texorpdfstring{Graphics\+Draw\+Big\+Dot()}{GraphicsDrawBigDot()}}
+{\footnotesize\ttfamily void Graphics\+Draw\+Big\+Dot (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{color,  }\item[{uint8\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+
+
+Wyswietla kropke 3x3 piksele o zadanych wspolrzednych. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em color} & -\/ kolor kropki \\
+\hline
+{\em x} & -\/ wspolrzedna x \\
+\hline
+{\em y} & -\/ wspolrzedna y \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_graphics_primitives_8h_a918204525652928b38335c666b14bbd7}\label{_graphics_primitives_8h_a918204525652928b38335c666b14bbd7}} 
+\index{Graphics\+Primitives.\+h@{Graphics\+Primitives.\+h}!Graphics\+Draw\+Circle@{Graphics\+Draw\+Circle}}
+\index{Graphics\+Draw\+Circle@{Graphics\+Draw\+Circle}!Graphics\+Primitives.\+h@{Graphics\+Primitives.\+h}}
+\paragraph{\texorpdfstring{Graphics\+Draw\+Circle()}{GraphicsDrawCircle()}}
+{\footnotesize\ttfamily void Graphics\+Draw\+Circle (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{color,  }\item[{uint8\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint8\+\_\+t}]{r }\end{DoxyParamCaption})}
+
+
+
+Wyswietla okrag o srodku w zadanych wspolrzednych. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em color} & -\/ kolor kropki \\
+\hline
+{\em x} & -\/ wspolrzedna x \\
+\hline
+{\em y} & -\/ wspolrzedna y \\
+\hline
+{\em r} & -\/ promien okregu \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_graphics_primitives_8h_a82cf59bae124939047643248072ca50a}\label{_graphics_primitives_8h_a82cf59bae124939047643248072ca50a}} 
+\index{Graphics\+Primitives.\+h@{Graphics\+Primitives.\+h}!Graphics\+Draw\+Line@{Graphics\+Draw\+Line}}
+\index{Graphics\+Draw\+Line@{Graphics\+Draw\+Line}!Graphics\+Primitives.\+h@{Graphics\+Primitives.\+h}}
+\paragraph{\texorpdfstring{Graphics\+Draw\+Line()}{GraphicsDrawLine()}}
+{\footnotesize\ttfamily \hyperlink{_global_errors_8h_a24419a48e73982468e2a8efbec672928}{Execute\+Result} Graphics\+Draw\+Line (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{color,  }\item[{uint8\+\_\+t}]{x1,  }\item[{uint16\+\_\+t}]{y1,  }\item[{uint8\+\_\+t}]{x2,  }\item[{uint16\+\_\+t}]{y2 }\end{DoxyParamCaption})}
+
+
+
+Wyswietla linie pomiedzy dwoma punktami. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em color} & -\/ kolor lini \\
+\hline
+{\em x1} & -\/ wspolrzedna x pierwszego punktu \\
+\hline
+{\em y1} & -\/ wspolrzedna y pierwszego punktu \\
+\hline
+{\em x2} & -\/ wspolrzedna x drugiego punktu \\
+\hline
+{\em y2} & -\/ wspolrzedna y drugiego punktu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+rezultat operacji 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_graphics_primitives_8h_ab407bb94474cfdce93815ad2b763729b}\label{_graphics_primitives_8h_ab407bb94474cfdce93815ad2b763729b}} 
+\index{Graphics\+Primitives.\+h@{Graphics\+Primitives.\+h}!Graphics\+Draw\+Simple\+Line@{Graphics\+Draw\+Simple\+Line}}
+\index{Graphics\+Draw\+Simple\+Line@{Graphics\+Draw\+Simple\+Line}!Graphics\+Primitives.\+h@{Graphics\+Primitives.\+h}}
+\paragraph{\texorpdfstring{Graphics\+Draw\+Simple\+Line()}{GraphicsDrawSimpleLine()}}
+{\footnotesize\ttfamily void Graphics\+Draw\+Simple\+Line (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{color,  }\item[{uint8\+\_\+t}]{x1,  }\item[{uint16\+\_\+t}]{y1,  }\item[{uint8\+\_\+t}]{x2,  }\item[{uint16\+\_\+t}]{y2 }\end{DoxyParamCaption})}
+
+
+
+Wyswietla linie w poziomie lub w pionie. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em color} & -\/ kolor lini \\
+\hline
+{\em x1} & -\/ wspolrzedna x pierwszego punktu \\
+\hline
+{\em y1} & -\/ wspolrzedna y pierwszego punktu \\
+\hline
+{\em x2} & -\/ wspolrzedna x drugiego punktu \\
+\hline
+{\em y2} & -\/ wspolrzedna y drugiego punktu \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_graphics_primitives_8h_a595fda74dcbc674296db9bdd5754265b}\label{_graphics_primitives_8h_a595fda74dcbc674296db9bdd5754265b}} 
+\index{Graphics\+Primitives.\+h@{Graphics\+Primitives.\+h}!Graphics\+Put\+Pixel@{Graphics\+Put\+Pixel}}
+\index{Graphics\+Put\+Pixel@{Graphics\+Put\+Pixel}!Graphics\+Primitives.\+h@{Graphics\+Primitives.\+h}}
+\paragraph{\texorpdfstring{Graphics\+Put\+Pixel()}{GraphicsPutPixel()}}
+{\footnotesize\ttfamily void Graphics\+Put\+Pixel (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{color,  }\item[{uint8\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+
+
+Wyswietla punkt o zadanych wspolrzednych. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em color} & -\/ kolor punktu \\
+\hline
+{\em x} & -\/ wspolrzedna x \\
+\hline
+{\em y} & -\/ wspolrzedna y \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_graphics_primitives_8h_a120096c95bb350f816bdd97e364b595d}\label{_graphics_primitives_8h_a120096c95bb350f816bdd97e364b595d}} 
+\index{Graphics\+Primitives.\+h@{Graphics\+Primitives.\+h}!Graphics\+Set\+Cursor@{Graphics\+Set\+Cursor}}
+\index{Graphics\+Set\+Cursor@{Graphics\+Set\+Cursor}!Graphics\+Primitives.\+h@{Graphics\+Primitives.\+h}}
+\paragraph{\texorpdfstring{Graphics\+Set\+Cursor()}{GraphicsSetCursor()}}
+{\footnotesize\ttfamily void Graphics\+Set\+Cursor (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+
+
+Ustawia kursor w punkcie o zadanych wspolrzednych. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em x} & -\/ wspolrzedna x \\
+\hline
+{\em y} & -\/ wspolrzedna y \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,37 @@
+digraph "SnakeElements.c"
+{
+  edge [fontname="TimesNewRoman",fontsize="10",labelfontname="TimesNewRoman",labelfontsize="10"];
+  node [fontname="TimesNewRoman",fontsize="10",shape=record];
+  Node0 [label="SnakeElements.c",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node1 [label="SnakeElements.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_snake_elements_8h.html",tooltip="Elementy weza dla gry Snake - header file. "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node2 [label="stdint.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node3 [label="stdlib.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node4 [label="stdbool.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node5 [label="LCDController.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_l_c_d_controller_8h.html",tooltip="Kontroler sterownika wyswietlacza BD663474 - header file. "];
+  Node5 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node6 [label="GraphicsPrimitives.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_graphics_primitives_8h.html",tooltip="Prymitywy graficzne - header file. "];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node7 [label="GlobalErrors.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_global_errors_8h.html",tooltip="Plik zawierajacy wszystkie definicje bledow - header file. "];
+  Node6 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node8 [label="AccelerometerController.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_accelerometer_controller_8h.html",tooltip="Kontroler akcelerometru - header file. "];
+  Node8 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node0 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node9 [label="ToolSet.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_tool_set_8h.html",tooltip="Zbior pomocnych funkcji - header file. "];
+  Node9 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node9 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node9 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node0 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node10 [label="Snake.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_snake_8h.html",tooltip="Gra Snake - header file. "];
+  Node10 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node10 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node10 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node10 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node0 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+}

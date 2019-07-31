@@ -1,0 +1,30 @@
+digraph "LCDController.h"
+{
+  edge [fontname="TimesNewRoman",fontsize="10",labelfontname="TimesNewRoman",labelfontsize="10"];
+  node [fontname="TimesNewRoman",fontsize="10",shape=record];
+  Node2 [label="LCDController.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node3 [label="Paint.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_paint_8h.html",tooltip="Aplikacja do rysowania - header file. "];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node4 [label="Snake.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_snake_8h.html",tooltip="Gra Snake - header file. "];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node5 [label="SnakeElements.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_snake_elements_8h.html",tooltip="Elementy weza dla gry Snake - header file. "];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node6 [label="SnakeMove.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_snake_move_8h.html",tooltip="Ruch weza dla gry Snake - header file. "];
+  Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node7 [label="Desktop.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_desktop_8h.html",tooltip="Pulpit z wejsciem menu - header file. "];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node8 [label="ApplicationMenu.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_application_menu_8h.html",tooltip="Menu z aplikacjami - header file. "];
+  Node7 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node9 [label="GamesMenu.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_games_menu_8h.html",tooltip="Menu z grami - header file. "];
+  Node7 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node10 [label="MainMenu.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_main_menu_8h.html",tooltip="Menu glowne - header file. "];
+  Node2 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node2 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node2 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node2 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node11 [label="Welcome.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_welcome_8h.html",tooltip="Ekran powitalny - header file. "];
+  Node2 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node12 [label="ToolSet.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_tool_set_8h.html",tooltip="Zbior pomocnych funkcji - header file. "];
+}

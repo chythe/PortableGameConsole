@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <info>
+    <title>Portable Game Console</title>
+    </info>
+    <chapter>
+        <title>Dokumentacja klas</title>
+        <xi:include href="struct_button.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="struct_element.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="struct_touch_point.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="struct_vector.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </chapter>
+    <chapter>
+        <title>Dokumentacja plików</title>
+        <xi:include href="_paint_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_paint_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_i2_c_controller_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_i2_c_controller_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_s_p_i_controller_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_s_p_i_controller_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_display_texts_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_global_errors_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_menu_options_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_accelerometer_controller_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_accelerometer_controller_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_l_c_d_controller_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_l_c_d_controller_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_touch_controller_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_touch_controller_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_ping_pong_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_ping_pong_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_snake_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_snake_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_snake_elements_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_snake_elements_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_snake_move_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_snake_move_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_button_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_button_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_font_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_font_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_graphics_primitives_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_graphics_primitives_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_question_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_question_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_main_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_application_menu_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_application_menu_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_desktop_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_desktop_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_games_menu_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_games_menu_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_main_menu_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_main_menu_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_welcome_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_welcome_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_tool_set_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_tool_set_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </chapter>
+</book>

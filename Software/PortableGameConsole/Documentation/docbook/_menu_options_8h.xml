@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_menu_options_8h">
+    <title>MenuOptions.h File Reference</title>
+        <section>
+            <title>Wyliczenia</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para><literallayout>enum <link linkend="_menu_options_8h_1a0e65ad13124ea2cb5e255b640464e35f">Option</link> {
+<link linkend="_menu_options_8h_1a0e65ad13124ea2cb5e255b640464e35fa753bf2fe209fe929b5fce88692cc475a">DESKTOP</link>= 0,
+<link linkend="_menu_options_8h_1a0e65ad13124ea2cb5e255b640464e35fa41c6eb506ccf657cc7e958c8e8c769cd">MAIN</link>,
+<link linkend="_menu_options_8h_1a0e65ad13124ea2cb5e255b640464e35fae0c878e410c52b2495e95169982f33f2">GAMES</link>,
+<link linkend="_menu_options_8h_1a0e65ad13124ea2cb5e255b640464e35fa83d29f79e34833adfe138524e127b4d3">APPLICATIONS</link>,
+<link linkend="_menu_options_8h_1a0e65ad13124ea2cb5e255b640464e35fa162aa5cd01138ca135d07a9393137fe1">PING_PONG</link>,
+<link linkend="_menu_options_8h_1a0e65ad13124ea2cb5e255b640464e35fa7d71275d46953bd71d2c6b11e219ee24">SNAKE</link>,
+<link linkend="_menu_options_8h_1a0e65ad13124ea2cb5e255b640464e35fa3feb6b21c491c5bfcff46c81e24b4052">PAINT</link>,
+<link linkend="_menu_options_8h_1a0e65ad13124ea2cb5e255b640464e35fac921ff2cfc571c1d19b0485d7f6926ee">BACK</link>,
+<link linkend="_menu_options_8h_1a0e65ad13124ea2cb5e255b640464e35fa99f136a862ba5c7d16967231c29f09d6">YES</link>,
+<link linkend="_menu_options_8h_1a0e65ad13124ea2cb5e255b640464e35fa0d077f5b932ce05e5b9f30c6087a2f31">NO</link>,
+<link linkend="_menu_options_8h_1a0e65ad13124ea2cb5e255b640464e35fa990cd45e93be2b4661f3499e0a658a33">LAST</link>
+}</literallayout>
+<para><emphasis>Wszystkie opcje menu.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Opis szczegółowy</title>
+
+<para>Plik zawierajacy wszystkie opcje menu - header file. </para>
+
+<para><formalpara><title>Autor: </title>
+
+<para>Mateusz Chudy </para>
+</formalpara>
+</para>
+    <para>Definition in file C:/AVR/SMIW_M.Chudy_PrzenosnaKonsolaGier/Software/PortableGameConsole/Sources/Config/MenuOptions.h</para>
+    </simplesect>
+</section>

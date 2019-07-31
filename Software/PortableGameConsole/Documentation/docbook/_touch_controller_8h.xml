@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_touch_controller_8h">
+    <title>TouchController.h File Reference</title>
+    <programlisting>#include &lt;stdint.h&gt;</programlisting>
+    <programlisting>#include &lt;avr/interrupt.h&gt;</programlisting>
+    <programlisting>#include &lt;GlobalErrors.h&gt;</programlisting>
+        <section>
+            <title> Klasy </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="struct_touch_point">TouchPoint</link></para>
+<para><emphasis>Punkt dotkniecia.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Definicje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_touch_controller_8h_1a6e617fa52aec8270317937d0ebf86a63">TOUCH_CS_H</link> PORTD |= (1 &lt;&lt; PD4);</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_touch_controller_8h_1ac5f94799b55d5c52a0e0dad657dc47b2">TOUCH_CS_L</link> PORTD &amp;= ~(1 &lt;&lt; PD4);</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_touch_controller_8h_1ad09ef803c6d09b0dabe40b228f93556d">CMD_READ_X</link> 0xD0</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_touch_controller_8h_1acbb9f7d8a64df6f7c46af407258532e4">CMD_READ_Y</link> 0x90</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_touch_controller_8h_1a3630fbd3339b17f5dfd6164153e6b1ee">ERR_RANGE</link> 50</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_touch_controller_8h_1a551e21385ab900aa4e17805e22d6352a">READ_TIMES</link> 10</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_touch_controller_8h_1a10537494bf876335f6e8cbfb9e392cb9">LOST_VAL</link> 4</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_touch_controller_8h_1a96ca70c48bbdb77688d2d40c614a6097">CORRECT_X</link> -20</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_touch_controller_8h_1a7f1d6891ba42af32cd6345f8dfcc718a">CORRECT_Y</link> -2</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Zmienne</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="struct_touch_point">TouchPoint</link> <link linkend="_touch_controller_8h_1aeb17df021cf2c222f3af8d36f2b2e4b9">touchPoint</link><para><emphasis>Globalny punkt dotknięcia.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>volatile uint8_t <link linkend="_touch_controller_8h_1ac97f7d84499940d6525e3c741aff9607">interruptFlag</link><para><emphasis>Globalna flaga wskazujaca na dotkniecie w ekran.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Funkcje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="_touch_controller_8h_1afea150fcd685610cb9f7672fce361e53">ISR</link> (
+INT0_vect )<para><emphasis>Procedura obslugi przerwania dotkniecia w ekran.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_touch_controller_8h_1a13aa17f82bc27e0c9c4b625f6b7b3b4b">TouchInit</link> (
+void )<para><emphasis>Inicjalizuje sterownik dotyku.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t <link linkend="_touch_controller_8h_1afd6b9fd0d9c6c8cd8c9207f77aee409b">TouchGetADC</link> (
+uint8_t cmdCode)<para><emphasis>Pobiera ze sterownika pojedynczy wynik ADC.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t <link linkend="_touch_controller_8h_1acd900b25f07bb8edbad17c66c6df1ae7">TouchGetADCEx</link> (
+uint8_t cmdCode)<para><emphasis>Pobiera ze sterownika kilka razy wynik ADC i filtruje zwracana wartosc.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_global_errors_8h_1a24419a48e73982468e2a8efbec672928">ExecuteResult</link> <link linkend="_touch_controller_8h_1a48966a8d6c8270b2401c35b21ec45339">TouchReadADS</link> (
+uint16_t * xad, uint16_t * yad)<para><emphasis>Pobiera ze sterownika przefiltrowane wyniki konwersji AD dla osi x i y.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_global_errors_8h_1a24419a48e73982468e2a8efbec672928">ExecuteResult</link> <link linkend="_touch_controller_8h_1a9c991e05a075f348beb925569a21794f">TouchReadADS2</link> (
+uint32_t * xad, uint32_t * yad)<para><emphasis>Dwukrotnie pobiera ze sterownika przefiltrowane wyniki konwersji AD dla osi x i y.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_touch_controller_8h_1a669d365b06438c56d3186e03b4714a99">TouchConvertAdToXy</link> (
+void )<para><emphasis>Konwertuje wartosci odczytanych ADC na wartosci wspolrzednych.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_global_errors_8h_1a24419a48e73982468e2a8efbec672928">ExecuteResult</link> <link linkend="_touch_controller_8h_1a29238080856992b4b2f5963da3dbb78a">TouchReadOnce</link> (
+void )<para><emphasis>Pobiera jednokrotnie wspolrzedne dotkniecia.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_global_errors_8h_1a24419a48e73982468e2a8efbec672928">ExecuteResult</link> <link linkend="_touch_controller_8h_1a5be623bca9f4958335adf98549214d99">TouchReadContinue</link> (
+void )<para><emphasis>Pobiera wspolrzedne dotkniecia w sposob ciagly.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Opis szczegółowy</title>
+
+<para>Kontroler sterownika dotyku XPT2046 - header file. </para>
+
+<para><formalpara><title>Autor: </title>
+
+<para>Mateusz Chudy </para>
+</formalpara>
+</para>
+    <para>Definition in file C:/AVR/SMIW_M.Chudy_PrzenosnaKonsolaGier/Software/PortableGameConsole/Sources/Drivers/TouchController.h</para>
+    </simplesect>
+</section>

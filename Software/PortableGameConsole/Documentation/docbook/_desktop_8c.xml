@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_desktop_8c">
+    <title>Desktop.c File Reference</title>
+    <programlisting>#include &lt;DisplayTexts.h&gt;</programlisting>
+    <programlisting>#include &lt;stdbool.h&gt;</programlisting>
+    <programlisting>#include &quot;string.h&quot;</programlisting>
+    <programlisting>#include &quot;Desktop.h&quot;</programlisting>
+    <programlisting>#include &quot;GraphicsPrimitives.h&quot;</programlisting>
+    <programlisting>#include &quot;Font.h&quot;</programlisting>
+    <programlisting>#include &quot;TouchController.h&quot;</programlisting>
+    <programlisting>#include &quot;ApplicationMenu.h&quot;</programlisting>
+    <programlisting>#include &quot;MainMenu.h&quot;</programlisting>
+    <programlisting>#include &quot;GamesMenu.h&quot;</programlisting>
+    <programlisting>#include &quot;Button.h&quot;</programlisting>
+    <programlisting>#include &quot;PingPong.h&quot;</programlisting>
+    <programlisting>#include &quot;Question.h&quot;</programlisting>
+    <programlisting>#include &quot;Snake/Snake.h&quot;</programlisting>
+    <programlisting>#include &quot;Paint.h&quot;</programlisting>
+        <section>
+            <title>Funkcje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_desktop_8c_1ac15683ad287aa0d36895bd3f01247255">DesktopCheckSelect</link> (
+void )<para><emphasis>Sprawdza wybranie opcji z menu.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_desktop_8c_1ac66b9f78f1e5e7f6d640e4770d27bd0b">DesktopShow</link> (
+void )<para><emphasis>Uruchamia pulpit.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_desktop_8c_1a68f232158ce001e6043b0c661aa0daf1">DesktopInvokeShowFunction</link> (
+<link linkend="_menu_options_8h_1a0e65ad13124ea2cb5e255b640464e35f">Option</link> option)<para><emphasis>Wywoluje funkcje uruchomienia wybranej opcji menu.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Opis szczegółowy</title>
+
+<para>Pulpit z wejsciem menu - source file. </para>
+
+<para><formalpara><title>Autor: </title>
+
+<para>Mateusz Chudy </para>
+</formalpara>
+</para>
+    <para>Definition in file C:/AVR/SMIW_M.Chudy_PrzenosnaKonsolaGier/Software/PortableGameConsole/Sources/Menu/Desktop.c</para>
+    </simplesect>
+</section>

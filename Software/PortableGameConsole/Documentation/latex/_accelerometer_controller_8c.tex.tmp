@@ -1,0 +1,65 @@
+\hypertarget{_accelerometer_controller_8c}{}\section{Dokumentacja pliku Accelerometer\+Controller.\+c}
+\label{_accelerometer_controller_8c}\index{Accelerometer\+Controller.\+c@{Accelerometer\+Controller.\+c}}
+
+
+Kontroler akcelerometru -\/ source file.  
+
+
+{\ttfamily \#include $<$avr/io.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Accelerometer\+Controller.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}I2\+C\+Controller.\+h\char`\"{}}\newline
+Wykres zależności załączania dla Accelerometer\+Controller.\+c\+:
+% FIG 0
+\subsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_accelerometer_controller_8c_a3503c5a03dda05fa47abd5022c9609b6}\label{_accelerometer_controller_8c_a3503c5a03dda05fa47abd5022c9609b6}} 
+void \hyperlink{_accelerometer_controller_8c_a3503c5a03dda05fa47abd5022c9609b6}{Accelerometer\+Init} (void)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje akcelerometr. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{_accelerometer_controller_8c_a8c6d76397000c290219fa9ec3320e2dc}{Accelerometer\+Get\+Angle} (\hyperlink{_accelerometer_controller_8h_ae3996976d8ffb3e58d88f58227473f8e}{Axis} axis)
+\begin{DoxyCompactList}\small\item\em Pobiera wartosc proporcjonalna do kata nachylenia do danej osi. \end{DoxyCompactList}\item 
+\hyperlink{_accelerometer_controller_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction} \hyperlink{_accelerometer_controller_8c_a20e54871d9dd61e2d49607176aeadb8d}{Accelerometer\+Get\+Direction} (void)
+\begin{DoxyCompactList}\small\item\em Pobiera kierunek nachylenia. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Kontroler akcelerometru -\/ source file. 
+
+\begin{DoxyAuthor}{Autor}
+Mateusz Chudy 
+\end{DoxyAuthor}
+
+
+\subsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{_accelerometer_controller_8c_a8c6d76397000c290219fa9ec3320e2dc}\label{_accelerometer_controller_8c_a8c6d76397000c290219fa9ec3320e2dc}} 
+\index{Accelerometer\+Controller.\+c@{Accelerometer\+Controller.\+c}!Accelerometer\+Get\+Angle@{Accelerometer\+Get\+Angle}}
+\index{Accelerometer\+Get\+Angle@{Accelerometer\+Get\+Angle}!Accelerometer\+Controller.\+c@{Accelerometer\+Controller.\+c}}
+\subsubsection{\texorpdfstring{Accelerometer\+Get\+Angle()}{AccelerometerGetAngle()}}
+{\footnotesize\ttfamily int8\+\_\+t Accelerometer\+Get\+Angle (\begin{DoxyParamCaption}\item[{\hyperlink{_accelerometer_controller_8h_ae3996976d8ffb3e58d88f58227473f8e}{Axis}}]{axis }\end{DoxyParamCaption})}
+
+
+
+Pobiera wartosc proporcjonalna do kata nachylenia do danej osi. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em axis} & -\/ indeks rejestru, pod ktorym znajduje sie wartosc dla danej osi \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wartosc proporcjonalna do kata nachylenia do danej osi 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_accelerometer_controller_8c_a20e54871d9dd61e2d49607176aeadb8d}\label{_accelerometer_controller_8c_a20e54871d9dd61e2d49607176aeadb8d}} 
+\index{Accelerometer\+Controller.\+c@{Accelerometer\+Controller.\+c}!Accelerometer\+Get\+Direction@{Accelerometer\+Get\+Direction}}
+\index{Accelerometer\+Get\+Direction@{Accelerometer\+Get\+Direction}!Accelerometer\+Controller.\+c@{Accelerometer\+Controller.\+c}}
+\subsubsection{\texorpdfstring{Accelerometer\+Get\+Direction()}{AccelerometerGetDirection()}}
+{\footnotesize\ttfamily \hyperlink{_accelerometer_controller_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction} Accelerometer\+Get\+Direction (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Pobiera kierunek nachylenia. 
+
+\begin{DoxyReturn}{Zwraca}
+kierunek nachylenia 
+\end{DoxyReturn}

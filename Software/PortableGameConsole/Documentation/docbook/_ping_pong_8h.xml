@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_ping_pong_8h">
+    <title>PingPong.h File Reference</title>
+    <programlisting>#include &lt;stdint.h&gt;</programlisting>
+    <programlisting>#include &lt;stdbool.h&gt;</programlisting>
+        <section>
+            <title> Klasy </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="struct_vector">Vector</link></para>
+<para><emphasis>Wektor.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Definicje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_ping_pong_8h_1a928a661d2eb900321e0330bd380c2829">PONG_ACCE_SENSITIVITY</link> 10</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_ping_pong_8h_1a4034492bc4bfe138258f5c7922248a26">PONG_DISP_SENSITIVITY</link> 1</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_ping_pong_8h_1a02c74bbdc11c4ac21984bb15a62fb852">PONG_Y_POS</link> 300</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_ping_pong_8h_1a2e42aacd428629307ac45af92bfe12d7">PONG_LINE_SIZE</link> 60</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_ping_pong_8h_1affb7797f05dc46e896c4fc2dcab97263">PONG_BALL_SPEED</link> 20</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_ping_pong_8h_1ad04b2c951fa5755e732f1d92770e01c0">PONG_LINE_SPEED</link> 2</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_ping_pong_8h_1a8b0132eb12cab213184ea8eb4bd31cf1">PONG_MIN_X</link> 0</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_ping_pong_8h_1a4a815bbd6344c98251e3733f3c357b38">PONG_MAX_X</link> 240</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_ping_pong_8h_1ace76dfe2161b327694f4e7d7c876a36c">PONG_MIN_Y</link> 0</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_ping_pong_8h_1adc642622c86796d9571c70d8315a954b">PONG_MAX_Y</link> 320</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Funkcje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="_ping_pong_8h_1a89c61936fa9499d05aee007b20dfac8e">CalculateBallPosition</link> (
+uint8_t * newX, uint16_t * newY, uint8_t lineX, <link linkend="struct_vector">Vector</link> * moveVector)<para><emphasis>Oblicza nowe wspolrzedne pilki.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_ping_pong_8h_1ac8f18c7a8dd2b7e9fa1caf220921f3d8">CalculateLinePosition</link> (
+uint8_t * newX)<para><emphasis>Oblicza nowe wspolrzedne lini.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_ping_pong_8h_1a34cfa6e64d63dce3a7f8f597bcb1b93e">PingPongPlay</link> (
+void )<para><emphasis>Wlacza gre Ping Pong.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Opis szczegółowy</title>
+
+<para>Gra Ping Pong - header file. </para>
+
+<para><formalpara><title>Autor: </title>
+
+<para>Mateusz Chudy </para>
+</formalpara>
+</para>
+    <para>Definition in file C:/AVR/SMIW_M.Chudy_PrzenosnaKonsolaGier/Software/PortableGameConsole/Sources/Games/PingPong/PingPong.h</para>
+    </simplesect>
+</section>

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_main_8c">
+    <title>Main.c File Reference</title>
+    <programlisting>#include &lt;util/delay.h&gt;</programlisting>
+    <programlisting>#include &quot;AccelerometerController.h&quot;</programlisting>
+    <programlisting>#include &quot;SPIController.h&quot;</programlisting>
+    <programlisting>#include &quot;TouchController.h&quot;</programlisting>
+    <programlisting>#include &quot;LCDController.h&quot;</programlisting>
+    <programlisting>#include &quot;I2CController.h&quot;</programlisting>
+    <programlisting>#include &quot;Welcome.h&quot;</programlisting>
+    <programlisting>#include &quot;Desktop.h&quot;</programlisting>
+        <section>
+            <title>Definicje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_main_8c_1a43bafb28b29491ec7f871319b5a3b2f8">F_CPU</link> 16000000UL</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Funkcje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="_main_8c_1a840291bc02cba5474a4cb46a9b9566fe">main</link> (
+void )<para><emphasis>Glowna funkcja programu.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Opis szczegółowy</title>
+
+<para>Zrodlo z glowna funkcja programu - source file. </para>
+
+<para><formalpara><title>Autor: </title>
+
+<para>Mateusz Chudy </para>
+</formalpara>
+</para>
+    <para>Definition in file C:/AVR/SMIW_M.Chudy_PrzenosnaKonsolaGier/Software/PortableGameConsole/Sources/Main.c</para>
+    </simplesect>
+</section>

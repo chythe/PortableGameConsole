@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_main_menu_8h">
+    <title>MainMenu.h File Reference</title>
+    <programlisting>#include &lt;stdint.h&gt;</programlisting>
+    <programlisting>#include &quot;Desktop.h&quot;</programlisting>
+    <programlisting>#include &quot;LCDController.h&quot;</programlisting>
+        <section>
+            <title>Definicje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_main_menu_8h_1a3252e092a6b0b1d9970c673660150e56">MAIN_GAMES_BUTTON_X1</link> 0</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_main_menu_8h_1afd5b9c840b3ad9ee1e07e68b71eb303a">MAIN_GAMES_BUTTON_Y1</link> 0</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_main_menu_8h_1a5804758e517e02a8b83e04bbbcb95098">MAIN_GAMES_BUTTON_X2</link> 240</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_main_menu_8h_1aea66830946e671098186605404f49a0d">MAIN_GAMES_BUTTON_Y2</link> 40</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_main_menu_8h_1a0f2eda066ac27754cd9c1c46f70154ed">MAIN_GAMES_BUTTON_COLOR</link> DARKBLUE</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_main_menu_8h_1af744f9ee29b36f22a5ea425938293775">MAIN_GAMES_TEXT_COLOR</link> WHITE</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_main_menu_8h_1a537700c2ce5027f034abfaa61e427263">MAIN_APP_BUTTON_X1</link> 0</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_main_menu_8h_1ac219366f9792c73ac658ca8983ec09d9">MAIN_APP_BUTTON_Y1</link> 40</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_main_menu_8h_1a93f8ccb0c2910fdd5377c3469df050a6">MAIN_APP_BUTTON_X2</link> 240</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_main_menu_8h_1aeaac31c48eb6be71d9e09ed81886e841">MAIN_APP_BUTTON_Y2</link> 80</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_main_menu_8h_1a87adb044b63ce9b26cc1a60970c71c24">MAIN_APP_BUTTON_COLOR</link> 0X01CA</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_main_menu_8h_1aefa7ee07e5ba12b2b6b064db1907d165">MAIN_APP_TEXT_COLOR</link> WHITE</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Funkcje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_main_menu_8h_1af93087fa3ef2be7df6b330520d4e32ed">MainMenuShow</link> (
+void )<para><emphasis>Wyswietla menu glowne.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Opis szczegółowy</title>
+
+<para>Menu glowne - header file. </para>
+
+<para><formalpara><title>Autor: </title>
+
+<para>Mateusz Chudy </para>
+</formalpara>
+</para>
+    <para>Definition in file C:/AVR/SMIW_M.Chudy_PrzenosnaKonsolaGier/Software/PortableGameConsole/Sources/Menu/MainMenu.h</para>
+    </simplesect>
+</section>

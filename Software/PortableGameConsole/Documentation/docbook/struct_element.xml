@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="struct_element">
+<title>Element struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="_snake_elements_8h">&lt;SnakeElements.h&gt;</link></programlisting>
+</para>
+        <section>
+            <title>Atrybuty publiczne</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t x</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t y</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Color color</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Direction newDirection</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Direction oldDirection</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Wyswietlany element. </para>
+    </simplesect>
+        <section>
+            <title>Dokumentacja atrybutów składowych</title>
+        </section>
+</section>

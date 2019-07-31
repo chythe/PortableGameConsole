@@ -1,0 +1,10 @@
+digraph "GraphicsPrimitives.h"
+{
+  edge [fontname="TimesNewRoman",fontsize="10",labelfontname="TimesNewRoman",labelfontsize="10"];
+  node [fontname="TimesNewRoman",fontsize="10",shape=record];
+  Node0 [label="GraphicsPrimitives.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 [label="GlobalErrors.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_global_errors_8h.html",tooltip="Plik zawierajacy wszystkie definicje bledow - header file. "];
+  Node0 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="stdint.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

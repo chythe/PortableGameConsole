@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_desktop_8h">
+    <title>Desktop.h File Reference</title>
+    <programlisting>#include &lt;stdint.h&gt;</programlisting>
+    <programlisting>#include &lt;avr/interrupt.h&gt;</programlisting>
+    <programlisting>#include &quot;LCDController.h&quot;</programlisting>
+    <programlisting>#include &quot;Button.h&quot;</programlisting>
+    <programlisting>#include &quot;MenuOptions.h&quot;</programlisting>
+        <section>
+            <title>Definicje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_desktop_8h_1a0e503fe1f5b5a115bb35a884253afdaa">DESK_MENU_BUTTON_X1</link> 0</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_desktop_8h_1aec9ccb506928fb134f1737180e1e130a">DESK_MENU_BUTTON_Y1</link> 280</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_desktop_8h_1a3ae17b53deda749230a4672bc3618b2d">DESK_MENU_BUTTON_X2</link> 240</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_desktop_8h_1a660a681de551e71290ffc2c0e39176eb">DESK_MENU_BUTTON_Y2</link> 320</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_desktop_8h_1ae35cd8431237028a3bd56b5d4ebbff53">DESK_MENU_BUTTON_COLOR</link> DARKBLUE</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_desktop_8h_1af340d94ea588eb82160d215fda6454d8">DESK_MENU_TEXT_COLOR</link> WHITE</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_desktop_8h_1aab50768d4cccca67edb40d86bad5f818">BACK_BUTTON_X1</link> 0</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_desktop_8h_1a70ca884d2ebc45885979349a823ab3ba">BACK_BUTTON_Y1</link> 280</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_desktop_8h_1af7b334d0c51fdde69c832a5c079422ff">BACK_BUTTON_X2</link> 240</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_desktop_8h_1a8504fd1f29abe11e34c8730debb96285">BACK_BUTTON_Y2</link> 320</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_desktop_8h_1a1695208ac396dd426b62992be5e0909f">BACK_BUTTON_COLOR</link> RED</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_desktop_8h_1a281166a653f6f849f83a16a386862f4a">BACK_TEXT_COLOR</link> WHITE</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Zmienne</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="struct_button">Button</link> * <link linkend="_desktop_8h_1a5e2a8049163a8a36e24cd0a0c850295f">buttonArray</link><para><emphasis>Globalna tablica przyciskow zawartych w menu.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Funkcje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_desktop_8h_1ac15683ad287aa0d36895bd3f01247255">DesktopCheckSelect</link> (
+void )<para><emphasis>Sprawdza wybranie opcji z menu.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_desktop_8h_1ac66b9f78f1e5e7f6d640e4770d27bd0b">DesktopShow</link> (
+void )<para><emphasis>Uruchamia pulpit.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_desktop_8h_1a68f232158ce001e6043b0c661aa0daf1">DesktopInvokeShowFunction</link> (
+<link linkend="_menu_options_8h_1a0e65ad13124ea2cb5e255b640464e35f">Option</link> option)<para><emphasis>Wywoluje funkcje uruchomienia wybranej opcji menu.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Opis szczegółowy</title>
+
+<para>Pulpit z wejsciem menu - header file. </para>
+
+<para><formalpara><title>Autor: </title>
+
+<para>Mateusz Chudy </para>
+</formalpara>
+</para>
+    <para>Definition in file C:/AVR/SMIW_M.Chudy_PrzenosnaKonsolaGier/Software/PortableGameConsole/Sources/Menu/Desktop.h</para>
+    </simplesect>
+</section>

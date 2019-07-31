@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_snake_8h">
+    <title>Snake.h File Reference</title>
+    <programlisting>#include &lt;stdint.h&gt;</programlisting>
+    <programlisting>#include &quot;LCDController.h&quot;</programlisting>
+    <programlisting>#include &quot;SnakeElements.h&quot;</programlisting>
+    <programlisting>#include &quot;AccelerometerController.h&quot;</programlisting>
+        <section>
+            <title>Definicje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_snake_8h_1ab423b62247109d00f65774558f07dc1a">SNAKE_START_SIZE</link> 3</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_snake_8h_1ac24c494ab47b6d399a9f11b21105bfef">SNAKE_START_X</link> 6</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_snake_8h_1a4672bcf8757d785011bc237171335e82">SNAKE_START_Y</link> 0</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_snake_8h_1a228d36455fd57038619532bf50045f59">SNAKE_MAX_X</link> 11</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_snake_8h_1aaaf9c77f00507c83a007de7246ba28d2">SNAKE_MAX_Y</link> 15</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_snake_8h_1acab04f75398247da057f379857043d51">SNAKE_START_DERECTION</link> DOWN</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_snake_8h_1a1782a6700795469fda439a0ca4736845">SNAKE_BACKGROUND_COLOR</link> 0x1002</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_snake_8h_1a1d5c45c71ad16baf25dc45e764346589">SNAKE_COLOR_FILTER</link> 0x4444</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_snake_8h_1a57aa017fe2ff0a4ea9d47d6a953c3733">SNAKE_DELAY</link> 200</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Funkcje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="struct_element">Element</link> ** <link linkend="_snake_8h_1afd18b31cb219f0ed9b648e9076f97efd">SnakeInit</link> (
+<link linkend="struct_element">Element</link> ** snakeElements, uint8_t * snakeSize, <link linkend="struct_element">Element</link> * food)<para><emphasis>Inicjalizuje gre Snake.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_snake_8h_1a1e500190a038b1944189f3251dd6c698">SnakePlay</link> (
+void )<para><emphasis>Wlacza gre Snake.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Opis szczegółowy</title>
+
+<para>Gra Snake - header file. </para>
+
+<para><formalpara><title>Autor: </title>
+
+<para>Mateusz Chudy </para>
+</formalpara>
+</para>
+    <para>Definition in file C:/AVR/SMIW_M.Chudy_PrzenosnaKonsolaGier/Software/PortableGameConsole/Sources/Games/Snake/Snake.h</para>
+    </simplesect>
+</section>

@@ -1,0 +1,110 @@
+\hypertarget{_button_8h}{}\subsection{Dokumentacja pliku Button.\+h}
+\label{_button_8h}\index{Button.\+h@{Button.\+h}}
+\subsubsection*{Struktury danych}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_button}{Button}
+\end{DoxyCompactItemize}
+\subsubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_button}{Button} $\ast$ \hyperlink{_button_8h_a367c2772e3110d433c77ee3443031ec2}{Button\+Create} (char $\ast$string, \hyperlink{_menu_options_8h_a0e65ad13124ea2cb5e255b640464e35f}{Option} option, uint16\+\_\+t text\+Color, uint16\+\_\+t button\+Color, uint8\+\_\+t x, uint16\+\_\+t y, uint8\+\_\+t width, uint16\+\_\+t height)
+\item 
+struct \hyperlink{struct_button}{Button} $\ast$$\ast$ \hyperlink{_button_8h_af8a436f5506fa2dc818138be7b3c9cf3}{Button\+Destroy} (struct \hyperlink{struct_button}{Button} $\ast$button)
+\item 
+void \hyperlink{_button_8h_a7617ae84fbfa553843b5d899dc685866}{Button\+Display} (struct \hyperlink{struct_button}{Button} $\ast$button)
+\item 
+bool \hyperlink{_button_8h_aa3ba40afe7ec1a5a1f74a68541eefa2a}{Button\+Check} (struct \hyperlink{struct_button}{Button} $\ast$button)
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Opis szczegółowy}
+\begin{DoxyAuthor}{Autor}
+Mateusz Chudy 
+\end{DoxyAuthor}
+
+
+\subsubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{_button_8h_aa3ba40afe7ec1a5a1f74a68541eefa2a}\label{_button_8h_aa3ba40afe7ec1a5a1f74a68541eefa2a}} 
+\index{Button.\+h@{Button.\+h}!Button\+Check@{Button\+Check}}
+\index{Button\+Check@{Button\+Check}!Button.\+h@{Button.\+h}}
+\paragraph{\texorpdfstring{Button\+Check()}{ButtonCheck()}}
+{\footnotesize\ttfamily bool Button\+Check (\begin{DoxyParamCaption}\item[{struct \hyperlink{struct_button}{Button} $\ast$}]{button }\end{DoxyParamCaption})}
+
+
+
+Sprawdza czy przycisk zostal nacisniety. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em button} & -\/ wskaznik na strukture przycisku \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wartosc logiczna oznaczajaca czy przycisk zostal wcisniety 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_button_8h_a367c2772e3110d433c77ee3443031ec2}\label{_button_8h_a367c2772e3110d433c77ee3443031ec2}} 
+\index{Button.\+h@{Button.\+h}!Button\+Create@{Button\+Create}}
+\index{Button\+Create@{Button\+Create}!Button.\+h@{Button.\+h}}
+\paragraph{\texorpdfstring{Button\+Create()}{ButtonCreate()}}
+{\footnotesize\ttfamily struct \hyperlink{struct_button}{Button}$\ast$ Button\+Create (\begin{DoxyParamCaption}\item[{char $\ast$}]{string,  }\item[{\hyperlink{_menu_options_8h_a0e65ad13124ea2cb5e255b640464e35f}{Option}}]{option,  }\item[{uint16\+\_\+t}]{text\+Color,  }\item[{uint16\+\_\+t}]{button\+Color,  }\item[{uint8\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint8\+\_\+t}]{width,  }\item[{uint16\+\_\+t}]{height }\end{DoxyParamCaption})}
+
+
+
+Tworzy nowy przycik. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em string} & -\/ napis na przycisku \\
+\hline
+{\em option} & -\/ opcja z ktorej powstal przycisk \\
+\hline
+{\em text\+Color} & -\/ kolor tekstu \\
+\hline
+{\em button\+Color} & -\/ kolor przycisku \\
+\hline
+{\em x} & -\/ wspolrzedna x przycisku \\
+\hline
+{\em y} & -\/ wspolrzedna y przycisku \\
+\hline
+{\em width} & -\/ szerokosc przycisku \\
+\hline
+{\em height} & -\/ wysokosc przycisku \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wskaznik na strukture nowego przycisku 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_button_8h_af8a436f5506fa2dc818138be7b3c9cf3}\label{_button_8h_af8a436f5506fa2dc818138be7b3c9cf3}} 
+\index{Button.\+h@{Button.\+h}!Button\+Destroy@{Button\+Destroy}}
+\index{Button\+Destroy@{Button\+Destroy}!Button.\+h@{Button.\+h}}
+\paragraph{\texorpdfstring{Button\+Destroy()}{ButtonDestroy()}}
+{\footnotesize\ttfamily struct \hyperlink{struct_button}{Button}$\ast$$\ast$ Button\+Destroy (\begin{DoxyParamCaption}\item[{struct \hyperlink{struct_button}{Button} $\ast$}]{button }\end{DoxyParamCaption})}
+
+
+
+Niszczy przycisk. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em button} & -\/ wskaznik na strukture przycisku \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wskaznik na strukture przycisku 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_button_8h_a7617ae84fbfa553843b5d899dc685866}\label{_button_8h_a7617ae84fbfa553843b5d899dc685866}} 
+\index{Button.\+h@{Button.\+h}!Button\+Display@{Button\+Display}}
+\index{Button\+Display@{Button\+Display}!Button.\+h@{Button.\+h}}
+\paragraph{\texorpdfstring{Button\+Display()}{ButtonDisplay()}}
+{\footnotesize\ttfamily void Button\+Display (\begin{DoxyParamCaption}\item[{struct \hyperlink{struct_button}{Button} $\ast$}]{button }\end{DoxyParamCaption})}
+
+
+
+Wyswietla przycisk. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em button} & -\/ wskaznik na strukture przycisku \\
+\hline
+\end{DoxyParams}

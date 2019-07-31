@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_l_c_d_controller_8c">
+    <title>LCDController.c File Reference</title>
+    <programlisting>#include &lt;avr/io.h&gt;</programlisting>
+    <programlisting>#include &lt;util/delay.h&gt;</programlisting>
+    <programlisting>#include &quot;LCDController.h&quot;</programlisting>
+    <programlisting>#include &quot;SPIController.h&quot;</programlisting>
+        <section>
+            <title>Definicje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_l_c_d_controller_8c_1a43bafb28b29491ec7f871319b5a3b2f8">F_CPU</link> 16000000UL</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Funkcje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_l_c_d_controller_8c_1ad73cbdb125a38140802550653f243fca">LCDPWMInit</link> (
+void )<para><emphasis>Inicjalizuje i wlacza sygnal PWM.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_l_c_d_controller_8c_1ae36ba846363b79a812be19300f843576">LCDWriteIndex</link> (
+uint16_t index)<para><emphasis>Wpisuje do sterownika indeks rejestru.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_l_c_d_controller_8c_1a30bbc98d8f283ea2b5bab632e48543d3">LCDWriteReg</link> (
+uint16_t index, uint16_t data)<para><emphasis>Wpisuje dane do rejestru.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_l_c_d_controller_8c_1a34085397b2bf54f843b9196a9b787e6b">LCDWriteData</link> (
+uint16_t data)<para><emphasis>Wpisuje dane.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_l_c_d_controller_8c_1a410f02e534a63d1f6e7a168dae003d6d">LCDInit</link> (
+void )<para><emphasis>Inicjalizuje sterownik wyswietlacza.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Opis szczegółowy</title>
+
+<para>Kontroler sterownika wyswietlacza BD663474 - source file. </para>
+
+<para><formalpara><title>Autor: </title>
+
+<para>Mateusz Chudy </para>
+</formalpara>
+</para>
+    <para>Definition in file C:/AVR/SMIW_M.Chudy_PrzenosnaKonsolaGier/Software/PortableGameConsole/Sources/Drivers/LCDController.c</para>
+    </simplesect>
+</section>

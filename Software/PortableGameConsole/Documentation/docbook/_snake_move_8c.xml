@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_snake_move_8c">
+    <title>SnakeMove.c File Reference</title>
+    <programlisting>#include &lt;util/delay.h&gt;</programlisting>
+    <programlisting>#include &quot;SnakeMove.h&quot;</programlisting>
+    <programlisting>#include &quot;Snake.h&quot;</programlisting>
+    <programlisting>#include &quot;LCDController.h&quot;</programlisting>
+        <section>
+            <title>Definicje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_snake_move_8c_1a43bafb28b29491ec7f871319b5a3b2f8">F_CPU</link> 16000000UL</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Funkcje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t <link linkend="_snake_move_8c_1a4826d6fabdc46eabdf73dd1f82413645">SnakeCheckCollision</link> (
+<link linkend="struct_element">Element</link> ** snakeElements, uint8_t snakeSize, uint8_t isFall)<para><emphasis>Sprawdza kolizje weza.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="struct_element">Element</link> ** <link linkend="_snake_move_8c_1aacfe4d57705b0bccb20be6eff24bf4c3">SnakeCheckChangeDirection</link> (
+<link linkend="struct_element">Element</link> ** snakeElements, uint8_t * snakeSize)<para><emphasis>Sprawdza i zmienia kierunek wenza.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="struct_element">Element</link> ** <link linkend="_snake_move_8c_1aa87c68fc69a04911e9d34a931c6eb0c7">SnakeCheckFood</link> (
+<link linkend="struct_element">Element</link> ** snakeElements, uint8_t * snakeSize, <link linkend="struct_element">Element</link> * food)<para><emphasis>Sprawdza czy waz natrafil na pokarm, jesli takrysuje nowy i zwieksza wenza.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="struct_element">Element</link> ** <link linkend="_snake_move_8c_1a7a5be7fc634f033f3648138c55029949">SnakeUpdateDirections</link> (
+<link linkend="struct_element">Element</link> ** snakeElements, uint8_t * snakeSize)<para><emphasis>Aktualizuje kierunki dla elementow wenza.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="struct_element">Element</link> ** <link linkend="_snake_move_8c_1a205cb9d6c4412c5e25b56f0d3d4b2176">SnakeMove</link> (
+<link linkend="struct_element">Element</link> ** snakeElements, uint8_t * snakeSize, <link linkend="struct_element">Element</link> * food)<para><emphasis>Przemieszcza wenza na ekranie.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Opis szczegółowy</title>
+
+<para>Ruch weza dla gry Snake - source file. </para>
+
+<para><formalpara><title>Autor: </title>
+
+<para>Mateusz Chudy </para>
+</formalpara>
+</para>
+    <para>Definition in file C:/AVR/SMIW_M.Chudy_PrzenosnaKonsolaGier/Software/PortableGameConsole/Sources/Games/Snake/SnakeMove.c</para>
+    </simplesect>
+</section>

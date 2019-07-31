@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_font_8h">
+    <title>Font.h File Reference</title>
+    <programlisting>#include &lt;stdint.h&gt;</programlisting>
+        <section>
+            <title>Definicje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_font_8h_1a316a33eb307aba3a626f74109b7001ef">CHAR_MAX_X</link> 8</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_font_8h_1a590a5395bf9f1ae5cefc7a609ae1c43c">CHAR_MAX_Y</link> 16</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_font_8h_1ab96cc82fc27e9285f894534128e9228c">CHAR_MASK</link> 0x80</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_font_8h_1ab7dd6ac7ca3cdf4cb894faa533588339">STRING_MAX_X</link> 230</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_font_8h_1a284fde5e6cadd88074ed4b7817070de8">STRING_MAX_Y</link> 300</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Zmienne</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const uint8_t <link linkend="_font_8h_1a3377e8fc0fc77345dd281d2363c95490">ascii</link><para><emphasis>Globalna tablica zawierajaca czcionke znakow ascii.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Funkcje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_font_8h_1abae5a8d0142047622e41d61a03993989">FontDisplayChar</link> (
+char character, uint16_t colorFront, uint16_t colorBackground, uint8_t x, uint16_t y)<para><emphasis>Wyswietla znak.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_font_8h_1ac20f88662bc23bd128ca429252ca3818">FontDisplayString</link> (
+char * string, uint16_t colorFront, uint16_t colorBackground, uint8_t x, uint16_t y)<para><emphasis>Wyswietla napis.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Opis szczegółowy</title>
+
+<para>Czionka i zarzadzanie tekstami - header file. </para>
+
+<para><formalpara><title>Autor: </title>
+
+<para>Mateusz Chudy </para>
+</formalpara>
+</para>
+    <para>Definition in file C:/AVR/SMIW_M.Chudy_PrzenosnaKonsolaGier/Software/PortableGameConsole/Sources/GUI/Font.h</para>
+    </simplesect>
+</section>

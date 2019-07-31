@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_games_menu_8h">
+    <title>GamesMenu.h File Reference</title>
+    <programlisting>#include &lt;stdint.h&gt;</programlisting>
+    <programlisting>#include &quot;Desktop.h&quot;</programlisting>
+    <programlisting>#include &quot;LCDController.h&quot;</programlisting>
+        <section>
+            <title>Definicje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_games_menu_8h_1ad445d3b63085266fd659081af1958914">GAMES_PONG_BUTTON_X1</link> 0</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_games_menu_8h_1ad50e75f70befab9318e4a69f35389b70">GAMES_PONG_BUTTON_Y1</link> 0</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_games_menu_8h_1a7b66f7328b948292f981205081165005">GAMES_PONG_BUTTON_X2</link> 240</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_games_menu_8h_1a24674e190b2c4ec2cb8257ffb1726994">GAMES_PONG_BUTTON_Y2</link> 40</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_games_menu_8h_1a9c74c9e11c1defe1a5481c504a8a7a69">GAMES_PONG_BUTTON_COLOR</link> DARKBLUE</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_games_menu_8h_1a8108748da75899cb20895b1389ee707d">GAMES_PONG_TEXT_COLOR</link> WHITE</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_games_menu_8h_1a73bceb64b05f2d8ec3f2419d376fa8aa">GAMES_SNAKE_BUTTON_X1</link> 0</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_games_menu_8h_1a8b2fb02e85715458ec49f8df6e31d3b3">GAMES_SNAKE_BUTTON_Y1</link> 40</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_games_menu_8h_1a0dfbb442af5a4d0f518c5f606933774a">GAMES_SNAKE_BUTTON_X2</link> 240</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_games_menu_8h_1a4e28d5bc1844f8e006d6e540c0dad431">GAMES_SNAKE_BUTTON_Y2</link> 80</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_games_menu_8h_1a0e3ebdc57d8067e4d5cd2743b289bef5">GAMES_SNAKE_BUTTON_COLOR</link> 0X01CA</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_games_menu_8h_1a6fd603889017b0a871b5418d12c61aa5">GAMES_SNAKE_TEXT_COLOR</link> WHITE</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Funkcje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_games_menu_8h_1a62db8bb9936422cb966dd2cc4d77710f">GamesMenuShow</link> (
+void )<para><emphasis>Wyswietla menu z grami.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Opis szczegółowy</title>
+
+<para>Menu z grami - header file. </para>
+
+<para><formalpara><title>Autor: </title>
+
+<para>Mateusz Chudy </para>
+</formalpara>
+</para>
+    <para>Definition in file C:/AVR/SMIW_M.Chudy_PrzenosnaKonsolaGier/Software/PortableGameConsole/Sources/Menu/GamesMenu.h</para>
+    </simplesect>
+</section>

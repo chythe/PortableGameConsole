@@ -1,0 +1,13 @@
+digraph "Paint" {
+  compound=true
+  node [ fontsize="10", fontname="TimesNewRoman"];
+  edge [ labelfontsize="10", labelfontname="TimesNewRoman"];
+  subgraph clusterdir_3352201c8297b49070269adae53d2a56 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Applications" fontname="TimesNewRoman", fontsize="10", URL="dir_3352201c8297b49070269adae53d2a56.html"]
+  dir_d37051598f8c5ed29ff6bda75e21ad69 [shape=box, label="Paint", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_d37051598f8c5ed29ff6bda75e21ad69.html"];
+  }
+  dir_2e65faa0945d6e1f05f940285ea6dae8 [shape=box label="GUI" URL="dir_2e65faa0945d6e1f05f940285ea6dae8.html"];
+  dir_abb47d9036a42ab5431b8adc2735c9e9 [shape=box label="Drivers" URL="dir_abb47d9036a42ab5431b8adc2735c9e9.html"];
+  dir_d37051598f8c5ed29ff6bda75e21ad69->dir_2e65faa0945d6e1f05f940285ea6dae8 [headlabel="1", labeldistance=1.5 headhref="dir_000007_000003.html"];
+  dir_d37051598f8c5ed29ff6bda75e21ad69->dir_abb47d9036a42ab5431b8adc2735c9e9 [headlabel="1", labeldistance=1.5 headhref="dir_000007_000001.html"];
+}

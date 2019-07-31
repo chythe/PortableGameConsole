@@ -1,0 +1,13 @@
+digraph "Snake" {
+  compound=true
+  node [ fontsize="10", fontname="TimesNewRoman"];
+  edge [ labelfontsize="10", labelfontname="TimesNewRoman"];
+  subgraph clusterdir_7a8ccb56a9e8ce43d4dc66eeef1b5636 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Games" fontname="TimesNewRoman", fontsize="10", URL="dir_7a8ccb56a9e8ce43d4dc66eeef1b5636.html"]
+  dir_08699772390e45925e35a396bbab0010 [shape=box, label="Snake", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_08699772390e45925e35a396bbab0010.html"];
+  }
+  dir_2e65faa0945d6e1f05f940285ea6dae8 [shape=box label="GUI" URL="dir_2e65faa0945d6e1f05f940285ea6dae8.html"];
+  dir_abb47d9036a42ab5431b8adc2735c9e9 [shape=box label="Drivers" URL="dir_abb47d9036a42ab5431b8adc2735c9e9.html"];
+  dir_08699772390e45925e35a396bbab0010->dir_2e65faa0945d6e1f05f940285ea6dae8 [headlabel="1", labeldistance=1.5 headhref="dir_000010_000003.html"];
+  dir_08699772390e45925e35a396bbab0010->dir_abb47d9036a42ab5431b8adc2735c9e9 [headlabel="5", labeldistance=1.5 headhref="dir_000010_000001.html"];
+}

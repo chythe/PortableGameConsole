@@ -1,0 +1,88 @@
+\hypertarget{_font_8h}{}\subsection{Dokumentacja pliku Font.\+h}
+\label{_font_8h}\index{Font.\+h@{Font.\+h}}
+\subsubsection*{Definicje}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_font_8h_a316a33eb307aba3a626f74109b7001ef}\label{_font_8h_a316a33eb307aba3a626f74109b7001ef}} 
+\#define {\bfseries C\+H\+A\+R\+\_\+\+M\+A\+X\+\_\+X}~8
+\item 
+\mbox{\Hypertarget{_font_8h_a590a5395bf9f1ae5cefc7a609ae1c43c}\label{_font_8h_a590a5395bf9f1ae5cefc7a609ae1c43c}} 
+\#define {\bfseries C\+H\+A\+R\+\_\+\+M\+A\+X\+\_\+Y}~16
+\item 
+\mbox{\Hypertarget{_font_8h_ab96cc82fc27e9285f894534128e9228c}\label{_font_8h_ab96cc82fc27e9285f894534128e9228c}} 
+\#define {\bfseries C\+H\+A\+R\+\_\+\+M\+A\+SK}~0x80
+\item 
+\mbox{\Hypertarget{_font_8h_ab7dd6ac7ca3cdf4cb894faa533588339}\label{_font_8h_ab7dd6ac7ca3cdf4cb894faa533588339}} 
+\#define {\bfseries S\+T\+R\+I\+N\+G\+\_\+\+M\+A\+X\+\_\+X}~230
+\item 
+\mbox{\Hypertarget{_font_8h_a284fde5e6cadd88074ed4b7817070de8}\label{_font_8h_a284fde5e6cadd88074ed4b7817070de8}} 
+\#define {\bfseries S\+T\+R\+I\+N\+G\+\_\+\+M\+A\+X\+\_\+Y}~300
+\end{DoxyCompactItemize}
+\subsubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_font_8h_abae5a8d0142047622e41d61a03993989}{Font\+Display\+Char} (char character, uint16\+\_\+t color\+Front, uint16\+\_\+t color\+Background, uint8\+\_\+t x, uint16\+\_\+t y)
+\item 
+void \hyperlink{_font_8h_ac20f88662bc23bd128ca429252ca3818}{Font\+Display\+String} (char $\ast$string, uint16\+\_\+t color\+Front, uint16\+\_\+t color\+Background, uint8\+\_\+t x, uint16\+\_\+t y)
+\end{DoxyCompactItemize}
+\subsubsection*{Zmienne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_font_8h_a3377e8fc0fc77345dd281d2363c95490}\label{_font_8h_a3377e8fc0fc77345dd281d2363c95490}} 
+const uint8\+\_\+t \hyperlink{_font_8h_a3377e8fc0fc77345dd281d2363c95490}{ascii} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Opis szczegółowy}
+\begin{DoxyAuthor}{Autor}
+Mateusz Chudy 
+\end{DoxyAuthor}
+
+
+\subsubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{_font_8h_abae5a8d0142047622e41d61a03993989}\label{_font_8h_abae5a8d0142047622e41d61a03993989}} 
+\index{Font.\+h@{Font.\+h}!Font\+Display\+Char@{Font\+Display\+Char}}
+\index{Font\+Display\+Char@{Font\+Display\+Char}!Font.\+h@{Font.\+h}}
+\paragraph{\texorpdfstring{Font\+Display\+Char()}{FontDisplayChar()}}
+{\footnotesize\ttfamily void Font\+Display\+Char (\begin{DoxyParamCaption}\item[{char}]{character,  }\item[{uint16\+\_\+t}]{color\+Front,  }\item[{uint16\+\_\+t}]{color\+Background,  }\item[{uint8\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+
+
+Wyswietla znak. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em character} & -\/ wyswietlany znak \\
+\hline
+{\em color\+Front} & -\/ kolor czcionki \\
+\hline
+{\em color\+Background} & -\/ kolor tla \\
+\hline
+{\em x} & -\/ wspolrzedna x lewego gornego konca znaku \\
+\hline
+{\em y} & -\/ wspolrzedna y lewego gornego konca znaku \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_font_8h_ac20f88662bc23bd128ca429252ca3818}\label{_font_8h_ac20f88662bc23bd128ca429252ca3818}} 
+\index{Font.\+h@{Font.\+h}!Font\+Display\+String@{Font\+Display\+String}}
+\index{Font\+Display\+String@{Font\+Display\+String}!Font.\+h@{Font.\+h}}
+\paragraph{\texorpdfstring{Font\+Display\+String()}{FontDisplayString()}}
+{\footnotesize\ttfamily void Font\+Display\+String (\begin{DoxyParamCaption}\item[{char $\ast$}]{string,  }\item[{uint16\+\_\+t}]{color\+Front,  }\item[{uint16\+\_\+t}]{color\+Background,  }\item[{uint8\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+
+
+Wyswietla napis. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em string} & -\/ wyswietlany napis \\
+\hline
+{\em color\+Front} & -\/ kolor czcionki \\
+\hline
+{\em color\+Background} & -\/ kolor tla \\
+\hline
+{\em x} & -\/ wspolrzedna x lewego gornego konca napisu \\
+\hline
+{\em y} & -\/ wspolrzedna y lewego gornego konca napisu \\
+\hline
+\end{DoxyParams}

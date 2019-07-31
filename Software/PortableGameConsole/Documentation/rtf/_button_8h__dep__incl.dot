@@ -1,0 +1,41 @@
+digraph "Button.h"
+{
+  edge [fontname="TimesNewRoman",fontsize="10",labelfontname="TimesNewRoman",labelfontsize="10"];
+  node [fontname="TimesNewRoman",fontsize="10",shape=record];
+  Node4 [label="Button.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node5 [label="Paint.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_paint_8h.html",tooltip="Aplikacja do rysowania - header file. "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node6 [label="Paint.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_paint_8c.html",tooltip="Aplikacja do rysowania - source file. "];
+  Node5 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node7 [label="Desktop.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_desktop_8c.html",tooltip="Pulpit z wejsciem menu - source file. "];
+  Node4 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node8 [label="Button.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_button_8c.html",tooltip="Przycisk na ekranie - source file. "];
+  Node4 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node9 [label="Question.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_question_8c.html",tooltip="Pytanie z funkcjami wyboru - source file. "];
+  Node4 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node10 [label="Desktop.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_desktop_8h.html",tooltip="Pulpit z wejsciem menu - header file. "];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node11 [label="TouchController.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_touch_controller_8c.html",tooltip="Kontroler sterownika dotyku XPT2046 - source file. "];
+  Node10 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node10 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node12 [label="Main.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_main_8c.html",tooltip="Zrodlo z glowna funkcja programu - source file. "];
+  Node10 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node13 [label="ApplicationMenu.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_application_menu_8h.html",tooltip="Menu z aplikacjami - header file. "];
+  Node13 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node14 [label="ApplicationMenu.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_application_menu_8c.html",tooltip="Menu z aplikacjami - source file. "];
+  Node13 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node10 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node10 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node15 [label="MainMenu.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_main_menu_8h.html",tooltip="Menu glowne - header file. "];
+  Node15 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node15 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node16 [label="MainMenu.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_main_menu_8c.html",tooltip="Menu glowne - source file. "];
+  Node10 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node17 [label="GamesMenu.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_games_menu_8h.html",tooltip="Menu z grami - header file. "];
+  Node17 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node17 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node18 [label="GamesMenu.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_games_menu_8c.html",tooltip="Menu z grami - source file. "];
+  Node4 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node4 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+}

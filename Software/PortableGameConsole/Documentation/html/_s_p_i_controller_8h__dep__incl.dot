@@ -1,0 +1,14 @@
+digraph "SPIController.h"
+{
+  edge [fontname="TimesNewRoman",fontsize="10",labelfontname="TimesNewRoman",labelfontsize="10"];
+  node [fontname="TimesNewRoman",fontsize="10",shape=record];
+  Node2 [label="SPIController.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node3 [label="SPIController.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_s_p_i_controller_8c.html",tooltip="Kontroler interfejsu SPI - source file. "];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node4 [label="LCDController.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_l_c_d_controller_8c.html",tooltip="Kontroler sterownika wyswietlacza BD663474 - source file. "];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node5 [label="TouchController.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_touch_controller_8c.html",tooltip="Kontroler sterownika dotyku XPT2046 - source file. "];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="TimesNewRoman"];
+  Node6 [label="Main.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_main_8c.html",tooltip="Zrodlo z glowna funkcja programu - source file. "];
+}
